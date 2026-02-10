@@ -5,13 +5,13 @@ const CONFIG = {
 };
 
 // Modal functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Hamburger Menu
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
 
     if (hamburger && mobileMenu) {
-        hamburger.addEventListener('click', function() {
+        hamburger.addEventListener('click', function () {
             hamburger.classList.toggle('active');
             mobileMenu.classList.toggle('active');
         });
@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close mobile menu when clicking a link
         const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
             });
         });
 
         // Close mobile menu when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('active');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Open modal when CTA buttons are clicked
     ctaButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.preventDefault();
             modal.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling
@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close modal when X is clicked
     if (closeBtn) {
-        closeBtn.addEventListener('click', function() {
+        closeBtn.addEventListener('click', function () {
             modal.classList.remove('active');
             document.body.style.overflow = ''; // Restore scrolling
         });
     }
 
     // Close modal when clicking outside
-    window.addEventListener('click', function(e) {
+    window.addEventListener('click', function (e) {
         if (e.target === modal) {
             modal.classList.remove('active');
             document.body.style.overflow = '';
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
             modal.classList.remove('active');
             document.body.style.overflow = '';
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle form submission
     if (contactForm) {
-        contactForm.addEventListener('submit', async function(e) {
+        contactForm.addEventListener('submit', async function (e) {
             e.preventDefault();
 
             // Get form data
@@ -109,19 +109,40 @@ document.addEventListener('DOMContentLoaded', function() {
                     console.log('GAS URL not configured. Form data:', formData);
                 }
 
-                // 成功時：モーダルを閉じてサンクスページへ遷移
-                modal.classList.remove('active');
-                document.body.style.overflow = '';
-                window.location.href = 'thanks.html';
+                // 成功時：フォームを非表示にして、成功メッセージを表示
+                contactForm.style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+
+                // フォームをリセット（次回使用時のため）
+                contactForm.reset();
 
             } catch (error) {
                 console.error('Error submitting form:', error);
                 alert('送信に失敗しました。時間をおいて再度お試しください。');
-                
+
                 // ボタンを元に戻す
                 submitButton.disabled = false;
                 submitButton.innerHTML = originalText;
             }
+        });
+    }
+
+    // 成功メッセージの「閉じる」ボタン
+    const successCloseButton = document.getElementById('successCloseButton');
+    if (successCloseButton) {
+        successCloseButton.addEventListener('click', function () {
+            // モーダルを閉じる
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+
+            // フォームと成功メッセージの表示を元に戻す
+            contactForm.style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+
+            // 送信ボタンを元に戻す
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            submitButton.disabled = false;
+            submitButton.innerHTML = '<span class="cta-inner">資料を申し込む</span>';
         });
     }
 });
