@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>資料請求ありがとうございます | RBS リペアスクール</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thanks-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+        }
+
+        .thanks-content {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .thanks-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .thanks-title {
+            font-size: 28px;
+            color: var(--navy);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .thanks-message {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .thanks-note {
+            background: var(--light-blue);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .thanks-note p {
+            margin: 0;
+            color: var(--navy);
+            font-size: 14px;
+        }
+
+        .thanks-button {
+            display: inline-block;
+            background: var(--orange, #FF6B35);
+            color: #ffffff !important;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .thanks-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.4);
+        }
+
+        @media (max-width: 600px) {
+            .thanks-content {
+                padding: 40px 25px;
+            }
+
+            .thanks-icon {
+                font-size: 60px;
+            }
+
+            .thanks-title {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thanks-container">
+        <div class="thanks-content">
+            <div class="thanks-icon">✉️</div>
+            <h1 class="thanks-title">資料請求ありがとうございます！</h1>
+            <p class="thanks-message">
+                ご入力いただいたメールアドレスに<br>
+                資料ページのURLをお送りしました。
+            </p>
+            <div class="thanks-note">
+                <p>📧 メールが届かない場合は、<br>迷惑メールフォルダをご確認ください。</p>
+            </div>
+            <a href="index.html" class="thanks-button">トップページへ戻る</a>
+        </div>
+    </div>
+</body>
+
+</html>

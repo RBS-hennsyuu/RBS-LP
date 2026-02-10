@@ -1,3 +1,9 @@
+// ===== 設定 =====
+const CONFIG = {
+    // Google Apps Script のウェブアプリURL（デプロイ後に設定）
+    GAS_URL: 'https://script.google.com/macros/s/AKfycbx3HESpS9Us_1rBg09ZlchMm3JrCqcFkt5WmkPLOHUiJmdFSv8QlA8FzFEZ00qsUuk1/exec'
+};
+
 // Modal functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Hamburger Menu
@@ -69,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle form submission
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
             // Get form data
@@ -81,27 +87,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 timestamp: new Date().toISOString()
             };
 
-            console.log('Form submitted:', formData);
+            // ボタンを無効化して送信中表示
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<span class="cta-inner">送信中...</span>';
 
-            // TODO: ここにFirebase/GASの処理を追加
-            // 例:
-            // - Firestoreにデータ保存
-            // - Googleスプレッドシートに追記
-            // - メール送信
-            
-            // 仮の実装：少し待ってから資料ページへ遷移
-            // 実際はFirebase処理完了後に遷移
-            setTimeout(() => {
-                // Close modal
+            try {
+                // GASにデータを送信
+                if (CONFIG.GAS_URL && CONFIG.GAS_URL !== 'YOUR_GAS_WEB_APP_URL_HERE') {
+                    const response = await fetch(CONFIG.GAS_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+                    console.log('Form submitted to GAS');
+                } else {
+                    console.log('GAS URL not configured. Form data:', formData);
+                }
+
+                // 成功時：モーダルを閉じてサンクスページへ遷移
                 modal.classList.remove('active');
                 document.body.style.overflow = '';
-                
-                // Redirect to documents page
-                window.location.href = 'documents.html';
-            }, 500);
+                window.location.href = 'thanks.html';
 
-            // フォームをリセット（オプション）
-            // contactForm.reset();
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('送信に失敗しました。時間をおいて再度お試しください。');
+                
+                // ボタンを元に戻す
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalText;
+            }
         });
     }
 });

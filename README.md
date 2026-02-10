@@ -16,7 +16,9 @@ new_project/
 ├── index.html           # メインLP
 ├── documents.html       # 資料ページ
 ├── style.css           # スタイルシート
-├── script.js           # JavaScript（モーダル、ハンバーガーメニュー）
+├── script.js           # JavaScript（モーダル、GAS送信）
+├── gas/                # Google Apps Script
+│   └── Code.gs           # GASコード（スプレッドシート保存・メール送信）
 ├── assets/             # 画像・リソース
 │   └── images/
 │       └── common/
@@ -31,8 +33,8 @@ new_project/
 ### 1. リポジトリのクローン
 
 ```bash
-git clone https://github.com/moritayuya/rbs-lp.git
-cd rbs-lp
+git clone https://github.com/RBS-hennsyuu/RBS-LP.git
+cd RBS-LP
 ```
 
 ### 2. ローカルでの確認
@@ -56,6 +58,49 @@ firebase deploy --only hosting
 ```
 
 デプロイ先: https://rbs-lp-test.web.app
+
+## Google Apps Script セットアップ
+
+資料請求フォームのデータをGoogleスプレッドシートに保存し、自動返信メールを送信するための設定です。
+
+### 1. スプレッドシートを作成
+
+1. [Google ドライブ](https://drive.google.com) で新規スプレッドシートを作成
+2. URL から スプレッドシートID をコピー
+   - 例: `https://docs.google.com/spreadsheets/d/【この部分がID】/edit`
+
+### 2. Apps Script を設定
+
+1. スプレッドシートで **拡張機能 > Apps Script** を開く
+2. 既存のコードを削除し、`gas/Code.gs` の内容を貼り付け
+3. `CONFIG.SPREADSHEET_ID` にステップ1でコピーしたIDを設定
+
+### 3. ウェブアプリとしてデプロイ
+
+1. **デプロイ > 新しいデプロイ**
+2. 種類: **ウェブアプリ**
+3. 設定:
+   - 実行ユーザー: **自分**
+   - アクセス権: **全員**
+4. **デプロイ** をクリック
+5. 表示される **ウェブアプリURL** をコピー
+
+### 4. script.js にURLを設定
+
+`script.js` の CONFIG を編集:
+
+```javascript
+const CONFIG = {
+    GAS_URL: 'https://script.google.com/macros/s/xxxxx/exec'  // ← ここにURLを貼り付け
+};
+```
+
+### 5. 動作確認
+
+1. `firebase deploy` で再デプロイ
+2. フォームを送信してテスト
+3. スプレッドシートにデータが追加されることを確認
+4. 入力したメールアドレスに自動返信メールが届くことを確認
 
 ### 本番環境へのデプロイ
 
@@ -85,10 +130,10 @@ firebase deploy --only hosting
 - ✅ FAQ セクション
 - ✅ 配色デザイン（ネイビー/オレンジ/ライトブルー）
 
+### 実装済み（設定待ち）
+- ✅ Google Apps Script連携（スプレッドシート保存・自動メール送信）
+
 ### 未実装（今後の予定）
-- ⏳ Firestore連携（フォームデータ保存）
-- ⏳ Google Apps Script連携
-- ⏳ メール送信機能（本人・管理者）
 - ⏳ PDF資料ダウンロード機能
 
 ## コーディング規約
