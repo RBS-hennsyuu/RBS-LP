@@ -1536,6 +1536,13 @@ footer {
     margin-left: 4px;
 }
 
+.optional {
+    color: #999;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 4px;
+}
+
 .form-group input,
 .form-group select,
 .form-group textarea {

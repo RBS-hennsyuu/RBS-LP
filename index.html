@@ -42,7 +42,7 @@
             <!-- Headline with differential sizing -->
             <h1>
                 <span class="headline-small">自分の理想、</span>
-                <span class="headline-large">補修リペアで<small>"</small>開業を目指す</span>
+                <span class="headline-large">補修リペアで<small>"</small>開業<small>"</small>を目指す</span>
             </h1>
             <p class="subtitle">技術×ビジネス戦略を学べる、<br>実践型リペアスクール</p>
 
@@ -365,29 +365,92 @@
             </div>
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
-                    <label for="name">お名前 <span class="required">必須</span></label>
-                    <input type="text" id="name" name="name" required placeholder="山田 太郎">
-                </div>
-                <div class="form-group">
                     <label for="email">メールアドレス <span class="required">必須</span></label>
                     <input type="email" id="email" name="email" required placeholder="example@email.com">
                 </div>
                 <div class="form-group">
-                    <label for="source">どのように知りましたか？</label>
-                    <select id="source" name="source">
+                    <label for="age_range">年齢幅 <span class="required">必須</span></label>
+                    <select id="age_range" name="age_range" required>
                         <option value="">選択してください</option>
-                        <option value="google">Google検索</option>
-                        <option value="instagram">Instagram</option>
-                        <option value="facebook">Facebook</option>
-                        <option value="twitter">X (旧Twitter)</option>
+                        <option value="10s">10代</option>
+                        <option value="20s">20代</option>
+                        <option value="30s">30代</option>
+                        <option value="40s">40代</option>
+                        <option value="50s">50代</option>
+                        <option value="60s_over">60代以上</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="prefecture">都道府県 <span class="required">必須</span></label>
+                    <select id="prefecture" name="prefecture" required>
+                        <option value="">選択してください</option>
+                        <option value="hokkaido">北海道</option>
+                        <option value="aomori">青森県</option>
+                        <option value="iwate">岩手県</option>
+                        <option value="miyagi">宮城県</option>
+                        <option value="akita">秋田県</option>
+                        <option value="yamagata">山形県</option>
+                        <option value="fukushima">福島県</option>
+                        <option value="ibaraki">茨城県</option>
+                        <option value="tochigi">栃木県</option>
+                        <option value="gunma">群馬県</option>
+                        <option value="saitama">埼玉県</option>
+                        <option value="chiba">千葉県</option>
+                        <option value="tokyo">東京都</option>
+                        <option value="kanagawa">神奈川県</option>
+                        <option value="niigata">新潟県</option>
+                        <option value="toyama">富山県</option>
+                        <option value="ishikawa">石川県</option>
+                        <option value="fukui">福井県</option>
+                        <option value="yamanashi">山梨県</option>
+                        <option value="nagano">長野県</option>
+                        <option value="gifu">岐阜県</option>
+                        <option value="shizuoka">静岡県</option>
+                        <option value="aichi">愛知県</option>
+                        <option value="mie">三重県</option>
+                        <option value="shiga">滋賀県</option>
+                        <option value="kyoto">京都府</option>
+                        <option value="osaka">大阪府</option>
+                        <option value="hyogo">兵庫県</option>
+                        <option value="nara">奈良県</option>
+                        <option value="wakayama">和歌山県</option>
+                        <option value="tottori">鳥取県</option>
+                        <option value="shimane">島根県</option>
+                        <option value="okayama">岡山県</option>
+                        <option value="hiroshima">広島県</option>
+                        <option value="yamaguchi">山口県</option>
+                        <option value="tokushima">徳島県</option>
+                        <option value="kagawa">香川県</option>
+                        <option value="ehime">愛媛県</option>
+                        <option value="kochi">高知県</option>
+                        <option value="fukuoka">福岡県</option>
+                        <option value="saga">佐賀県</option>
+                        <option value="nagasaki">長崎県</option>
+                        <option value="kumamoto">熊本県</option>
+                        <option value="oita">大分県</option>
+                        <option value="miyazaki">宮崎県</option>
+                        <option value="kagoshima">鹿児島県</option>
+                        <option value="okinawa">沖縄県</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="source">どこでRBSを知りましたか？ <span class="required">必須</span></label>
+                    <select id="source" name="source" required>
+                        <option value="">選択してください</option>
                         <option value="youtube">YouTube</option>
-                        <option value="referral">知人の紹介</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="tiktok">TikTok</option>
+                        <option value="trc_hp">TRCのHP</option>
+                        <option value="internet_search">インターネット検索</option>
+                        <option value="sns_ads">SNS広告</option>
+                        <option value="review">口コミ</option>
+                        <option value="referral">知人、友人の紹介</option>
                         <option value="other">その他</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="message">ご質問・ご要望（任意）</label>
-                    <textarea id="message" name="message" rows="4" placeholder="ご質問やご要望があればご記入ください"></textarea>
+                    <label for="experience_years">リペアの経験年数 <span class="optional">任意</span></label>
+                    <input type="text" id="experience_years" name="experience_years" placeholder="例: 未経験、1年など">
                 </div>
                 <button type="submit" class="cta-button form-submit-button">
                     <span class="cta-inner">

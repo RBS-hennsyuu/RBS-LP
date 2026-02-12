@@ -80,10 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Get form data
             const formData = {
-                name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
+                age_range: document.getElementById('age_range').value,
+                prefecture: document.getElementById('prefecture').value,
                 source: document.getElementById('source').value,
-                message: document.getElementById('message').value,
+                experience_years: document.getElementById('experience_years').value,
                 timestamp: new Date().toISOString()
             };
 

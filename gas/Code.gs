@@ -67,20 +67,21 @@ function saveToSpreadsheet(data) {
   // シートがなければ作成してヘッダーを追加
   if (!sheet) {
     sheet = ss.insertSheet(CONFIG.SHEET_NAME);
-    sheet.appendRow(['受付日時', 'お名前', 'メールアドレス', '流入経路', 'メッセージ']);
+    sheet.appendRow(['受付日時', 'メールアドレス', '年齢幅', '都道府県', '流入経路', '経験年数']);
     
     // ヘッダー行のスタイル設定
-    sheet.getRange(1, 1, 1, 5).setFontWeight('bold').setBackground('#4285f4').setFontColor('#ffffff');
+    sheet.getRange(1, 1, 1, 6).setFontWeight('bold').setBackground('#4285f4').setFontColor('#ffffff');
   }
   
   // データを追加
   const timestamp = new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' });
   sheet.appendRow([
     timestamp,
-    data.name || '',
     data.email || '',
+    data.age_range || '',
+    data.prefecture || '',
     data.source || '',
-    data.message || ''
+    data.experience_years || ''
   ]);
 }
 
@@ -92,8 +93,6 @@ function sendAutoReplyEmail(data) {
   const subject = '資料請求ありがとうございます';
   
   const body = `
-${data.name} 様
-
 この度は、RBS リペアスクールの資料請求をいただき、
 誠にありがとうございます。
 
@@ -124,10 +123,11 @@ https://rbs-lp.web.app
  */
 function testSubmission() {
   const testData = {
-    name: 'テスト太郎',
     email: 'test@example.com',
-    source: 'google',
-    message: 'テストメッセージです'
+    age_range: '30s',
+    prefecture: 'tokyo',
+    source: 'youtube',
+    experience_years: '未経験'
   };
   
   saveToSpreadsheet(testData);
