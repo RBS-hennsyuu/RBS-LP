@@ -1861,3 +1861,349 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* ================================================== */
+/*                DOCUMENTS PAGE STYLES              */
+/* ================================================== */
+
+.pamphlet-hero {
+    background-color: var(--navy);
+    color: #fff;
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.pamphlet-hero h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    margin-bottom: 20px;
+}
+
+.pamphlet-hero p {
+    font-size: clamp(16px, 3vw, 20px);
+    opacity: 0.9;
+}
+
+.pamphlet-section {
+    padding: 80px 0;
+}
+
+.bg-gray {
+    background-color: var(--section-gray);
+}
+
+.section-title-pamphlet {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--navy);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title-pamphlet::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* 比較表 */
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background: #fff;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: var(--navy);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-table .row-header {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    width: 150px;
+}
+
+.course-highlight {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* レスポンシブ比較表切り替え */
+.pc-only-table {
+    display: none;
+}
+
+.sp-only-cards {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .pc-only-table {
+        display: block;
+    }
+
+    .sp-only-cards {
+        display: none;
+    }
+}
+
+/* SP用比較カードスタイル */
+.comparison-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+}
+
+.comparison-card-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 15px -20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.comparison-card-header.hiyoko {
+    background: #FFD700;
+    color: #333;
+}
+
+.comparison-card-header.cocco {
+    background: #E67E22;
+    color: #fff;
+}
+
+.comparison-card-header.phoenix {
+    background: #C0392B;
+    color: #fff;
+}
+
+.comparison-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-label {
+    font-weight: bold;
+    color: #666;
+    min-width: 80px;
+}
+
+.comparison-value {
+    text-align: right;
+    font-weight: 500;
+}
+
+/* コース詳細 */
+.course-detail-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    border-top: 5px solid var(--navy);
+}
+
+.course-detail-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-badge {
+    font-size: 14px;
+    background: var(--accent-color);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.course-detail-list {
+    list-style: none;
+    padding: 0;
+}
+
+.course-detail-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.course-detail-list li::before {
+    content: '✔';
+    color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* フロー */
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    border-left: 5px solid var(--accent-color);
+}
+
+.flow-step::after {
+    content: '▼';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ccc;
+    font-size: 14px;
+}
+
+.flow-step:last-child::after {
+    display: none;
+}
+
+/* 仕事例・収益モデル */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.work-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.revenue-model-box {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.revenue-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* CTA Area Pamphlet */
+.cta-area-pamphlet {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--section-pink);
+}
+
+.cta-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.cta-buttons-wrapper .cta-button {
+    width: 100%;
+    max-width: 320px;
+}
+
+@media (min-width: 768px) {
+    .cta-buttons-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.secondary-cta {
+    background-color: #fff;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+}
+
+.secondary-cta:hover {
+    background-color: var(--navy);
+    color: #fff;
+}
+
+.secondary-cta small {
+    color: var(--navy);
+}
+
+.secondary-cta:hover small {
+    color: #fff;
+}
+
+/* 募集状況バッジ */
+.recruitment-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

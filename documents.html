@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コース資料ダウンロード | リペアスクール開業支援</title>
+    <title>RBS デジタルパンフレット | Repair Business School</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation Header -->
+    <!-- Navigation (Common with LP) -->
     <nav class="nav-header">
         <div class="nav-container">
             <div class="nav-logo">
@@ -17,139 +20,505 @@
                     <img src="assets/images/common/logo.png" alt="RBS Logo" class="logo-img">
                 </a>
             </div>
+
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">トップページへ</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- Thank You Section -->
-    <section class="documents-hero">
+    <!-- Hero Section -->
+    <header class="pamphlet-hero">
         <div class="container">
-            <div class="documents-header">
-                <h1 class="documents-title">資料請求ありがとうございます</h1>
-                <p class="documents-subtitle">コース詳細資料をご確認いただけます</p>
-            </div>
+            <h1>RBS デジタルパンフレット</h1>
+            <p>技術を仕事として成立させるためのスクール</p>
         </div>
-    </section>
+    </header>
 
-    <!-- Download Section -->
-    <section class="download-section">
+    <!-- Market & Future Section (New Concept) -->
+    <section class="pamphlet-section">
         <div class="container">
-            <div class="download-card">
-                <div class="download-icon">
-                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16Z" fill="#3e3a39"/>
-                        <path d="M6 20C5.45 20 4.97933 19.8043 4.588 19.413C4.19667 19.0217 4.00067 18.5507 4 18V15H6V18H18V15H20V18C20 18.55 19.8043 19.021 19.413 19.413C19.0217 19.805 18.5507 20.0007 18 20H6Z" fill="#3e3a39"/>
-                    </svg>
-                </div>
-                <h2 class="download-title">リペアスクール コース詳細資料</h2>
-                <p class="download-description">
-                    カリキュラム内容、料金プラン、受講スケジュール、<br>
-                    卒業生の実績などを詳しくご紹介しています。
+            <h2 class="section-title-pamphlet">市場環境と将来性</h2>
+            <div style="max-width: 800px; margin: 0 auto; line-height: 2; text-align: left;">
+                <p>
+                    2023年時点では、インフレの影響で住宅価格が10年前と比較して35%も高騰しているというデータがあります。<br>
+                    新築の「建て控え」などの動きが加速し、建設業や職人の収入減少、倒産・廃業が今後一層増えていくと言われています。
                 </p>
-                <a href="#" class="cta-button download-button">
-                    <span class="cta-inner">
-                        <small>PDF形式（約5MB）</small>
-                        資料をダウンロードする
-                    </span>
-                </a>
+                <div
+                    style="background: #f9f9f9; padding: 20px; border-left: 5px solid var(--accent-color); margin: 30px 0;">
+                    <h3 style="margin-top: 0; color: var(--navy); font-size: 1.2rem;">迫りくる「2つの波」</h3>
+                    <ul style="margin: 10px 0 0 20px;">
+                        <li><strong>AIの進化:</strong> 10〜20年後にAIによって減少する仕事量は約50%と言われています。</li>
+                        <li><strong>人口減少・高齢化:</strong> 10年後には約2万人の人口減少が予測されています。</li>
+                    </ul>
+                </div>
+                <p>
+                    建築業界の勢いが下降気味である中、仕事はAIによって代替され、住宅も売れにくくなっていく。<br>
+                    そんな状況で、あなたは今まで通り過ごしますか？
+                </p>
+                <p style="margin-top: 20px;">
+                    しかし、そんな中でも<strong>「なくならない仕事」</strong>があります。<br>
+                    それは、<strong>属人性が高いお仕事</strong>です。
+                </p>
+                <p>
+                    リペアという仕事は、ありとあらゆる状態のキズや破損を、人の手や感覚によって微調整し、自然な風合いに仕上げていく技術です。<br>
+                    いくらAIが発達しても、この現場対応力は代替できません。<br>
+                    さらに、リフォーム市場は右肩上がりであり、賃貸や施設メンテナンスなど、リペアが活躍できる場は拡大しています。
+                </p>
+                <p
+                    style="font-weight: bold; text-align: center; margin-top: 40px; font-size: 1.1rem; color: var(--navy);">
+                    「代わりの効かない職人」になることで、<br>
+                    安定的かつ継続的に稼いでいく未来を、RBSで実現しませんか？
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Contents Preview Section -->
-    <section class="contents-preview-section">
+    <!-- Courses Comparison -->
+    <section class="pamphlet-section bg-gray">
         <div class="container">
-            <h2 class="section-title">資料の内容</h2>
-            <div class="contents-grid">
-                <div class="content-item">
-                    <div class="content-number">01</div>
-                    <h3 class="content-title">コース紹介</h3>
-                    <p class="content-desc">3つのコースの特徴と選び方をご紹介</p>
+            <h2 class="section-title-pamphlet">コース一覧・比較</h2>
+            <p style="text-align: center;">あなたの目標に合わせて選べる3つのステータス</p>
+
+            <div class="comparison-table-wrapper pc-only-table">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="row-header">項目</th>
+                            <th>🐣 ひよこコース</th>
+                            <th>🐔 コッココース</th>
+                            <th>🦅 フェニックスコース</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="row-header">価格（税別）</td>
+                            <td>190,000円</td>
+                            <td>450,000円</td>
+                            <td>（面談にてご案内）</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">期間</td>
+                            <td>4日間</td>
+                            <td>8日間</td>
+                            <td>要相談</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">対象レベル</td>
+                            <td>初心者〜中級者</td>
+                            <td>中級者〜上級者</td>
+                            <td>独立・経営者向け</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">内容</td>
+                            <td style="text-align: left;">
+                                ・RBS独自の5つの技法習得<br>
+                                ・技術講習<br>
+                                ・添削サポートあり
+                            </td>
+                            <td style="text-align: left;">
+                                ・高度補修技術習得<br>
+                                ・弱点克服トレーニング<br>
+                                ・添削サポート5回
+                            </td>
+                            <td style="text-align: left;">
+                                ・市場調査<br>
+                                ・経営戦略作成<br>
+                                ・定期コンサル<br>
+                                ・売上改善支援<br>
+                                ・動画コンテンツ全開放<br>
+                                ・現場実習
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SP用カード表示 -->
+            <div class="sp-only-cards">
+                <!-- ひよこコース -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header hiyoko">🐣 ひよこコース</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">価格（税別）</span>
+                        <span class="comparison-value">190,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">期間</span>
+                        <span class="comparison-value">4日間</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">対象</span>
+                        <span class="comparison-value">初心者〜中級者</span>
+                    </div>
+                    <div class="comparison-row" style="display: block;">
+                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
+                        <span class="comparison-value"
+                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                            ・RBS独自の5つの技法習得<br>
+                            ・技術講習<br>
+                            ・添削サポートあり
+                        </span>
+                    </div>
                 </div>
-                <div class="content-item">
-                    <div class="content-number">02</div>
-                    <h3 class="content-title">カリキュラム詳細</h3>
-                    <p class="content-desc">学習内容と習得できるスキルを解説</p>
+
+                <!-- コッココース -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header cocco">🐔 コッココース</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">価格（税別）</span>
+                        <span class="comparison-value">450,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">期間</span>
+                        <span class="comparison-value">8日間</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">対象</span>
+                        <span class="comparison-value">中級者〜上級者</span>
+                    </div>
+                    <div class="comparison-row" style="display: block;">
+                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
+                        <span class="comparison-value"
+                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                            ・高度補修技術習得<br>
+                            ・弱点克服トレーニング<br>
+                            ・添削サポート5回
+                        </span>
+                    </div>
                 </div>
-                <div class="content-item">
-                    <div class="content-number">03</div>
-                    <h3 class="content-title">料金プラン</h3>
-                    <p class="content-desc">受講料と支払い方法の詳細</p>
-                </div>
-                <div class="content-item">
-                    <div class="content-number">04</div>
-                    <h3 class="content-title">受講の流れ</h3>
-                    <p class="content-desc">申込から卒業までのステップ</p>
-                </div>
-                <div class="content-item">
-                    <div class="content-number">05</div>
-                    <h3 class="content-title">卒業生の実績</h3>
-                    <p class="content-desc">独立開業した先輩の事例紹介</p>
-                </div>
-                <div class="content-item">
-                    <div class="content-number">06</div>
-                    <h3 class="content-title">サポート体制</h3>
-                    <p class="content-desc">受講中・卒業後のサポート内容</p>
+
+                <!-- フェニックスコース -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header phoenix">🦅 フェニックスコース</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">価格</span>
+                        <span class="comparison-value">（面談にてご案内）</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">対象</span>
+                        <span class="comparison-value">独立・経営者向け</span>
+                    </div>
+                    <div class="comparison-row" style="display: block;">
+                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
+                        <span class="comparison-value"
+                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                            ・市場調査<br>
+                            ・経営戦略作成<br>
+                            ・定期コンサル<br>
+                            ・売上改善支援<br>
+                            ・動画コンテンツ全開放<br>
+                            ・現場実習
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Next Step CTA Section -->
-    <section class="next-step-section">
+    <!-- Flow -->
+    <section class="pamphlet-section">
         <div class="container">
-            <h2 class="section-title">次のステップ</h2>
-            <p class="section-subtitle">資料をご確認いただき、ご不明点があればお気軽にご相談ください</p>
-            
-            <div class="next-step-cards">
-                <div class="step-card">
-                    <h3 class="step-card-title">無料説明会に参加</h3>
-                    <p class="step-card-desc">オンラインまたは対面で詳しい説明をお聞きいただけます</p>
-                    <a href="#" class="step-card-link">説明会を予約する →</a>
+            <h2 class="section-title-pamphlet">学習の流れ</h2>
+            <div class="flow-container">
+                <div class="flow-step">
+                    <h3>1. お申込み</h3>
+                    <p>Webフォームまたはメールにてお申込みいただきます。</p>
                 </div>
-                <div class="step-card">
-                    <h3 class="step-card-title">個別相談を予約</h3>
-                    <p class="step-card-desc">あなたの状況に合わせた個別アドバイスを提供します</p>
-                    <a href="#" class="step-card-link">相談を予約する →</a>
+                <div class="flow-step">
+                    <h3>2. 事前動画で予習</h3>
+                    <p>講習当日までに、専用の学習動画で基礎知識や道具の使い方を予習します。</p>
                 </div>
-                <div class="step-card">
-                    <h3 class="step-card-title">LINEで質問</h3>
-                    <p class="step-card-desc">気軽に質問できる公式LINEアカウント</p>
-                    <a href="#" class="step-card-link">LINE登録する →</a>
+                <div class="flow-step">
+                    <h3>3. 講習・現場実習</h3>
+                    <p>コースに応じた日数（4日〜8日）で、実技中心の徹底指導を行います。</p>
+                </div>
+                <div class="flow-step">
+                    <h3>4. 添削サポート・フォロー</h3>
+                    <p>講習後の課題提出や、現場での疑問点などをサポートします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work & Revenue -->
+    <section class="pamphlet-section bg-gray">
+        <div class="container">
+            <h2 class="section-title-pamphlet">習得後の仕事例・収益モデル</h2>
+
+            <!-- 単価目安 -->
+            <div
+                style="background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                <h3 style="text-align: center; margin-bottom: 20px; color: var(--navy);">リペア事業の収益性</h3>
+                <p style="margin-bottom: 20px;">
+                    リペア事業は利益率が高い（90%〜95%）ビジネスモデルです。<br>
+                    継続的に仕事を安定して受注するのは簡単ではありませんが、経営ノウハウや営業戦略を立てることで、安定した売上を作ることが可能です。
+                </p>
+                <div class="work-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div class="work-card">
+                        <h4>業種別売上単価</h4>
+                        <p style="font-size: 14px;">
+                            新築1棟: 2.5〜3.5万円<br>
+                            原状回復: 3.5〜5万円<br>
+                            <span style="font-size: 11px; color: #666;">※出張費、駐車代別</span>
+                        </p>
+                    </div>
+                    <div class="work-card">
+                        <h4>売上平均単価</h4>
+                        <p style="font-size: 24px; font-weight: bold; color: var(--accent-color);">1件 3万円</p>
+                    </div>
+                </div>
+                <div class="work-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 10px;">
+                    <div class="work-card">
+                        <h4>売上50万 目安件数</h4>
+                        <p style="font-size: 24px; font-weight: bold;">約 17件</p>
+                    </div>
+                    <div class="work-card">
+                        <h4>売上100万 達成目安</h4>
+                        <p style="font-size: 24px; font-weight: bold;">約 35件</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-bottom: 20px;">収益シミュレーション例</h3>
+            <div class="comparison-table-wrapper pc-only-table" style="margin-top: 0; margin-bottom: 20px;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th class="row-header">項目</th>
+                            <th>Aさん（副業・スタート）</th>
+                            <th>Bさん（専業・安定）</th>
+                            <th>Cさん（独立・拡大）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="row-header">売上</td>
+                            <td>650,000円</td>
+                            <td>1,200,000円</td>
+                            <td>2,000,000円</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">原価/材料費</td>
+                            <td>45,500円</td>
+                            <td>84,000円</td>
+                            <td>140,000円</td>
+                        </tr>
+                        <tr style="background-color: #eaf6f6;">
+                            <td class="row-header">粗利益 (90~95%)</td>
+                            <td style="font-weight: bold;">604,500円</td>
+                            <td style="font-weight: bold;">1,116,000円</td>
+                            <td style="font-weight: bold;">1,860,000円</td>
+                        </tr>
+                        <tr>
+                            <td class="row-header">経費合計<br><small>(ガソリン+保険等)</small></td>
+                            <td>30,000円</td>
+                            <td>40,000円</td>
+                            <td>50,000円</td>
+                        </tr>
+                        <tr style="background-color: #fff9c4;">
+                            <td class="row-header" style="color: #d32f2f; font-size: 1.1em;">収入</td>
+                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥574,500</td>
+                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,076,000</td>
+                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,810,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- SP用カード表示（収益モデル） -->
+            <div class="sp-only-cards">
+                <!-- Aさん -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header" style="background: #4DBCC5; color: #fff;">Aさん（副業・スタート）</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">売上</span>
+                        <span class="comparison-value">650,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">原価/材料費</span>
+                        <span class="comparison-value">45,500円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                        <span class="comparison-label">粗利益</span>
+                        <span class="comparison-value" style="font-weight: bold;">604,500円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">経費合計</span>
+                        <span class="comparison-value">30,000円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #fff9c4;">
+                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
+                        <span class="comparison-value"
+                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥574,500</span>
+                    </div>
+                </div>
+
+                <!-- Bさん -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header" style="background: #2C3E50; color: #fff;">Bさん（専業・安定）</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">売上</span>
+                        <span class="comparison-value">1,200,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">原価/材料費</span>
+                        <span class="comparison-value">84,000円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                        <span class="comparison-label">粗利益</span>
+                        <span class="comparison-value" style="font-weight: bold;">1,116,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">経費合計</span>
+                        <span class="comparison-value">40,000円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #fff9c4;">
+                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
+                        <span class="comparison-value"
+                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,076,000</span>
+                    </div>
+                </div>
+
+                <!-- Cさん -->
+                <div class="comparison-card">
+                    <div class="comparison-card-header" style="background: #C0392B; color: #fff;">Cさん（独立・拡大）</div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">売上</span>
+                        <span class="comparison-value">2,000,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">原価/材料費</span>
+                        <span class="comparison-value">140,000円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                        <span class="comparison-label">粗利益</span>
+                        <span class="comparison-value" style="font-weight: bold;">1,860,000円</span>
+                    </div>
+                    <div class="comparison-row">
+                        <span class="comparison-label">経費合計</span>
+                        <span class="comparison-value">50,000円</span>
+                    </div>
+                    <div class="comparison-row" style="background-color: #fff9c4;">
+                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
+                        <span class="comparison-value"
+                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,810,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="revenue-note" style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+                ※上記はモデルケースであり、売上、経費、収入を保証するものではありません。<br>
+                楽して稼げる仕事ではありませんが、本気で取り組むことで結果が出る仕事です。「本気でやりたい！」そんな方達と切磋琢磨しながらお付き合いしたいと思っています。
+            </p>
+        </div>
+    </section>
+
+    <!-- Instructor & YouTube -->
+    <section class="pamphlet-section">
+        <div class="container">
+            <h2 class="section-title-pamphlet">講師・メディア紹介</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
+                <div
+                    style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3>講師紹介</h3>
+                    <p><strong>現役リペア職人 / スクール代表</strong></p>
+                    <p>年間4,000件以上の施工実績を持つ株式会社TRCのエース職人が直接指導します。現場で本当に使える「実践的な技術」と「お客様に喜ばれる対応力」を伝授します。</p>
+                </div>
+                <div
+                    style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3>YouTubeチャンネル</h3>
+                    <p>講習の雰囲気や、実際の技術解説動画をYouTubeで公開しています。</p>
+                    <div style="margin-top: 15px; text-align: center;">
+                        <a href="https://youtu.be/lMbKwwQVxuw?si=bsWgiXjFAog6IjLe" target="_blank"
+                            style="color: var(--navy); text-decoration: underline; font-weight: bold;">
+                            ▶ 公式チャンネルはこちら
+                        </a>
+                        <p style="font-size: 13px; color: #666; margin-top: 5px;">※事前の技術確認におすすめです</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section class="faq-section bg-gray">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">よくある質問</h2>
+                <h2 class="section-title">FAQ</h2>
+                <p class="section-subtitle">よくある質問</p>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <h3>Q. 未経験でも本当に大丈夫ですか？</h3>
-                    <p>A. はい、カリキュラムは初心者向けに設計されています。基礎から丁寧に指導しますので、未経験の方でも安心して受講いただけます。</p>
+                    <h3>Q. 未経験でも受講可能ですか</h3>
+                    <p>A. 可能です。基礎から学べるように設計されています。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q. 年齢制限はありますか？</h3>
+                    <p>A. ありません。20代から60代まで幅広い年齢層の方が活躍されています。視力や腰痛などの不安があれば事前にご相談ください。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q. 受講の際の道具は自分で揃える必要がありますか？</h3>
+                    <p>A. 講習中はスクールの道具をお貸しします。卒業後、ご自身で活動するための推奨ツールセット（有料）もご案内可能です。</p>
                 </div>
                 <div class="faq-item">
                     <h3>Q. 受講期間はどのくらいですか？</h3>
-                    <p>A. コースによって異なりますが、最短3日の集中コースから、6ヶ月間の本格コースまでご用意しています。</p>
+                    <p>A. 最短4日のひよこコースから、8日のコッココースなどがございます。ご自身の目標レベルに合わせて選択いただけます。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q. 卒業後のサポートはありますか？</h3>
-                    <p>A. はい、案件紹介や技術相談など、卒業後も継続的にサポートいたします。</p>
+                    <h3>Q. 仕事や案件は保証されますか？</h3>
+                    <p>A. 保証制度はありません。その代わりに、再現性のある技術と、仕事として通用する力を身につけられます。</p>
                 </div>
                 <div class="faq-item">
-                    <h3>Q. 分割払いは可能ですか？</h3>
-                    <p>A. はい、各種分割払いに対応しております。詳細はお問い合わせください。</p>
+                    <h3>Q. 地方でも受講できますか？</h3>
+                    <p>A. 東京での対面講習のほか、オンラインでのサポートや、短期集中での合宿形式（宿泊等は各自手配）も相談可能です。</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-area-pamphlet">
+        <div class="container">
+            <div class="recruitment-badge">現在、新規受講生を募集中です</div>
+            <h2>お申込み・お問い合わせ</h2>
+            <p style="margin-bottom: 30px;">あなたのキャリアを変える一歩を、ここから。</p>
+
+            <div class="cta-buttons-wrapper">
+                <a href="mailto:rbs.waku.kiku@gmail.com" class="cta-button secondary-cta">
+                    <span class="cta-inner">
+                        <small>相談してから考えたい方</small>
+                        ✉️ メールで問い合わせる
+                    </span>
+                </a>
+                <a href="https://repair-business-school.com" target="_blank" class="cta-button">
+                    <span class="cta-inner">
+                        <small>すぐに受講を決めたい方</small>
+                        🌐 公式サイトから申し込む
+                    </span>
+                </a>
+            </div>
+            <p style="margin-top: 20px; font-size: 14px; color: #666;">
+                「どのコースがいいか迷っている」「まずは相談したい」という方は、<br class="pc-only">
+                お気軽にメールにてご連絡ください。
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Repair Business School. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
