@@ -2361,21 +2361,21 @@ footer {
     .benefit-tags {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        /* 2列固定 */
-        gap: 10px;
+        gap: 8px;
+        /* 少し詰める */
     }
 
     .benefit-tag {
-        font-size: 0.85rem;
-        /* 文字サイズ調整 */
-        padding: 8px 5px;
-        /* パディング調整 */
+        font-size: 11px;
+        /* 確実に小さく */
         text-align: center;
         white-space: nowrap;
-        /* 折り返し防止 */
         overflow: hidden;
         text-overflow: ellipsis;
-        /* 長すぎる場合は省略記号（念のため） */
+        padding: 8px 2px;
+        /* 左右2pxまで詰める */
+        letter-spacing: -0.05em;
+        /* 文字間を詰める */
     }
 }
 
