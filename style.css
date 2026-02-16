@@ -2133,6 +2133,7 @@ footer {
     font-size: 12px;
     color: #666;
     margin-top: 10px;
+    line-height: 1.6;
 }
 
 /* CTA Area Pamphlet */
@@ -2205,5 +2206,16 @@ footer {
 
     100% {
         transform: scale(1);
+    }
+}
+
+/* SP Only Break */
+.sp-br {
+    display: inline;
+}
+
+@media (min-width: 768px) {
+    .sp-br {
+        display: none;
     }
 }
