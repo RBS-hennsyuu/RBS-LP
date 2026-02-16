@@ -2240,6 +2240,17 @@ footer {
     padding-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+    .curriculum-card h3 {
+        font-size: 1.1rem;
+        /* SPでは小さくして1行に */
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        letter-spacing: -0.05em;
+        /* つめる */
+    }
+}
+
 .curriculum-text {
     text-align: left;
     line-height: 1.8;
@@ -2267,7 +2278,16 @@ footer {
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 0.9rem;
+    font-size: 0.9rem;
     margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .framework-badge {
+        display: inline-block;
+        margin-bottom: 6px;
+        /* 縦に余白を追加 */
+    }
 }
 
 .framework-desc {
@@ -2301,6 +2321,15 @@ footer {
     padding-top: 15px;
 }
 
+@media (max-width: 768px) {
+    .framework-title {
+        font-size: 1.1rem;
+        /* SPでは文字サイズ小さく */
+        letter-spacing: -0.05em;
+        /* 文字間を詰める */
+    }
+}
+
 .benefit-section {
     margin-bottom: 20px;
 }
@@ -2326,6 +2355,28 @@ footer {
     border-radius: 8px;
     font-size: 1rem;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .benefit-tags {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* 2列固定 */
+        gap: 10px;
+    }
+
+    .benefit-tag {
+        font-size: 0.85rem;
+        /* 文字サイズ調整 */
+        padding: 8px 5px;
+        /* パディング調整 */
+        text-align: center;
+        white-space: nowrap;
+        /* 折り返し防止 */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* 長すぎる場合は省略記号（念のため） */
+    }
 }
 
 .curriculum-conclusion {
