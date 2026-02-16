@@ -2359,23 +2359,31 @@ footer {
 
 @media (max-width: 768px) {
     .benefit-tags {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-        /* 少し詰める */
+        display: flex;
+        /* フレックスボックスに変更 */
+        flex-direction: column;
+        /* 縦並び */
+        gap: 12px;
+        /* 少し間隔を広げる */
+        max-width: 320px;
+        /* 幅を制限して中央配置 */
+        margin: 0 auto;
     }
 
     .benefit-tag {
-        font-size: 11px;
-        /* 確実に小さく */
+        font-size: 1rem;
+        /* 文字サイズを大きく読みやすく */
+        padding: 12px 15px;
+        /* パディングもゆったり */
         text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: 8px 2px;
-        /* 左右2pxまで詰める */
-        letter-spacing: -0.05em;
-        /* 文字間を詰める */
+        width: 100%;
+        display: block;
+        white-space: normal;
+        /* 折り返し許可 */
+        overflow: visible;
+        /* 切り取らない */
+        letter-spacing: normal;
+        /* 文字間戻す */
     }
 }
 
