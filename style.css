@@ -2543,7 +2543,6 @@ footer {
     color: var(--accent-color);
     /* アクセントカラーに変更 */
     font-size: 1.8rem;
-    margin: 15px 0;
     line-height: 1;
     opacity: 0.8;
 }
