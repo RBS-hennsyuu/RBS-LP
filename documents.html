@@ -104,26 +104,24 @@
     <section class="pamphlet-section">
         <div class="container">
             <h2 class="section-title-pamphlet">市場環境と将来性</h2>
-            <div style="max-width: 800px; margin: 0 auto; line-height: 2; text-align: left;">
+            <div class="market-content">
                 <p>
                     2023年時点では、インフレの影響で住宅価格が10年前と比較して35%も高騰しているというデータがあります。<br>
                     新築の「建て控え」などの動きが加速し、建設業や職人の収入減少、倒産・廃業が今後一層増えていくと言われています。
                 </p>
-                <div
-                    style="background: #f9f9f9; padding: 20px; border-left: 5px solid var(--accent-color); margin: 30px 0;">
-                    <h3 style="margin-top: 0; color: var(--navy); font-size: 1.2rem;">迫りくる「2つの波」</h3>
-                    <ul style="margin: 10px 0 0 20px;">
+                <div class="highlight-box">
+                    <h3>迫りくる「2つの波」</h3>
+                    <ul>
                         <li><strong>AIの進化:</strong> 10〜20年後にAIによって減少する仕事量は約50%と言われています。</li>
                         <li><strong>人口減少・高齢化:</strong> 10年後には約2万人の人口減少が予測されています。</li>
                     </ul>
                 </div>
 
                 <!-- Market Data Image -->
-                <div style="display: flex; justify-content: center; margin: 30px 0;">
-                    <figure style="margin: 0; width: 100%; max-width: 600px;">
-                        <img src="assets/market_data_graph.png" alt="市場の推移（住宅価格上昇とAIによる仕事減少予測）"
-                            style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eee; display: block;">
-                        <figcaption style="font-size: 11px; color: #888; margin-top: 8px; text-align: left;">
+                <div class="market-image-wrapper">
+                    <figure>
+                        <img src="assets/market_data_graph.png" alt="市場の推移（住宅価格上昇とAIによる仕事減少予測）">
+                        <figcaption>
                             出典元: 野村総合研究所 / 国土交通省（イメージ図）
                         </figcaption>
                     </figure>
@@ -133,7 +131,7 @@
                     建築業界の勢いが下降気味である中、仕事はAIによって代替され、住宅も売れにくくなっていく。<br>
                     そんな状況で、あなたは今まで通り過ごしますか？
                 </p>
-                <p style="margin-top: 20px;">
+                <p class="market-text-mt">
                     しかし、そんな中でも<strong>「なくならない仕事」</strong>があります。<br>
                     それは、<strong>属人性が高い仕事</strong>です。
                 </p>
@@ -142,8 +140,7 @@
                     いくらAIが発達しても、この現場対応力は代替できません。<br>
                     さらに、リフォーム市場は右肩上がりであり、賃貸や施設メンテナンスなど、リペアが活躍できる場は拡大しています。
                 </p>
-                <p
-                    style="font-weight: bold; text-align: center; margin-top: 40px; font-size: 1.1rem; color: var(--navy);">
+                <p class="market-conclusion">
                     「代わりの効かない職人」になることで、<br>
                     安定的かつ継続的に稼いでいく未来を、<br class="sp-br">RBSで実現しませんか？
                 </p>
@@ -205,7 +202,7 @@
     <section class="pamphlet-section">
         <div class="container">
             <h2 class="section-title-pamphlet">コース一覧・比較</h2>
-            <p style="text-align: center;">あなたの目標に合わせて選べる3つのステータス</p>
+            <p style="text-align: center; margin-bottom: 40px; padding: 0 10px;">あなたの目標に合わせて選べる3つのステータス</p>
 
             <div class="comparison-table-wrapper pc-only-table">
                 <table class="comparison-table">
@@ -350,58 +347,54 @@
             <h2 class="section-title-pamphlet">仕事例・収益モデル</h2>
 
             <!-- Before/After Images -->
-            <div style="text-align: center; margin-bottom: 50px;">
-                <h3 style="color: var(--navy); margin-bottom: 20px; font-size: 1.2rem;">リペアによる修復事例</h3>
-                <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 280px; max-width: 400px;">
-                        <img src="assets/before_repair.png" alt="Before"
-                            style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 8px;">
-                        <p style="font-weight: bold; color: #666;">Before</p>
+            <div class="before-after-section">
+                <h3 class="before-after-title">リペアによる修復事例</h3>
+                <div class="before-after-grid">
+                    <div class="before-after-item">
+                        <img src="assets/before_repair.png" alt="Before">
+                        <p class="label-before">Before</p>
                     </div>
-                    <div style="flex: 1; min-width: 280px; max-width: 400px;">
-                        <img src="assets/after_repair.png" alt="After"
-                            style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 8px;">
-                        <p style="font-weight: bold; color: var(--accent-color);">After</p>
+                    <div class="before-after-item">
+                        <img src="assets/after_repair.png" alt="After">
+                        <p class="label-after">After</p>
                     </div>
                 </div>
             </div>
 
             <!-- 単価目安 -->
-            <div
-                style="background: #fff; padding: 30px; border-radius: 8px; margin-bottom: 40px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                <h3 style="text-align: center; margin-bottom: 20px; color: var(--navy);">リペア事業の収益性</h3>
-                <p style="margin-bottom: 20px;">
+            <div class="revenue-box">
+                <h3 class="revenue-box-title">リペア事業の収益性</h3>
+                <p class="revenue-box-desc">
                     リペア事業は利益率が高い（90%〜95%）ビジネスモデルです。<br>
                     継続的に仕事を安定して受注するのは簡単ではありませんが、経営ノウハウや営業戦略を立てることで、安定した売上を作ることが可能です。
                 </p>
-                <div class="work-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div class="work-grid-auto">
                     <div class="work-card">
                         <h4>業種別売上単価</h4>
-                        <p style="font-size: 14px;">
+                        <p class="work-card-price">
                             新築1棟: 2.5〜3.5万円<br>
                             原状回復: 3.5〜5万円<br>
-                            <span style="font-size: 11px; color: #666;">※出張費、駐車代別</span>
+                            <span class="note">※出張費、駐車代別</span>
                         </p>
                     </div>
                     <div class="work-card">
                         <h4>売上平均単価</h4>
-                        <p style="font-size: 24px; font-weight: bold; color: var(--accent-color);">1件 3万円</p>
+                        <p class="work-card-big">1件 3万円</p>
                     </div>
                 </div>
-                <div class="work-grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-top: 10px;">
+                <div class="work-grid-auto mt-10">
                     <div class="work-card">
                         <h4>売上50万 目安件数</h4>
-                        <p style="font-size: 24px; font-weight: bold;">約 17件</p>
+                        <p class="work-card-big-dark">約 17件</p>
                     </div>
                     <div class="work-card">
                         <h4>売上100万 達成目安</h4>
-                        <p style="font-size: 24px; font-weight: bold;">約 35件</p>
+                        <p class="work-card-big-dark">約 35件</p>
                     </div>
                 </div>
             </div>
 
-            <h3 style="text-align: center; margin-bottom: 20px;">収益シミュレーション例</h3>
+            <h3 class="simulation-title">収益シミュレーション例</h3>
             <div class="comparison-table-wrapper pc-only-table" style="margin-top: 0; margin-bottom: 20px;">
                 <table class="comparison-table">
                     <thead>
@@ -451,7 +444,7 @@
             <div class="sp-only-cards">
                 <!-- Aさん -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header" style="background: #4DBCC5; color: #fff;">Aさん（副業・スタート）</div>
+                    <div class="comparison-card-header revenue-a">Aさん（副業・スタート）</div>
                     <div class="comparison-row">
                         <span class="comparison-label">売上</span>
                         <span class="comparison-value">650,000円</span>
@@ -460,24 +453,23 @@
                         <span class="comparison-label">原価/材料費</span>
                         <span class="comparison-value">45,500円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                    <div class="comparison-row profit-row">
                         <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value" style="font-weight: bold;">604,500円</span>
+                        <span class="comparison-value bold">604,500円</span>
                     </div>
                     <div class="comparison-row">
                         <span class="comparison-label">経費合計</span>
                         <span class="comparison-value">30,000円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #fff9c4;">
-                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
-                        <span class="comparison-value"
-                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥574,500</span>
+                    <div class="comparison-row income-row">
+                        <span class="comparison-label">収入</span>
+                        <span class="comparison-value">¥574,500</span>
                     </div>
                 </div>
 
                 <!-- Bさん -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header" style="background: #2C3E50; color: #fff;">Bさん（専業・安定）</div>
+                    <div class="comparison-card-header revenue-b">Bさん（専業・安定）</div>
                     <div class="comparison-row">
                         <span class="comparison-label">売上</span>
                         <span class="comparison-value">1,200,000円</span>
@@ -486,24 +478,23 @@
                         <span class="comparison-label">原価/材料費</span>
                         <span class="comparison-value">84,000円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                    <div class="comparison-row profit-row">
                         <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value" style="font-weight: bold;">1,116,000円</span>
+                        <span class="comparison-value bold">1,116,000円</span>
                     </div>
                     <div class="comparison-row">
                         <span class="comparison-label">経費合計</span>
                         <span class="comparison-value">40,000円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #fff9c4;">
-                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
-                        <span class="comparison-value"
-                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,076,000</span>
+                    <div class="comparison-row income-row">
+                        <span class="comparison-label">収入</span>
+                        <span class="comparison-value">¥1,076,000</span>
                     </div>
                 </div>
 
                 <!-- Cさん -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header" style="background: #C0392B; color: #fff;">Cさん（独立・拡大）</div>
+                    <div class="comparison-card-header revenue-c">Cさん（独立・拡大）</div>
                     <div class="comparison-row">
                         <span class="comparison-label">売上</span>
                         <span class="comparison-value">2,000,000円</span>
@@ -512,23 +503,22 @@
                         <span class="comparison-label">原価/材料費</span>
                         <span class="comparison-value">140,000円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #eaf6f6;">
+                    <div class="comparison-row profit-row">
                         <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value" style="font-weight: bold;">1,860,000円</span>
+                        <span class="comparison-value bold">1,860,000円</span>
                     </div>
                     <div class="comparison-row">
                         <span class="comparison-label">経費合計</span>
                         <span class="comparison-value">50,000円</span>
                     </div>
-                    <div class="comparison-row" style="background-color: #fff9c4;">
-                        <span class="comparison-label" style="color: #d32f2f; font-weight: bold;">収入</span>
-                        <span class="comparison-value"
-                            style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,810,000</span>
+                    <div class="comparison-row income-row">
+                        <span class="comparison-label">収入</span>
+                        <span class="comparison-value">¥1,810,000</span>
                     </div>
                 </div>
             </div>
 
-            <p class="revenue-note" style="text-align: left; margin: 10px 0 0 0;">
+            <p class="revenue-note">
                 ※上記はモデルケースであり、売上、経費、収入を保証するものではありません。<br>
                 楽して稼げる仕事ではありませんが、本気で取り組むことで結果が出る仕事です。「本気でやりたい！」そんな方達と切磋琢磨しながらお付き合いしたいと思っています。
             </p>
@@ -539,33 +529,26 @@
     <section class="pamphlet-section">
         <div class="container">
             <h2 class="section-title-pamphlet">講師・メディア紹介</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center;">
-                <div
-                    style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee;">
+            <div class="instructor-cards-wrapper">
+                <div class="instructor-card">
                     <h3>講師紹介</h3>
-                    <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px;">
-                        <img src="assets/instructor_photo.png" alt="RBS講師 山田 太郎"
-                            style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="instructor-profile">
+                        <img src="assets/instructor_photo.png" alt="RBS講師 山田 太郎" class="instructor-photo">
                         <div>
-                            <p style="font-size: 1.1rem; font-weight: bold; margin-bottom: 5px;">山田 太郎 <span
-                                    style="font-size: 0.8rem; font-weight: normal; color: #666;">(Yamada Taro)</span>
-                            </p>
-                            <p style="margin-bottom: 0; font-size: 0.9rem; color: var(--navy); font-weight: bold;">
-                                現役リペア職人 / <br class="sp-br">スクール代表</p>
+                            <p class="instructor-name">山田 太郎 <span class="instructor-name-en">(Yamada Taro)</span></p>
+                            <p class="instructor-title">現役リペア職人 / <br class="sp-br">スクール代表</p>
                         </div>
                     </div>
                     <p>年間4,000件以上の施工実績を持つ株式会社TRCのエース職人が直接指導します。現場で本当に使える「実践的な技術」と「お客様に喜ばれる対応力」を伝授します。</p>
                 </div>
-                <div
-                    style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 8px; border: 1px solid #eee;">
+                <div class="youtube-card">
                     <h3>YouTubeチャンネル</h3>
                     <p>講習の雰囲気や、実際の技術解説動画をYouTubeで公開しています。</p>
-                    <div style="margin-top: 15px; text-align: center;">
-                        <a href="https://youtu.be/lMbKwwQVxuw?si=bsWgiXjFAog6IjLe" target="_blank"
-                            style="color: var(--navy); text-decoration: underline; font-weight: bold;">
+                    <div class="youtube-link-wrapper">
+                        <a href="https://youtu.be/lMbKwwQVxuw?si=bsWgiXjFAog6IjLe" target="_blank" class="youtube-link">
                             ▶ 公式チャンネルはこちら
                         </a>
-                        <p style="font-size: 13px; color: #666; margin-top: 5px;">※事前の技術確認におすすめです</p>
+                        <p class="youtube-note">※事前の技術確認におすすめです</p>
                     </div>
                 </div>
             </div>
@@ -613,7 +596,7 @@
         <div class="container">
             <div class="recruitment-badge">現在、新規受講生を募集中です</div>
             <h2>お申込み・お問い合わせ</h2>
-            <p style="margin-bottom: 30px;">あなたのキャリアを変える一歩を、ここから。</p>
+            <p class="cta-lead">あなたのキャリアを変える一歩を、ここから。</p>
 
             <div class="cta-buttons-wrapper">
                 <a href="mailto:rbs.waku.kiku@gmail.com" class="cta-button secondary-cta">
@@ -629,7 +612,7 @@
                     </span>
                 </a>
             </div>
-            <p style="margin-top: 20px; font-size: 14px; color: #666;">
+            <p class="cta-note">
                 「どのコースがいいか迷っている」「まずは相談したい」という方は、<br class="pc-only">
                 お気軽にメールにてご連絡ください。
             </p>

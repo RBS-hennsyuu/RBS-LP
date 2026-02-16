@@ -1908,7 +1908,7 @@ footer {
     font-size: 28px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     color: var(--navy);
     position: relative;
     padding-bottom: 15px;
@@ -2045,7 +2045,7 @@ footer {
 .course-detail-card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
     padding: 40px;
     margin-bottom: 40px;
     border-top: 5px solid var(--navy);
@@ -2111,7 +2111,7 @@ footer {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    border: 1px solid #eee;
+    border: 2px solid #4cbcc5;
 }
 
 .revenue-model-box {
@@ -2587,4 +2587,296 @@ footer {
         border-bottom: none;
         margin-bottom: 5px;
     }
+}
+
+/* ================================================== */
+/*           DOCUMENTS PAGE - INLINE STYLE移行        */
+/* ================================================== */
+
+/* 市場環境セクション */
+.market-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: left;
+}
+
+.highlight-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid var(--accent-color);
+    margin: 30px 0;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: var(--navy);
+    font-size: 1.2rem;
+}
+
+.highlight-box ul {
+    margin: 10px 0 0 20px;
+}
+
+.market-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.market-image-wrapper figure {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.market-image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    display: block;
+}
+
+.market-image-wrapper figcaption {
+    font-size: 11px;
+    color: #888;
+    margin-top: 8px;
+    text-align: left;
+}
+
+.market-text-mt {
+    margin-top: 20px;
+}
+
+.market-conclusion {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1rem;
+    color: var(--navy);
+}
+
+/* Before/After セクション */
+.before-after-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.before-after-title {
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.before-after-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.before-after-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.before-after-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 8px;
+}
+
+.before-after-item .label-before {
+    font-weight: bold;
+    color: #666;
+}
+
+.before-after-item .label-after {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* 収益性ボックス */
+.revenue-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.revenue-box-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+.revenue-box-desc {
+    margin-bottom: 20px;
+}
+
+.work-grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work-grid-auto.mt-10 {
+    margin-top: 10px;
+}
+
+.work-card-price {
+    font-size: 14px;
+}
+
+.work-card-price .note {
+    font-size: 11px;
+    color: #666;
+}
+
+.work-card-big {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.work-card-big-dark {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* シミュレーションタイトル */
+.simulation-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 収益カードヘッダーカラー */
+.comparison-card-header.revenue-a {
+    background: #4DBCC5;
+    color: #fff;
+}
+
+.comparison-card-header.revenue-b {
+    background: #2C3E50;
+    color: #fff;
+}
+
+.comparison-card-header.revenue-c {
+    background: #C0392B;
+    color: #fff;
+}
+
+/* 収益行のスタイル */
+.comparison-row.profit-row {
+    background-color: #eaf6f6;
+}
+
+.comparison-row.income-row {
+    background-color: #fff9c4;
+}
+
+.comparison-row.income-row .comparison-label {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.comparison-row.income-row .comparison-value {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.comparison-value.bold {
+    font-weight: bold;
+}
+
+/* 講師・メディアセクション */
+.instructor-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.instructor-card,
+.youtube-card {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    border: 3px solid #1c3a57;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.instructor-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instructor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.instructor-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.instructor-name-en {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.instructor-title {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.youtube-link-wrapper {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.youtube-link {
+    color: var(--navy);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.youtube-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* 収益ノート */
+.revenue-note {
+    text-align: left;
+    margin: 10px 0 0 0;
+}
+
+/* CTA セクション */
+.cta-area-pamphlet .cta-lead {
+    margin-bottom: 30px;
+}
+
+.cta-area-pamphlet .cta-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
 }
