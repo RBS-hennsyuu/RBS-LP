@@ -2097,27 +2097,7 @@ footer {
     margin: 0 auto;
 }
 
-.flow-step {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    border-left: 5px solid var(--accent-color);
-}
 
-.flow-step::after {
-    content: '▼';
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ccc;
-    font-size: 14px;
-}
-
-.flow-step:last-child::after {
-    display: none;
-}
 
 /* 仕事例・収益モデル */
 .work-grid {
@@ -2404,4 +2384,148 @@ footer {
 .online-salon-text {
     text-align: left;
     line-height: 1.8;
+}
+
+/* ================================================== */
+/*                FLOW SECTION (TIMELINE)             */
+/* ================================================== */
+
+.flow-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    /* 上下中央揃え（ラベルとテキストのバランス） */
+    gap: 25px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-left: 6px solid var(--navy);
+    /* 左にアクセントライン */
+}
+
+
+
+.flow-step:last-child {
+    margin-bottom: 0;
+}
+
+/* STEPラベル */
+.flow-step-label {
+    background: var(--navy);
+    color: #fff;
+    width: 70px;
+    /* 固定幅 */
+    height: 70px;
+    /* 正方形に近い */
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flow-step-label span {
+    font-size: 1.6rem;
+    /* 数字を大きく */
+    display: block;
+    margin-top: 2px;
+}
+
+.flow-step-label::before {
+    content: "STEP";
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* コンテンツエリア */
+.flow-content {
+    flex: 1;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+/* タイトル */
+.flow-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+    display: block;
+    /* 矢印アイコンなしでシンプルに */
+}
+
+/* 説明文 */
+.flow-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* 矢印アイコン（ステップ間） */
+.flow-arrow {
+    text-align: center;
+    color: var(--accent-color);
+    /* アクセントカラーに変更 */
+    font-size: 1.8rem;
+    margin: 15px 0;
+    line-height: 1;
+    opacity: 0.8;
+}
+
+/* SP調整 */
+@media (max-width: 768px) {
+    .flow-step {
+        flex-direction: column;
+        /* SPでは縦積み */
+        align-items: flex-start;
+        /* 左寄せ */
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .flow-step-label {
+        width: 100%;
+        /* 横幅いっぱいに */
+        height: auto;
+        padding: 8px 15px;
+        flex-direction: row;
+        /* 横並びに変更 STEP 01 */
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 10px;
+        border-radius: 4px;
+    }
+
+    .flow-step-label span {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .flow-step-label::before {
+        content: "STEP";
+        font-size: 1rem;
+    }
+
+    .flow-title {
+        font-size: 1.15rem;
+        border-bottom: none;
+        margin-bottom: 5px;
+    }
 }
