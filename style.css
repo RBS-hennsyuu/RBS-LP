@@ -1983,51 +1983,83 @@ footer {
     }
 }
 
-/* SP用比較カードスタイル */
+/* SP用比較カードスタイル（収益シミュレーション統一版） */
 .comparison-card {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    margin-bottom: 24px;
+    /* 間隔を少し広めに */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* 控えめな影 */
+    border: 1px solid #ddd;
+    /* 枠線を明確に */
+    overflow: hidden;
+    /* ヘッダーの角丸を反映 */
 }
 
 .comparison-card-header {
     background: var(--navy);
     color: #fff;
-    padding: 10px 15px;
-    border-radius: 8px 8px 0 0;
-    margin: -20px -20px 15px -20px;
+    padding: 15px 20px;
+    /* 余白を広めに */
+    margin: -20px -20px 20px -20px;
+    /* カード全体の幅に合わせる */
     font-weight: bold;
     text-align: center;
+    font-size: 1.1rem;
+    /* 文字サイズを少し大きく */
+    letter-spacing: 0.05em;
 }
 
+/* 収益シミュレーション（Aさん・Bさん・Cさん）と同じ配色に統一 */
 .comparison-card-header.hiyoko {
-    background: #FFD700;
-    color: #333;
+    background: #4DBCC5;
+    /* Aさんと同じ水色 */
+    color: #fff;
 }
 
 .comparison-card-header.cocco {
-    background: #E67E22;
+    background: #2C3E50;
+    /* Bさんと同じ紺色 */
     color: #fff;
 }
 
 .comparison-card-header.phoenix {
     background: #C0392B;
+    /* Cさんと同じ赤色 */
     color: #fff;
 }
 
 .comparison-row {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    /* 垂直方向中央揃え */
+    padding: 12px 15px;
+    /* 余白調整 */
     border-bottom: 1px solid #f0f0f0;
     font-size: 14px;
+    line-height: 1.5;
+}
+
+.comparison-label {
+    font-weight: bold;
+    color: #666;
+    flex: 0 0 40%;
+    /* ラベル幅を固定 */
+}
+
+.comparison-value {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    flex: 1;
 }
 
 .comparison-row:last-child {
     border-bottom: none;
+
 }
 
 .comparison-label {
@@ -2633,7 +2665,7 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border: 1px solid #eee;
     display: block;
 }
@@ -2685,7 +2717,7 @@ footer {
 .before-after-item img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 8px;
 }
 
@@ -2705,7 +2737,7 @@ footer {
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .revenue-box-title {
@@ -2809,7 +2841,7 @@ footer {
     padding: 30px;
     border-radius: 8px;
     border: 3px solid #1c3a57;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .instructor-profile {
@@ -2824,7 +2856,7 @@ footer {
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .instructor-name {
@@ -2878,4 +2910,194 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #666;
+}
+/* PCテーブル比較行のハイライト */
+tr.income-row {
+    background-color: #fff9c4;
+}
+tr.profit-row {
+    background-color: #eaf6f6;
+}
+tr.profit-row td {
+    font-weight: bold;
+}
+
+/* SPカード：期間行を太字に */
+.comparison-row.profit-row .comparison-value {
+    font-weight: bold;
+}
+
+/* SPカード：対象行（最初の行）だけ薄いグレー背景にする */
+.comparison-row:first-of-type {
+    background-color: #f9f9f9;
+}
+
+/* コース一覧サブタイトル */
+.courses-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+/* テーブルセル左寄せ */
+.comparison-table td.text-left {
+    text-align: left;
+}
+
+/* SP用カード 内容行（ブロック表示） */
+.comparison-row.content-row {
+    display: block;
+}
+
+.comparison-row.content-row .comparison-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comparison-row.content-row .comparison-value {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* 収益シミュレーションテーブル */
+.simulation-table-wrapper {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* PCテーブル 粗利益・収入行 */
+.comparison-table tr.profit-highlight {
+    background-color: #eaf6f6;
+}
+
+.comparison-table tr.profit-highlight td {
+    font-weight: bold;
+}
+
+.comparison-table tr.income-highlight {
+    background-color: #fff9c4;
+}
+
+.comparison-table tr.income-highlight td.row-header {
+    color: #d32f2f;
+    font-size: 1.1em;
+}
+
+.comparison-table tr.income-highlight td {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* ユーザー追加クラスのスタイル補完 */
+
+/* コース比較：内容行 */
+.comparison-row.content-row {
+    display: block;
+}
+.comparison-row.content-row .comparison-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.comparison-row.content-row .comparison-value {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* シミュレーション表ハイライト */
+tr.profit-highlight {
+    background-color: #eaf6f6;
+}
+tr.profit-highlight td {
+    font-weight: bold;
+}
+tr.income-highlight {
+    background-color: #fff9c4;
+}
+tr.income-highlight .row-header {
+    color: #d32f2f;
+    font-size: 1.1em;
+}
+tr.income-highlight td {
+    color: #d32f2f;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* 市場環境（以前の編集分） */
+.market-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 2;
+    text-align: left;
+}
+.highlight-box {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid var(--accent-color);
+    margin: 30px 0;
+}
+.highlight-box h3 {
+    margin-top: 0;
+    color: var(--navy);
+    font-size: 1.2rem;
+}
+.market-image-wrapper figure {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+.market-image-wrapper img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+/* 講師紹介など（以前の編集分） */
+.instructor-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.instructor-card, .youtube-card {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.instructor-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.instructor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* PCテーブルヘッダーの色分け（SPと連動） */
+.comparison-table th.header-hiyoko {
+    background-color: #4DBCC5; /* Aさんと同じ水色 */
+    color: #fff;
+}
+.comparison-table th.header-cocco {
+    background-color: #2C3E50; /* Bさんと同じ紺色 */
+    color: #fff;
+}
+.comparison-table th.header-phoenix {
+    background-color: #C0392B; /* Cさんと同じ赤色 */
+    color: #fff;
 }

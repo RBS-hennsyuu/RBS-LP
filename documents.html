@@ -202,30 +202,24 @@
     <section class="pamphlet-section">
         <div class="container">
             <h2 class="section-title-pamphlet">コース一覧・比較</h2>
-            <p style="text-align: center; margin-bottom: 40px; padding: 0 10px;">あなたの目標に合わせて選べる3つのコース</p>
+            <p class="courses-subtitle">あなたの目標に合わせて選べる3つのコース</p>
 
             <div class="comparison-table-wrapper pc-only-table">
                 <table class="comparison-table">
                     <thead>
                         <tr>
                             <th class="row-header">項目</th>
-                            <th>🐣 ひよこコース</th>
-                            <th>🐔 コッココース</th>
-                            <th>🦅 フェニックスコース</th>
+                            <th class="header-hiyoko">ひよこコース</th>
+                            <th class="header-cocco">コッココース</th>
+                            <th class="header-phoenix">フェニックスコース</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="income-row">
                             <td class="row-header">価格（税別）</td>
                             <td>190,000円</td>
                             <td>450,000円</td>
                             <td>1,300,000円</td>
-                        </tr>
-                        <tr>
-                            <td class="row-header">期間</td>
-                            <td>4日間</td>
-                            <td>8日間</td>
-                            <td>要相談</td>
                         </tr>
                         <tr>
                             <td class="row-header">対象レベル</td>
@@ -233,19 +227,25 @@
                             <td>中級者〜上級者</td>
                             <td>独立・経営者向け</td>
                         </tr>
+                        <tr class="profit-row">
+                            <td class="row-header">期間</td>
+                            <td>4日間</td>
+                            <td>8日間</td>
+                            <td>要相談</td>
+                        </tr>
                         <tr>
                             <td class="row-header">内容</td>
-                            <td style="text-align: left;">
+                            <td class="text-left">
                                 ・RBS独自の5つの技法習得<br>
                                 ・技術講習<br>
                                 ・添削サポートあり
                             </td>
-                            <td style="text-align: left;">
+                            <td class="text-left">
                                 ・高度補修技術習得<br>
                                 ・弱点克服トレーニング<br>
                                 ・添削サポート5回
                             </td>
-                            <td style="text-align: left;">
+                            <td class="text-left">
                                 ・市場調査<br>
                                 ・経営戦略作成<br>
                                 ・定期コンサル<br>
@@ -262,23 +262,22 @@
             <div class="sp-only-cards">
                 <!-- ひよこコース -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header hiyoko">🐣 ひよこコース</div>
-                    <div class="comparison-row">
+                    <div class="comparison-card-header hiyoko">ひよこコース</div>
+                    <div class="comparison-row income-row">
                         <span class="comparison-label">価格（税別）</span>
                         <span class="comparison-value">190,000円</span>
                     </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">期間</span>
-                        <span class="comparison-value">4日間</span>
-                    </div>
-                    <div class="comparison-row">
+                    <div class="comparison-row target-row">
                         <span class="comparison-label">対象</span>
                         <span class="comparison-value">初心者〜中級者</span>
                     </div>
-                    <div class="comparison-row" style="display: block;">
-                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
-                        <span class="comparison-value"
-                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                    <div class="comparison-row profit-row">
+                        <span class="comparison-label">期間</span>
+                        <span class="comparison-value">4日間</span>
+                    </div>
+                    <div class="comparison-row content-row">
+                        <span class="comparison-label">内容</span>
+                        <span class="comparison-value">
                             ・RBS独自の5つの技法習得<br>
                             ・技術講習<br>
                             ・添削サポートあり
@@ -288,23 +287,22 @@
 
                 <!-- コッココース -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header cocco">🐔 コッココース</div>
-                    <div class="comparison-row">
+                    <div class="comparison-card-header cocco">コッココース</div>
+                    <div class="comparison-row income-row">
                         <span class="comparison-label">価格（税別）</span>
                         <span class="comparison-value">450,000円</span>
                     </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">期間</span>
-                        <span class="comparison-value">8日間</span>
-                    </div>
-                    <div class="comparison-row">
+                    <div class="comparison-row target-row">
                         <span class="comparison-label">対象</span>
                         <span class="comparison-value">中級者〜上級者</span>
                     </div>
-                    <div class="comparison-row" style="display: block;">
-                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
-                        <span class="comparison-value"
-                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                    <div class="comparison-row profit-row">
+                        <span class="comparison-label">期間</span>
+                        <span class="comparison-value">8日間</span>
+                    </div>
+                    <div class="comparison-row content-row">
+                        <span class="comparison-label">内容</span>
+                        <span class="comparison-value">
                             ・高度補修技術習得<br>
                             ・弱点克服トレーニング<br>
                             ・添削サポート5回
@@ -314,19 +312,22 @@
 
                 <!-- フェニックスコース -->
                 <div class="comparison-card">
-                    <div class="comparison-card-header phoenix">🦅 フェニックスコース</div>
-                    <div class="comparison-row">
+                    <div class="comparison-card-header phoenix">フェニックスコース</div>
+                    <div class="comparison-row income-row">
                         <span class="comparison-label">価格</span>
-                        <span class="comparison-value">（面談にてご案内）</span>
+                        <span class="comparison-value">1,300,000円</span>
                     </div>
-                    <div class="comparison-row">
+                    <div class="comparison-row target-row">
                         <span class="comparison-label">対象</span>
                         <span class="comparison-value">独立・経営者向け</span>
                     </div>
-                    <div class="comparison-row" style="display: block;">
-                        <span class="comparison-label" style="display: block; margin-bottom: 5px;">内容</span>
-                        <span class="comparison-value"
-                            style="display: block; text-align: left; font-size: 13px; line-height: 1.6;">
+                    <div class="comparison-row profit-row">
+                        <span class="comparison-label">期間</span>
+                        <span class="comparison-value">（無制限）</span>
+                    </div>
+                    <div class="comparison-row content-row">
+                        <span class="comparison-label">内容</span>
+                        <span class="comparison-value">
                             ・市場調査<br>
                             ・経営戦略作成<br>
                             ・定期コンサル<br>
@@ -395,7 +396,7 @@
             </div>
 
             <h3 class="simulation-title">収益シミュレーション例</h3>
-            <div class="comparison-table-wrapper pc-only-table" style="margin-top: 0; margin-bottom: 20px;">
+            <div class="comparison-table-wrapper pc-only-table simulation-table-wrapper">
                 <table class="comparison-table">
                     <thead>
                         <tr>
@@ -418,11 +419,11 @@
                             <td>84,000円</td>
                             <td>140,000円</td>
                         </tr>
-                        <tr style="background-color: #eaf6f6;">
+                        <tr class="profit-highlight">
                             <td class="row-header">粗利益 (90~95%)</td>
-                            <td style="font-weight: bold;">604,500円</td>
-                            <td style="font-weight: bold;">1,116,000円</td>
-                            <td style="font-weight: bold;">1,860,000円</td>
+                            <td>604,500円</td>
+                            <td>1,116,000円</td>
+                            <td>1,860,000円</td>
                         </tr>
                         <tr>
                             <td class="row-header">経費合計<br><small>(ガソリン+保険等)</small></td>
@@ -430,11 +431,11 @@
                             <td>40,000円</td>
                             <td>50,000円</td>
                         </tr>
-                        <tr style="background-color: #fff9c4;">
-                            <td class="row-header" style="color: #d32f2f; font-size: 1.1em;">収入</td>
-                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥574,500円</td>
-                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,076,000円</td>
-                            <td style="color: #d32f2f; font-weight: bold; font-size: 1.2em;">¥1,810,000円</td>
+                        <tr class="income-highlight">
+                            <td class="row-header">収入</td>
+                            <td>¥574,500円</td>
+                            <td>¥1,076,000円</td>
+                            <td>¥1,810,000円</td>
                         </tr>
                     </tbody>
                 </table>
