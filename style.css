@@ -2013,21 +2013,22 @@ footer {
 }
 
 /* 収益シミュレーション（Aさん・Bさん・Cさん）と同じ配色に統一 */
+/* 収益シミュレーション（Aさん・Bさん・Cさん）と同じ配色に統一 */
 .comparison-card-header.hiyoko {
-    background: #4DBCC5;
-    /* Aさんと同じ水色 */
+    background: #5cb85c;
+    /* 緑 */
     color: #fff;
 }
 
 .comparison-card-header.cocco {
-    background: #2C3E50;
-    /* Bさんと同じ紺色 */
+    background: #4DBCC5;
+    /* 水色 */
     color: #fff;
 }
 
 .comparison-card-header.phoenix {
-    background: #C0392B;
-    /* Cさんと同じ赤色 */
+    background: #2C3E50;
+    /* 紺色 */
     color: #fff;
 }
 
@@ -2911,13 +2912,16 @@ footer {
     font-size: 14px;
     color: #666;
 }
+
 /* PCテーブル比較行のハイライト */
 tr.income-row {
     background-color: #fff9c4;
 }
+
 tr.profit-row {
     background-color: #eaf6f6;
 }
+
 tr.profit-row td {
     font-weight: bold;
 }
@@ -2997,10 +3001,12 @@ tr.profit-row td {
 .comparison-row.content-row {
     display: block;
 }
+
 .comparison-row.content-row .comparison-label {
     display: block;
     margin-bottom: 5px;
 }
+
 .comparison-row.content-row .comparison-value {
     display: block;
     text-align: left;
@@ -3012,16 +3018,20 @@ tr.profit-row td {
 tr.profit-highlight {
     background-color: #eaf6f6;
 }
+
 tr.profit-highlight td {
     font-weight: bold;
 }
+
 tr.income-highlight {
     background-color: #fff9c4;
 }
+
 tr.income-highlight .row-header {
     color: #d32f2f;
     font-size: 1.1em;
 }
+
 tr.income-highlight td {
     color: #d32f2f;
     font-weight: bold;
@@ -3035,26 +3045,30 @@ tr.income-highlight td {
     line-height: 2;
     text-align: left;
 }
+
 .highlight-box {
     background: #f9f9f9;
     padding: 20px;
     border-left: 5px solid var(--accent-color);
     margin: 30px 0;
 }
+
 .highlight-box h3 {
     margin-top: 0;
     color: var(--navy);
     font-size: 1.2rem;
 }
+
 .market-image-wrapper figure {
     margin: 0;
     width: 100%;
     max-width: 600px;
 }
+
 .market-image-wrapper img {
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     border: 1px solid #eee;
 }
 
@@ -3065,39 +3079,48 @@ tr.income-highlight td {
     gap: 40px;
     justify-content: center;
 }
-.instructor-card, .youtube-card {
+
+.instructor-card,
+.youtube-card {
     flex: 1;
     min-width: 300px;
     background: #fff;
     padding: 40px;
     border-radius: 16px;
     border: 2px solid #ddd;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
+
 .instructor-profile {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 20px;
 }
+
 .instructor-photo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* PCテーブルヘッダーの色分け（SPと連動） */
 .comparison-table th.header-hiyoko {
-    background-color: #4DBCC5; /* Aさんと同じ水色 */
+    background-color: #5cb85c;
+    /* 緑 */
     color: #fff;
 }
+
 .comparison-table th.header-cocco {
-    background-color: #2C3E50; /* Bさんと同じ紺色 */
+    background-color: #4DBCC5;
+    /* 水色 */
     color: #fff;
 }
+
 .comparison-table th.header-phoenix {
-    background-color: #C0392B; /* Cさんと同じ赤色 */
+    background-color: #2C3E50;
+    /* 紺色 */
     color: #fff;
 }
