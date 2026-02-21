@@ -1,3 +1,10 @@
+.youtube-link-center {
+    text-align: center;
+    margin-top: 36px;
+}
+.youtube-link-center .youtube-note {
+    margin-top: 16px;
+}
 .section-title-pamphlet {
     font-size: 2rem;
     font-weight: 700;
