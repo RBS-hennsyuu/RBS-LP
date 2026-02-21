@@ -4511,5 +4511,12 @@ tr.income-highlight td {
 /* 最終CTAラッパー */
 .final-cta-btn-wrap {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 90px;
+    padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .final-cta-btn-wrap {
+        margin-top: 72px;
+    }
 }
