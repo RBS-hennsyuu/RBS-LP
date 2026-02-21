@@ -3420,6 +3420,9 @@ tr.income-highlight td {
 .draft-section {
     padding: 80px 0;
 }
+.section-bg-light {
+    padding: 0 0 80px 0;
+}
 
 .draft-section-label {
     font-size: 18px;
@@ -4123,6 +4126,9 @@ tr.income-highlight td {
 @media (max-width: 768px) {
     .draft-section {
         padding: 56px 0;
+    }
+    .section-bg-light {
+        padding: 0 0 56px 0;
     }
 
     .stats-inner {
