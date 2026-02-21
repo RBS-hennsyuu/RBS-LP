@@ -135,7 +135,7 @@ a {
     width: 100%;
     text-align: center;
     font-size: 13px;
-    font-weight: normal;
+    font-weight: bold;
     margin-bottom: 1px;
     opacity: 0.9;
     padding: 0;
@@ -3943,24 +3943,11 @@ tr.income-highlight td {
     flex-shrink: 0;
 }
 
-.faq-icon {
-    display: none;
-}
-
 .faq-a {
     font-size: 14px;
     line-height: 1.8;
     color: #555;
     padding: 0 4px 22px 36px;
-    display: none;
-}
-
-.faq-item-v2.open .faq-a {
-    display: block;
-}
-
-.faq-item-v2.open .faq-icon {
-    transform: rotate(45deg);
 }
 
 /* ================================================
@@ -4480,3 +4467,49 @@ tr.income-highlight td {
     }
 }
 
+/* ==================================================
+   直書きCSS移行分
+================================================== */
+
+/* アイコン色ユーティリティ */
+.icon-green {
+    color: #10b981;
+}
+
+.icon-blue {
+    color: #3b82f6;
+}
+
+.icon-amber {
+    color: #f59e0b;
+}
+
+/* セクション背景 */
+#strengths {
+    background: #fff;
+}
+
+.section-bg-light {
+    background: var(--bg-light);
+}
+
+/* 共感セクション サブタイトル */
+.empathy-section-v2 .draft-main-subtitle {
+    margin-bottom: 36px;
+}
+
+/* 会社概要セクション テキスト色 */
+.company-section-v2 .draft-section-label {
+    color: #fff;
+}
+
+.company-section-v2 .draft-main-title {
+    color: #fff;
+    margin-bottom: 52px;
+}
+
+/* 最終CTAラッパー */
+.final-cta-btn-wrap {
+    text-align: center;
+    margin-top: 64px;
+}
