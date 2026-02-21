@@ -1,3 +1,127 @@
+.section-title-pamphlet {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #1c3a57;
+}
+.market-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: #222;
+}
+.highlight-box {
+    background: #f8f9fa;
+    border-left: 6px solid #FF6B35;
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 8px;
+}
+.highlight-box h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #FF6B35;
+}
+.highlight-box ul {
+    margin: 0;
+    padding-left: 18px;
+}
+.market-image-wrapper {
+    text-align: center;
+    margin: 24px 0;
+}
+.market-image-wrapper img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.market-image-wrapper figcaption {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 6px;
+}
+.market-text-mt {
+    margin-top: 18px;
+}
+.market-conclusion {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1c3a57;
+    text-align: center;
+    margin: 32px 0 0 0;
+}
+.benefit-tag {
+    background: #1c3a57;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 4px 12px;
+    margin: 2px 6px;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+.final-cta-section h2,
+.final-cta-section .cta-lead {
+    color: #fff !important;
+}
+.final-cta-btn-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+}
+.cta-buttons-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 16px;
+}
+@media (max-width: 600px) {
+    .cta-buttons-wrapper {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+}
+.final-cta-title, .final-cta-text {
+        text-align: center;
+        margin-bottom: 12px;
+}
+.cta-note {
+        text-align: center;
+        margin-top: 8px;
+}
+.cta-note {
+    color: #fff !important;
+}
+.cta-button.secondary-cta {
+        padding: 14px 32px;
+        line-height: 1.4;
+    background: #fff;
+    color: var(--accent-color);
+    border: 3px solid var(--accent-color);
+    font-weight: 700;
+    box-shadow: none;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 12px;
+    margin: 0 8px;
+    box-sizing: border-box;
+    padding: 14px 32px;
+    line-height: 1.4;
+}
+
+.cta-button.secondary-cta:hover {
+    background: var(--accent-color);
+    color: #fff;
+    border: 3px solid var(--accent-color);
+    opacity: 1;
+}
+
 /* flow-starアイコン用カラー */
 .flow-star {
     color: #f59e0b;
@@ -2082,18 +2206,18 @@ footer {
 }
 
 .secondary-cta {
-    background-color: #f8f9fa;
-    color: var(--navy);
-    border: 2px solid var(--navy);
+    background-color: #fff;
+    color: var(--orange);
+    border: 3px solid var(--orange);
 }
 
 .secondary-cta:hover {
-    background-color: var(--navy);
+    background-color: var(--orange);
     color: #fff;
 }
 
 .secondary-cta small {
-    color: var(--navy);
+    color: var(--orange);
 }
 
 .secondary-cta:hover small {
@@ -2273,8 +2397,8 @@ footer {
 }
 
 .benefit-tag {
-    background: #eef4f9;
-    color: var(--navy);
+    /*background: #eef4f9;
+    /*color: var(--navy);*/
     padding: 8px 16px;
     border-radius: 8px;
     font-size: 1rem;
@@ -2731,6 +2855,7 @@ footer {
     padding: 30px;
     border-radius: 8px;
     border: 3px solid #1c3a57;
+    border: 5px solid #1c3a57;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -2973,10 +3098,10 @@ tr.income-highlight td {
 .youtube-card {
     flex: 1;
     min-width: 300px;
-    background: #f8f9fa;
+    background: #ffffff;
     padding: 40px;
     border-radius: 16px;
-    border: 2px solid #ddd;
+    border: 5px solid #1c3a57;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
@@ -4407,8 +4532,8 @@ tr.income-highlight td {
     display: inline-block;
     font-size: 18px;
     font-weight: 500;
-    color: #64748b;
-    background: #e2e8f0;
+    color: #ffffff;
+    background: #236fb7;
     padding: 4px 12px;
     border-radius: 20px;
     margin-left: 12px;
@@ -4486,11 +4611,11 @@ tr.income-highlight td {
 
 /* セクション背景 */
 #strengths {
-    background: #fff;
+    background: #fbe0e0;
 }
 
 .section-bg-light {
-    background: var(--bg-light);
+    background: #fbe0e0;
 }
 
 /* 共感セクション サブタイトル */
