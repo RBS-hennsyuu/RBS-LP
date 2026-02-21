@@ -1,3 +1,8 @@
+/* flow-starアイコン用カラー */
+.flow-star {
+    color: #f59e0b;
+}
+
 /* ================================================== */
 /*                   CSS IMPORTS & VARIABLES         */
 /* ================================================== */
@@ -104,17 +109,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 280px;
+    width: auto;
+    min-width: 280px;
     max-width: 90%;
-    height: 70px;
-    padding: 0;
+    height: auto;
+    min-height: 70px;
+    padding: 14px 32px;
     background: var(--navy);
     color: #fff;
     border-radius: 12px;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     border: none;
     transition: transform 0.2s;
@@ -142,6 +149,50 @@ a {
 .cta-container,
 .footer-cta-container {
     text-align: left;
+}
+
+/* CTAバッジ（募集中/満員御礼など） */
+.cta-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.cta-badge {
+    position: absolute;
+    top: -45px;
+    left: -35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #f8f9fa;
+    color: var(--accent-color);
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.3;
+    text-align: center;
+    border: 4px solid var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: rotate(-15deg);
+    z-index: 10;
+}
+
+.cta-badge.soldout {
+    background: #f8f9fa;
+    color: var(--navy);
+    border-color: var(--navy);
+    flex-direction: column;
+}
+
+.cta-badge.soldout .offset {
+    margin-left: 12px;
+}
+
+.cta-button.disabled {
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .testimonial-cta {
@@ -223,7 +274,7 @@ a {
 }
 
 .nav-menu li a.nav-cta {
-    background: var(--navy);
+    background: #ff6a35;
     color: #fff;
     padding: 10px 24px;
     border-radius: 24px;
@@ -232,7 +283,7 @@ a {
 }
 
 .nav-menu li a.nav-cta:hover {
-    background: #0F2438;
+    background: #e55a28;
     color: #fff;
     transform: translateY(-2px);
 }
@@ -323,14 +374,14 @@ a {
 }
 
 .mobile-menu-list li a.mobile-cta {
-    background: var(--navy);
+    background: #ff6a35;
     color: #fff;
     font-weight: 600;
     text-align: center;
 }
 
 .mobile-menu-list li a.mobile-cta:hover {
-    background: #0F2438;
+    background: #e55a28;
     color: #fff;
 }
 
@@ -382,144 +433,6 @@ a {
 }
 
 /* ================================================== */
-/*                   PROBLEMS SECTION                */
-/* ================================================== */
-
-.problems-section {
-    background-color: var(--light-blue);
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.problem-list {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.problem-item {
-    background: #fff;
-    padding: 30px 20px;
-    border-radius: 15px;
-    width: 250px;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.problem-item::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-width: 15px 15px 0;
-    border-style: solid;
-    border-color: #fff transparent transparent;
-}
-
-.icon-placeholder {
-    font-size: 3rem;
-    margin-top: 20px;
-}
-
-/* ================================================== */
-/*                   FEATURES SECTION                */
-/* ================================================== */
-
-.features-section {
-    text-align: center;
-    background-color: #fff;
-}
-
-.features-description {
-    margin: 30px auto 40px;
-    max-width: 600px;
-}
-
-.features-subtitle {
-    font-size: clamp(17px, 4.5vw, 1.4rem);
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: #000;
-}
-
-.features-text {
-    font-size: clamp(17px, 3.2vw, 1rem);
-    line-height: 1.6;
-    color: #333;
-}
-
-.feature-card-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-}
-
-.feature-card {
-    background-color: var(--accent-color);
-    color: #fff;
-    border-radius: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-/* ================================================== */
-/*                 TESTIMONIALS SECTION              */
-/* ================================================== */
-
-.testimonials-section {
-    background-color: #fff;
-    text-align: center;
-}
-
-.testimonial-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.testimonial-card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-}
-
-.testimonial-card .badge {
-    background: var(--accent-color);
-    color: #fff;
-    font-size: 11px;
-    font-weight: 900;
-    padding: 2px 6px;
-    border-radius: 0;
-    letter-spacing: 0.05em;
-    align-self: flex-start;
-    margin-bottom: 4px;
-    border: none;
-    box-shadow: none;
-}
-
-.testimonial-card .occupation {
-    font-size: 13px;
-    color: #666;
-    margin: 0;
-    font-weight: bold;
-}
-
-.testimonial-card .testimonial-text {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #333;
-    margin: 24px 0 24px 0;
-}
-
-/* ================================================== */
 /*                 WHY REPAIR SECTION                */
 /* ================================================== */
 
@@ -556,25 +469,6 @@ a {
 }
 
 /* ================================================== */
-/*                   COMPANY SECTION                 */
-/* ================================================== */
-
-.company-section {
-    background-color: var(--navy);
-    color: #fff;
-    text-align: center;
-}
-
-.company-section .section-title {
-    color: #fff;
-}
-
-.company-info p {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-/* ================================================== */
 /*                     FAQ SECTION                   */
 /* ================================================== */
 
@@ -590,7 +484,7 @@ a {
 }
 
 .faq-item {
-    background: #fff;
+    background: #f8f9fa;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -812,7 +706,7 @@ footer {
 
     .why-repair-item {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         gap: 100px;
     }
@@ -1102,7 +996,7 @@ footer {
     }
 
     .problem-item {
-        background: #fff;
+        background: #f8f9fa;
         padding: 20px;
         border-radius: 20px;
         width: 232px;
@@ -1455,7 +1349,7 @@ footer {
 }
 
 .modal-content {
-    background-color: #fff;
+    background-color: #f8f9fa;
     margin: 20px;
     padding: 40px;
     border-radius: 12px;
@@ -1663,7 +1557,7 @@ footer {
 }
 
 .download-card {
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 16px;
     padding: 60px 40px;
     text-align: center;
@@ -1711,7 +1605,7 @@ footer {
 }
 
 .content-item {
-    background: #fff;
+    background: #f8f9fa;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -1755,7 +1649,7 @@ footer {
 }
 
 .step-card {
-    background: #fff;
+    background: #f8f9fa;
     padding: 40px 30px;
     border-radius: 12px;
     border: 2px solid #e0e0e0;
@@ -1834,7 +1728,6 @@ footer {
 
     .form-group textarea {
         min-height: 80px;
-        rows: 3;
     }
 
     .form-submit-button {
@@ -1935,7 +1828,7 @@ footer {
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
-    background: #fff;
+    background: #f8f9fa;
 }
 
 .comparison-table th,
@@ -1985,7 +1878,7 @@ footer {
 
 /* SP用比較カードスタイル（収益シミュレーション統一版） */
 .comparison-card {
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 24px;
@@ -2076,7 +1969,7 @@ footer {
 
 /* コース詳細 */
 .course-detail-card {
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 12px;
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
     padding: 40px;
@@ -2130,8 +2023,6 @@ footer {
     margin: 0 auto;
 }
 
-
-
 /* 仕事例・収益モデル */
 .work-grid {
     display: grid;
@@ -2140,7 +2031,7 @@ footer {
 }
 
 .work-card {
-    background: #fff;
+    background: #f8f9fa;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -2148,7 +2039,7 @@ footer {
 }
 
 .revenue-model-box {
-    background: #fff;
+    background: #f8f9fa;
     padding: 30px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -2191,7 +2082,7 @@ footer {
 }
 
 .secondary-cta {
-    background-color: #fff;
+    background-color: #f8f9fa;
     color: var(--navy);
     border: 2px solid var(--navy);
 }
@@ -2257,7 +2148,7 @@ footer {
 }
 
 .curriculum-card {
-    background: #fff;
+    background: #f8f9fa;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -2436,7 +2327,7 @@ footer {
 
 /* オンラインサロン */
 .online-salon-box {
-    background: #fff;
+    background: #f8f9fa;
     border: 2px solid var(--accent-color);
     border-radius: 12px;
     padding: 30px;
@@ -2493,15 +2384,13 @@ footer {
     /* 上下中央揃え（ラベルとテキストのバランス） */
     gap: 25px;
     padding: 25px;
-    background: #fff;
+    background: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     position: relative;
     border-left: 6px solid var(--navy);
     /* 左にアクセントライン */
 }
-
-
 
 .flow-step:last-child {
     margin-bottom: 0;
@@ -2734,7 +2623,7 @@ footer {
 
 /* 収益性ボックス */
 .revenue-box {
-    background: #fff;
+    background: #f8f9fa;
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 40px;
@@ -3084,7 +2973,7 @@ tr.income-highlight td {
 .youtube-card {
     flex: 1;
     min-width: 300px;
-    background: #fff;
+    background: #f8f9fa;
     padding: 40px;
     border-radius: 16px;
     border: 2px solid #ddd;
@@ -3124,3 +3013,1470 @@ tr.income-highlight td {
     /* 紺色 */
     color: #fff;
 }
+
+/* ================================================== */
+/*           LP DRAFT - 新規セクションスタイル        */
+/* ================================================== */
+
+/* 共感セクション */
+.empathy-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f4f8 100%);
+}
+
+.empathy-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.empathy-item {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.empathy-item:hover {
+    transform: translateY(-5px);
+}
+
+.empathy-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.empathy-item p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--navy);
+}
+
+.empathy-conclusion {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: var(--navy);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.empathy-lead {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.empathy-lead strong {
+    color: var(--accent-color);
+}
+
+.empathy-text {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* RBSの強みセクション */
+.strengths-section {
+    padding: 80px 0;
+}
+
+.strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.strength-card {
+    background: #f8f9fa;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-top: 4px solid var(--accent-color);
+}
+
+.strength-number {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgba(27, 58, 87, 0.1);
+}
+
+.strength-title {
+    font-size: 1.2rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.strength-desc {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* 講習概要セクション */
+.course-overview-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.course-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.overview-card {
+    background: var(--light-blue);
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.overview-icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.overview-card h3 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.overview-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+.overview-card strong {
+    color: var(--accent-color);
+}
+
+.overview-note {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* リペアメリット結論 */
+.why-repair-conclusion {
+    text-align: center;
+    margin-top: 50px;
+    padding: 40px;
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
+    border-radius: 12px;
+    color: #fff;
+}
+
+.why-repair-conclusion p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.why-repair-conclusion strong {
+    color: var(--accent-color);
+}
+
+/* 会社概要テーブル */
+.company-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.company-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.company-table th,
+.company-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.company-table th {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-weight: 500;
+}
+
+.company-table td {
+    color: #fff;
+}
+
+/* 最終CTA強化 */
+.final-cta-content {
+    text-align: center;
+}
+
+.final-cta-title {
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 15px;
+}
+
+.final-cta-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .empathy-section {
+        padding: 60px 0;
+    }
+
+    .empathy-list {
+        gap: 20px;
+    }
+
+    .empathy-item {
+        padding: 25px 20px;
+    }
+
+    .empathy-lead {
+        font-size: 1.2rem;
+    }
+
+    .strengths-grid {
+        gap: 20px;
+    }
+
+    .strength-card {
+        padding: 30px 25px;
+    }
+
+    .course-overview-grid {
+        gap: 15px;
+    }
+
+    .overview-card {
+        padding: 25px 20px;
+    }
+
+    .why-repair-conclusion {
+        padding: 30px 20px;
+    }
+
+    .why-repair-conclusion p {
+        font-size: 1rem;
+    }
+
+    .company-table th,
+    .company-table td {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+    .final-cta-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* ================================================== */
+/*            ドラフトLP専用スタイル                    */
+/* ================================================== */
+
+/* --- セクション共通 --- */
+.draft-section {
+    padding: 80px 0;
+}
+
+.draft-section-label {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--navy);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* SP用改行 */
+.sp-br {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sp-br {
+        display: block;
+    }
+}
+
+.draft-main-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 900;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.draft-main-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+/* ================================================
+   実績数字バナー
+================================================ */
+.stats-banner {
+    background: var(--navy);
+    padding: 32px 0;
+}
+
+.stats-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.stat-number {
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 900;
+    line-height: 1;
+    color: #fff;
+}
+
+.stat-number span {
+    color: var(--accent-color);
+}
+
+.stat-label {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.stat-divider {
+    display: none;
+}
+
+/* ================================================
+   共感セクション
+================================================ */
+.empathy-section-v2 {
+    background: #f8f9fa;
+    padding: 80px 0 72px;
+}
+
+.empathy-list-v2 {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 580px;
+    margin: 0 auto 40px;
+}
+
+.empathy-item-v2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--light-blue);
+    border-radius: 12px;
+    padding: 18px 22px;
+    border-left: 4px solid var(--navy);
+}
+
+.empathy-check {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.empathy-item-v2 p {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.55;
+    margin: 0;
+}
+
+.empathy-conclusion-v2 {
+    text-align: center;
+    border-top: 1px solid #dce8f0;
+    padding: 36px 0 0;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.empathy-conclusion-v2 .empathy-lead {
+    font-size: clamp(18px, 3vw, 24px);
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.empathy-conclusion-v2 .empathy-lead strong {
+    color: var(--accent-color);
+    font-size: 1.3em;
+}
+
+.emphasis-dots {
+    text-emphasis: filled dot var(--accent-color);
+    text-emphasis-position: over right;
+    -webkit-text-emphasis: filled dot var(--accent-color);
+    -webkit-text-emphasis-position: over right;
+}
+
+.empathy-conclusion-v2 .empathy-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+    .empathy-conclusion-v2 .empathy-text {
+        font-size: 11px;
+    }
+}
+
+/* ================================================
+   リペア技術セクション結論
+================================================ */
+.why-repair-conclusion-v2 {
+    max-width: 860px;
+    margin: 60px auto 0;
+    border-top: 1px solid #dce8f0;
+    padding: 40px 0 0;
+    text-align: left;
+}
+
+.why-repair-conclusion-v2 p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.8;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.why-repair-conclusion-v2 strong {
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .why-repair-conclusion-v2 {
+        padding: 28px 0 0;
+        text-align: left;
+    }
+}
+
+/* ================================================
+   RBSの強み（2×2グリッド）
+================================================ */
+.strengths-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.strength-card-v2 {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 32px 28px;
+    border: 1.5px solid #e4eef6;
+    border-left: 4px solid var(--accent-color);
+    position: relative;
+}
+
+.strength-card-v2.featured {
+    background: var(--navy);
+    border: none;
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-num {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-title {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-desc {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-arrow {
+    color: #fff;
+}
+
+.str-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+.str-num {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    min-width: 50px;
+    line-height: 1;
+}
+
+.str-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.str-desc {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #555;
+}
+
+.str-arrow {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 16px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* ================================================
+   講習概要
+================================================ */
+.overview-layout {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.overview-main-card {
+    background: var(--navy);
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 340px;
+}
+
+.overview-main-text-area {
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overview-main-tag {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.overview-main-title {
+    font-size: clamp(20px, 3.2vw, 26px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.35;
+}
+
+.overview-main-desc {
+    font-size: 13.5px;
+    color: #fff;
+    line-height: 1.75;
+}
+
+.overview-main-badge {
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 8px 0 0;
+    display: block;
+    margin-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.overview-main-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    min-height: 280px;
+}
+
+.overview-sub-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.overview-sub-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 26px 22px;
+    border: 1.5px solid #e4eef6;
+}
+
+.overview-sub-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.overview-sub-icon {
+    font-size: 20px;
+    color: var(--accent-color);
+}
+
+.overview-sub-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--navy);
+    margin: 0;
+}
+
+.overview-sub-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.overview-note-v2 {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 16px;
+}
+
+/* ================================================
+   受講者の声（ドラフトLP）
+================================================ */
+.voices-section {
+    background: #f8f9fa;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.voices-section .testimonial-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 25px;
+    padding: 0;
+    max-width: 1080px;
+    margin: 0 auto 48px;
+}
+
+.voices-section .testimonial-card {
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+    flex: 1;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.voices-section .testimonial-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.voices-section .testimonial-card .avatar-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.voices-section .testimonial-card .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.voices-section .testimonial-card .badge {
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 4px 14px;
+    border-radius: 16px;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+    margin-bottom: 4px;
+}
+
+.voices-section .testimonial-card .name-age {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+}
+
+.voices-section .testimonial-card .occupation {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    font-weight: bold;
+}
+
+.voices-section .testimonial-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.voices-section .testimonial-card .testimonial-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0 0 24px 0;
+    flex: 1;
+}
+
+.voices-section .testimonial-card .site-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.voices-section .testimonial-card .site-img-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.voices-section .testimonial-card .site-img-box img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.voices-section .testimonial-card .site-img-box span {
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+}
+
+.testimonial-cta {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ================================================
+   会社概要（強化）
+================================================ */
+.company-section-v2 {
+    background: var(--navy);
+    padding: 80px 0;
+    color: #fff;
+}
+
+.company-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.company-table-v2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.company-table-v2 tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-table-v2 th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 0;
+    width: 110px;
+    vertical-align: top;
+}
+
+.company-table-v2 td {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 0;
+    line-height: 1.55;
+}
+
+.company-stats-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.company-stat-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 22px 28px;
+    text-align: center;
+}
+
+.company-stat-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.company-stat-number span {
+    color: var(--accent-color);
+}
+
+.company-stat-label {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+/* ================================================
+   FAQアコーディオン
+================================================ */
+.faq-section-v2 {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.faq-list-v2 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item-v2 {
+    border-bottom: 1px solid #e8edf2;
+}
+
+.faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 4px;
+    cursor: pointer;
+    gap: 16px;
+}
+
+.faq-q-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+.faq-q-text::before {
+    content: 'Q';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.faq-icon {
+    display: none;
+}
+
+.faq-a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    padding: 0 4px 22px 36px;
+    display: none;
+}
+
+.faq-item-v2.open .faq-a {
+    display: block;
+}
+
+.faq-item-v2.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* ================================================
+   最終CTA
+================================================ */
+.final-cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.final-cta-section .final-cta-title {
+    font-size: clamp(20px, 3.5vw, 28px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.final-cta-section .final-cta-text {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 36px;
+    line-height: 1.7;
+}
+
+/* ドラフトLP ファーストビューCTA（オレンジ） */
+.header .cta-button {
+    background: #ff6a35;
+}
+
+.header .cta-button:hover {
+    background: #e55a28;
+}
+
+.final-cta-section .cta-button {
+    background: var(--accent-color);
+    margin: 0 auto;
+}
+
+.final-cta-section .cta-button:hover {
+    background: var(--accent-dark);
+}
+
+/* ================================================
+   ドラフトLP SP対応
+================================================ */
+@media (max-width: 768px) {
+    .draft-section {
+        padding: 56px 0;
+    }
+
+    .stats-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    .stat-item {
+        padding: 12px 8px;
+    }
+
+    .stat-number {
+        font-size: clamp(20px, 4vw, 26px);
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    .empathy-section-v2 {
+        padding: 56px 0 48px;
+    }
+
+    .empathy-conclusion-v2 {
+        padding: 28px 24px;
+    }
+
+    .why-repair-cards {
+        gap: 28px;
+    }
+
+    .why-card {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card.reverse {
+        direction: ltr;
+    }
+
+    .why-card-img {
+        min-height: 220px;
+        max-height: 240px;
+    }
+
+    .why-card-body {
+        padding: 28px 24px;
+    }
+
+    .why-repair-conclusion-v2 {
+        padding: 28px 24px;
+    }
+
+    .strengths-grid-2x2 {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .str-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .str-num {
+        margin-bottom: 0;
+        font-size: 40px;
+        flex-shrink: 0;
+        min-width: 45px;
+        line-height: 1;
+    }
+
+    .str-title {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .overview-main-card {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-main-text-area {
+        padding: 30px 24px;
+    }
+
+    .overview-main-card-img {
+        min-height: 200px;
+        max-height: 240px;
+    }
+
+    .overview-sub-cards {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .voices-section .testimonial-list {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 25px;
+    }
+
+    .voices-section .testimonial-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .voices-section {
+        padding: 56px 0;
+    }
+
+    .company-section-v2 {
+        padding: 56px 0;
+    }
+
+    .faq-section-v2 {
+        padding: 56px 0;
+    }
+
+    .final-cta-section {
+        padding: 56px 0;
+    }
+
+    .company-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+}
+
+/* ================================================
+   受講の流れ（ステップタイムライン）
+================================================ */
+.flow-section-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--navy);
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.flow-timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flow-step {
+    display: flex;
+    gap: 24px;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.flow-step:last-child {
+    padding-bottom: 0;
+}
+
+.flow-step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.flow-step-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: var(--accent-color);
+    color: #fff;
+    border-radius: 50%;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.flow-step-num small {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+.flow-step-num span {
+    font-size: 22px;
+}
+
+.flow-step-line {
+    flex: 1;
+    width: 3px;
+    background: var(--accent-color);
+    margin-top: 8px;
+}
+
+.flow-step:last-child .flow-step-line {
+    display: none;
+}
+
+.flow-step-content {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e4eef6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.flow-step-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.flow-step-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--light-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--navy);
+    font-size: 18px;
+}
+
+.flow-step-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy);
+    margin: 0;
+}
+
+.flow-step-desc {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .flow-section-title {
+        margin: 40px 0 30px;
+    }
+
+    .flow-step {
+        gap: 16px;
+        padding-bottom: 30px;
+    }
+
+    .flow-step-left {
+        width: 50px;
+    }
+
+    .flow-step-num {
+        width: 50px;
+        height: 50px;
+    }
+
+    .flow-step-num small {
+        font-size: 9px;
+    }
+
+    .flow-step-num span {
+        font-size: 18px;
+    }
+
+    .flow-step-content {
+        padding: 18px;
+    }
+
+    .flow-step-title {
+        font-size: 15px;
+    }
+
+    .flow-step-desc {
+        font-size: 13px;
+    }
+}
+
+/* ===================================
+   受講の流れ（2カラム）
+=================================== */
+.learning-flow-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 48px;
+    align-items: flex-start;
+}
+
+/* 左＝フロー図、右＝学習の進め方 */
+.learning-flow-left {
+    order: 1;
+    flex: 0 0 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.learning-flow-right {
+    order: 2;
+    flex: 1;
+}
+
+.learning-flow-main-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--navy);
+}
+
+.learning-flow-item {
+    margin-bottom: 24px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.learning-flow-item-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.learning-flow-item-title i {
+    font-size: 18px;
+}
+
+.learning-flow-item-desc {
+    font-size: 14px;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* フロー図の行 */
+.flow-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+/* 丸アイコン */
+.flow-circle {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.flow-circle-start {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.flow-circle-start::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+/* 縦線 */
+.flow-line {
+    width: 2px;
+    min-width: 2px;
+    height: 60px;
+    background: #cbd5e1;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+
+.flow-line-dashed {
+    background: repeating-linear-gradient(to bottom,
+            #cbd5e1 0px, #cbd5e1 6px,
+            transparent 6px, transparent 10px);
+}
+
+/* ラベル */
+.flow-label-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+.flow-label-badge {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #64748b;
+    background: #e2e8f0;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-left: 12px;
+}
+
+/* SP */
+@media (max-width: 768px) {
+    .learning-flow-wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .learning-flow-right {
+        order: 1;
+    }
+
+    .learning-flow-left {
+        order: 2;
+        flex: 0 0 auto;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .flow-row {
+        gap: 12px;
+    }
+
+    .flow-label-title {
+        font-size: 13px;
+    }
+
+    .flow-label-badge {
+        font-size: 11px;
+        padding: 3px 10px;
+        margin-left: 4px;
+    }
+
+    .learning-flow-main-title {
+        font-size: 18px;
+    }
+
+    .learning-flow-item {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+
+    .learning-flow-item-title {
+        font-size: 15px;
+    }
+
+    .learning-flow-item-desc {
+        font-size: 13px;
+    }
+}
+
