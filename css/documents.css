@@ -1948,9 +1948,6 @@
         margin-right: 0 !important;
         margin-bottom: 32px;
     }
-    .course-description-blocks > div:last-child {
-        margin-bottom: 0 !important;
-    }
 }
 
 /* 画面幅による列数の最終調整（上書き）：
