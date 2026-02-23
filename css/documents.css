@@ -1,0 +1,1309 @@
+/* ================================================== */
+/*      documents.html / documents_draft.html 専用    */
+/* ================================================== */
+
+/* ================================================== */
+/*                 ヒーローセクション                   */
+/* ================================================== */
+
+.pamphlet-hero {
+    background-color: var(--navy);
+    color: #fff;
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.pamphlet-hero h1 {
+    font-size: clamp(24px, 5vw, 40px);
+    margin-bottom: 20px;
+}
+
+.pamphlet-hero p {
+    font-size: clamp(16px, 3vw, 20px);
+    opacity: 0.9;
+}
+
+.pamphlet-section {
+    padding: 80px 0;
+}
+
+.bg-gray {
+    background-color: var(--section-gray);
+}
+
+/* ドラフト共通 */
+.draft-section {
+    padding: 80px 0;
+}
+
+.section-bg-light {
+    padding: 0 0 80px 0;
+}
+
+.draft-section-label {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--navy);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.draft-main-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 900;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+
+.draft-main-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+/* ================================================== */
+/*                 セクションタイトル（ドキュメント）   */
+/* ================================================== */
+
+.section-title-pamphlet {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--navy);
+}
+
+/* ================================================== */
+/*                 カリキュラム                         */
+/* ================================================== */
+
+.curriculum-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.curriculum-card {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+}
+
+.curriculum-card h3 {
+    color: var(--navy);
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid var(--border-subtle);
+    padding-bottom: 15px;
+}
+
+.curriculum-text {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.curriculum-conclusion {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    color: var(--accent-color);
+}
+
+/* ================================================== */
+/*                 フレームワーク                       */
+/* ================================================== */
+
+.framework-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.framework-title {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.framework-badge {
+    background: var(--accent-color);
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.framework-desc {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.framework-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.framework-list li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.framework-list li span {
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.framework-footer {
+    font-weight: bold;
+    color: var(--navy);
+    border-top: 1px dashed var(--border-dashed);
+    padding-top: 15px;
+}
+
+/* ================================================== */
+/*                 ベネフィットタグ                     */
+/* ================================================== */
+
+.benefit-section {
+    margin-bottom: 20px;
+}
+
+.benefit-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.benefit-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.benefit-tag {
+    background: var(--navy);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 4px 12px;
+    margin: 2px 6px;
+    font-size: 0.95rem;
+    display: inline-block;
+}
+
+/* ================================================== */
+/*                 オンラインサロン                     */
+/* ================================================== */
+
+.online-salon-box {
+    background: #f8f9fa;
+    border: 2px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.online-salon-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 15px;
+    border-bottom-left-radius: 8px;
+}
+
+.online-salon-title {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.online-salon-date {
+    display: inline-block;
+    background: var(--border-subtle);
+    color: #666;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.online-salon-text {
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* ================================================== */
+/*                 市場環境                             */
+/* ================================================== */
+
+.market-content {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: #222;
+    line-height: 2;
+    text-align: left;
+}
+
+.highlight-box {
+    background: var(--bg-light);
+    border-left: 6px solid var(--accent-color);
+    padding: 16px 20px;
+    margin: 24px 0;
+    border-radius: 8px;
+}
+
+.highlight-box h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+.highlight-box ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.market-image-wrapper {
+    text-align: center;
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.market-image-wrapper figure {
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.market-image-wrapper img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-subtle);
+    display: block;
+}
+
+.market-image-wrapper figcaption {
+    font-size: 0.85rem;
+    color: var(--text-fine);
+    margin-top: 6px;
+    text-align: left;
+}
+
+.market-text-mt {
+    margin-top: 18px;
+}
+
+.market-conclusion {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: center;
+    margin: 32px 0 0 0;
+}
+
+/* ================================================== */
+/*                 RBSの強み（ドキュメント版）          */
+/* ================================================== */
+
+.strengths-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.strength-card-v2 {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 32px 28px;
+    border: 1.5px solid var(--border-blue);
+    border-left: 4px solid var(--accent-color);
+    position: relative;
+}
+
+.strength-card-v2.featured {
+    background: var(--navy);
+    border: none;
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-num {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-title {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-desc {
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-arrow {
+    color: #fff;
+}
+
+.str-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+.str-num {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    min-width: 50px;
+    line-height: 1;
+}
+
+.str-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.str-desc {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #555;
+}
+
+.str-arrow {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 16px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* ================================================== */
+/*                 Why Repair（ドキュメント版）         */
+/* ================================================== */
+
+.why-repair-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.why-repair-item {
+    text-align: left;
+}
+
+.why-repair-conclusion-v2 {
+    max-width: 860px;
+    margin: 60px auto 0;
+    border-top: 1px solid var(--border-teal);
+    padding: 40px 0 0;
+    text-align: left;
+}
+
+.why-repair-conclusion-v2 p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.8;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.why-repair-conclusion-v2 strong {
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+/* ================================================== */
+/*                 比較表                              */
+/* ================================================== */
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    margin-top: 40px;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    background: #f8f9fa;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid var(--border);
+    padding: 15px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: var(--navy);
+    color: #fff;
+    font-weight: bold;
+}
+
+.comparison-table .row-header {
+    background-color: var(--bg-gray);
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    width: 150px;
+}
+
+.comparison-table td.text-left {
+    text-align: left;
+}
+
+.pc-only-table {
+    display: none;
+}
+
+.sp-only-cards {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .pc-only-table {
+        display: block;
+    }
+
+    .sp-only-cards {
+        display: none;
+    }
+}
+
+/* SPカード */
+.comparison-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    overflow: hidden;
+}
+
+.comparison-card-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+.comparison-card-header.hiyoko {
+    background: var(--course-green);
+}
+
+.comparison-card-header.cocco {
+    background: var(--course-teal);
+}
+
+.comparison-card-header.phoenix {
+    background: var(--course-dark);
+}
+
+.comparison-card-header.revenue-a {
+    background: var(--course-teal);
+}
+
+.comparison-card-header.revenue-b {
+    background: var(--course-dark);
+}
+
+.comparison-card-header.revenue-c {
+    background: #C0392B;
+}
+
+.comparison-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--bg-gray);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-label {
+    font-weight: bold;
+    color: #666;
+    flex: 0 0 40%;
+    min-width: 80px;
+}
+
+.comparison-value {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    flex: 1;
+    font-weight: 500;
+}
+
+.comparison-value.bold {
+    font-weight: bold;
+}
+
+.comparison-row.profit-row {
+    background-color: var(--profit-bg);
+}
+
+.comparison-row.income-row {
+    background-color: var(--income-bg);
+}
+
+/* ================================================== */
+/*                 学習の流れ（ドキュメント版）         */
+/* ================================================== */
+
+.flow-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    position: relative;
+    border-left: 6px solid var(--navy);
+}
+
+.flow-step:last-child {
+    margin-bottom: 0;
+}
+
+.flow-step-label {
+    background: var(--navy);
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.1;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-family: "Noto Sans JP", sans-serif;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flow-step-label span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 2px;
+}
+
+.flow-step-label::before {
+    content: "STEP";
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.flow-content {
+    flex: 1;
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.flow-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 8px;
+    display: block;
+}
+
+.flow-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.flow-arrow {
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    line-height: 1;
+    opacity: 0.8;
+}
+
+/* ================================================== */
+/*                 仕事例・収益モデル                   */
+/* ================================================== */
+
+.before-after-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.before-after-title {
+    color: var(--navy);
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.before-after-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.before-after-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.before-after-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px;
+}
+
+.before-after-item .label-before {
+    font-weight: bold;
+    color: #666;
+}
+
+.before-after-item .label-after {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.revenue-box {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.revenue-box-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+.revenue-box-desc {
+    margin-bottom: 20px;
+}
+
+.work-grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.work-grid-auto.mt-10 {
+    margin-top: 10px;
+}
+
+.work-card {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--teal-light);
+}
+
+.work-card-price {
+    font-size: 14px;
+}
+
+.work-card-price .note {
+    font-size: 11px;
+    color: #666;
+}
+
+.work-card-big {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.work-card-big-dark {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.simulation-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.simulation-table-wrapper {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.revenue-note {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.courses-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+
+/* ================================================== */
+/*                 講師・メディア紹介（ドキュメント版） */
+/* ================================================== */
+
+.instructor-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.instructor-card,
+.youtube-card {
+    flex: 1;
+    min-width: 300px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    border: 5px solid var(--navy);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.instructor-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instructor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.instructor-name-en {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.instructor-title {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.youtube-link-wrapper {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.youtube-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* ================================================== */
+/*                 FAQ（ドキュメント版）                */
+/* ================================================== */
+
+.faq-section {
+    background-color: var(--light-blue);
+    text-align: center;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    background: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.faq-item h3 {
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+/* FAQアコーディオン版 */
+.faq-section-v2 {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.faq-list-v2 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item-v2 {
+    border-bottom: 1px solid #e8edf2;
+}
+
+.faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 4px;
+    cursor: pointer;
+    gap: 16px;
+}
+
+.faq-q-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+.faq-q-text::before {
+    content: 'Q';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.faq-a {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    padding: 0 4px 22px 36px;
+}
+
+/* ================================================== */
+/*                 会社概要（ドキュメント版）           */
+/* ================================================== */
+
+.company-section-v2 {
+    background: var(--navy);
+    padding: 80px 0;
+    color: #fff;
+}
+
+.company-section-v2 .draft-section-label {
+    color: #fff;
+}
+
+.company-section-v2 .draft-main-title {
+    color: #fff;
+    margin-bottom: 52px;
+}
+
+.company-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.company-table-v2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.company-table-v2 tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-table-v2 th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 0;
+    width: 110px;
+    vertical-align: top;
+}
+
+.company-table-v2 td {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 0;
+    line-height: 1.55;
+}
+
+.company-stats-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.company-stat-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 22px 28px;
+    text-align: center;
+}
+
+.company-stat-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.company-stat-number span {
+    color: var(--accent-color);
+}
+
+.company-stat-label {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+/* ================================================== */
+/*                 最終CTA（ドキュメント版）            */
+/* ================================================== */
+
+.final-cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.final-cta-section h2,
+.final-cta-section .cta-lead {
+    color: #fff !important;
+}
+
+.final-cta-section .cta-button {
+    background: var(--accent-color);
+}
+
+.final-cta-section .cta-button:hover {
+    background: var(--accent-dark);
+}
+
+.cta-area-pamphlet {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--section-pink);
+}
+
+.cta-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 24px;
+}
+
+@media (min-width: 768px) {
+    .cta-buttons-wrapper {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-buttons-wrapper {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+}
+
+.final-cta-title,
+.final-cta-text {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.cta-note {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.cta-note {
+    color: #fff !important;
+}
+
+.cta-area-pamphlet .cta-lead {
+    margin-bottom: 30px;
+}
+
+.cta-area-pamphlet .cta-note {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.final-cta-btn-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* ================================================== */
+/*              PC RESPONSIVE - Documents            */
+/* ================================================== */
+
+@media (min-width: 769px) {
+    .why-repair-list {
+        gap: 120px;
+        margin-top: 80px;
+    }
+
+    .why-repair-item {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 100px;
+    }
+
+    .why-repair-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+/* ================================================== */
+/*              SP RESPONSIVE - Documents            */
+/* ================================================== */
+
+@media (max-width: 768px) {
+    .pamphlet-hero {
+        padding: 90px 0 40px;
+    }
+
+    .pamphlet-section {
+        padding: 40px 0;
+    }
+
+    .draft-section {
+        padding: 56px 0;
+    }
+
+    .section-bg-light {
+        padding: 0 0 56px 0;
+    }
+
+    .curriculum-card h3 {
+        font-size: 1.1rem;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        letter-spacing: -0.05em;
+    }
+
+    .framework-badge {
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    .framework-title {
+        font-size: 1.1rem;
+        letter-spacing: -0.05em;
+    }
+
+    .benefit-tags {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .benefit-tag {
+        font-size: 1rem;
+        padding: 12px 15px;
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    .curriculum-conclusion {
+        text-align: center;
+    }
+
+    .strengths-grid-2x2 {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .str-header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 25px;
+    }
+
+    .str-num {
+        margin-bottom: 0;
+        font-size: 40px;
+        flex-shrink: 0;
+        min-width: 45px;
+        line-height: 1;
+    }
+
+    .str-title {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .why-repair-list {
+        gap: 60px;
+        margin-top: 0;
+    }
+
+    .why-repair-item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .why-repair-conclusion-v2 {
+        padding: 28px 0 0;
+    }
+
+    .flow-step {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .flow-step-label {
+        width: 100%;
+        height: auto;
+        padding: 8px 15px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: baseline;
+        gap: 10px;
+        border-radius: 4px;
+    }
+
+    .flow-step-label span {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .flow-step-label::before {
+        content: "STEP";
+        font-size: 1rem;
+    }
+
+    .flow-title {
+        font-size: 1.15rem;
+        border-bottom: none;
+        margin-bottom: 5px;
+    }
+
+    .faq-section-v2 {
+        padding: 56px 0;
+    }
+
+    .company-section-v2 {
+        padding: 56px 0;
+    }
+
+    .company-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .final-cta-section {
+        padding: 56px 0;
+    }
+
+    .final-cta-btn-wrap {
+        margin-top: 24px;
+    }
+}

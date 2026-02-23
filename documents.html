@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RBS デジタルパンフレット | Repair Business School</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <meta name="description" content="RBS（Repair Business School）の詳細資料。コース内容・料金・学習の流れ・収益モデルをまとめています。">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/documents.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation (Common with LP) -->
+
+    <!-- ナビゲーション -->
     <nav class="nav-header">
         <div class="nav-container">
             <div class="nav-logo">
@@ -21,189 +24,272 @@
                 </a>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html">トップページへ</a></li>
+                <li><a href="index.html">トップページへ戻る</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="メニュー">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ============================================
+         1. ヒーロー (pamphlet-hero をindex風に)
+    ============================================ -->
     <header class="pamphlet-hero">
         <div class="container">
-            <h1>RBS デジタルパンフレット</h1>
-            <p>技術を仕事として成立させるためのスクール</p>
+            <p class="draft-section-label" style="color:rgba(255,255,255,0.7);">RBS Digital Pamphlet</p>
+            <h1 class="draft-main-title" style="color:#fff; font-size:clamp(24px,5vw,44px);">
+                RBS デジタルパンフレット
+            </h1>
+            <p class="draft-main-subtitle" style="color:rgba(255,255,255,0.85); margin-top:12px;">
+                技術を仕事として成立させるためのスクール
+            </p>
         </div>
     </header>
-    <!-- RBS Introduction & Curriculum Section -->
-    <section class="pamphlet-section bg-gray">
+
+    <!-- ============================================
+         2. RBSの強み (strength-card-v2)
+    ============================================ -->
+    <section class="draft-section section-bg-light">
         <div class="container">
-            <h2 class="section-title-pamphlet">RBSの強み</h2>
+            <p class="draft-section-label">Why RBS</p>
+            <h2 class="draft-main-title">RBSの強み</h2>
+            <p class="draft-main-subtitle">他のスクールとの違い</p>
 
-            <div class="curriculum-content">
-                <!-- カリキュラム詳細: 調色について -->
-                <div class="curriculum-card">
-                    <h3>「センス」ではなく「構造」で学ぶ</h3>
+            <div class="strengths-grid-2x2">
 
-                    <p class="curriculum-text">
-                        リペアにおいて、調色は非常に重要です。<br>
-                        色が合わなければ、どれだけ補修が整っていても評価は下がります。<br>
-                        一般的な色彩理論には色相・明度・彩度といった概念がありますが、正しい理論であっても0から学ぶ人には抽象的で難しいこともあります。
-                    </p>
-
-                    <div class="framework-box">
-                        <h4 class="framework-title">
-                            <span class="framework-badge">POINT</span><br class="sp-br">
-                            当スクールオリジナルの調色フレームワーク
-                        </h4>
-                        <p class="framework-desc">色の要素を分解し、現場で使える形に再構築しています。</p>
-                        <ul class="framework-list">
-                            <li><span>✔</span> 色を分解する</li>
-                            <li><span>✔</span> 足りない要素を特定する</li>
-                            <li><span>✔</span> 修正方向を明確にする</li>
-                        </ul>
-                        <p class="framework-footer">
-                            「なんとなく近づける」のではなく、“なぜその色を足すのか”が理解できる設計です。
-                        </p>
+                <div class="strength-card-v2">
+                    <div class="str-header">
+                        <span class="str-num">01</span>
+                        <h3 class="str-title">RBSオリジナルの<br>調色フレームワーク</h3>
                     </div>
+                    <p class="str-desc">
+                        リペアで最も難しい「調色」を、センスではなく論理で学びます。
+                        色を分解し・不足要素を特定し・修正方向を明確にする3ステップで、
+                        初心者でも再現性のある色合わせが身につきます。
+                    </p>
+                    <span class="str-arrow">→ 独自メソッドで効率的に習得できる</span>
+                </div>
 
-                    <div class="benefit-section">
-                        <p class="benefit-title">だから、RBSで学ぶと...</p>
-                        <div class="benefit-tags">
-                            <span class="benefit-tag">#再現性が高い</span>
-                            <span class="benefit-tag">#修正が早い</span>
-                            <span class="benefit-tag">#上達が早い</span>
-                            <span class="benefit-tag">#論理的に学べる</span>
+                <div class="strength-card-v2">
+                    <div class="str-header">
+                        <span class="str-num">02</span>
+                        <h3 class="str-title">動画でいつでも<br>予習・復習が可能</h3>
+                    </div>
+                    <p class="str-desc">
+                        講座動画はいつでもどこでも視聴可能。
+                        事前に知識を入れて講習に臨めるので、
+                        限られた時間で最大限に吸収できます。
+                    </p>
+                    <span class="str-arrow">→ 自分のペースで質の高い学習ができる</span>
+                </div>
+
+                <div class="strength-card-v2">
+                    <div class="str-header">
+                        <span class="str-num">03</span>
+                        <h3 class="str-title">補修スキルと<br>経営戦略を同時に学ぶ</h3>
+                    </div>
+                    <p class="str-desc">
+                        「技術はあるのに仕事が来ない」を解決します。
+                        受注・単価・顧客獲得まで、ビジネスとして成立させる力を習得。
+                    </p>
+                    <span class="str-arrow">→ スキルを仕事に変える戦略が身につく</span>
+                </div>
+
+                <div class="strength-card-v2 featured">
+                    <div class="str-header">
+                        <span class="str-num">04</span>
+                        <h3 class="str-title">株式会社TRC<br>（リペア事業会社）が運営</h3>
+                    </div>
+                    <p class="str-desc">
+                        年間4,000件・累計50,000件以上の現場実績を持つプロが直接指導。
+                        教科書的な知識ではなく、現場で通用する生きた技術を学べます。
+                    </p>
+                    <span class="str-arrow">→ 実績のあるプロから直接学べる</span>
+                </div>
+
+            </div>
+
+            <!-- 調色フレームワーク 詳細 -->
+            <div class="framework-box" style="margin-top:48px;">
+                <div class="str-header" style="margin-bottom: 16px;">
+                    <span class="str-num">01</span>
+                    <h3 class="str-title">RBSオリジナルの<br>調色フレームワーク</h3>
+                </div>
+                <h3 class="framework-title">
+                    <span class="framework-badge">POINT</span>
+                    「センス」ではなく「構造」で学ぶ当スクールオリジナルの調色フレームワーク
+                </h3>
+                <p class="framework-desc">
+                    リペアにおいて、調色は非常に重要です。色が合わなければ、どれだけ補修が整っていても評価は下がります。<br>
+                    一般的な色彩理論には色相・明度・彩度といった概念がありますが、正しい理論であっても0から学ぶ人には抽象的で難しいこともあります。<br>
+                    色の要素を分解し、現場で使える形に再構築しています。
+                </p>
+                <ul class="framework-list">
+                    <li><span>✔</span> 色を分解する</li>
+                    <li><span>✔</span> 足りない要素を特定する</li>
+                    <li><span>✔</span> 修正方向を明確にする</li>
+                </ul>
+                <p class="framework-footer">
+                    「なんとなく近づける」のではなく、"なぜその色を足すのか"が理解できる設計です。
+                </p>
+                <div class="benefit-section">
+                    <p class="benefit-title">だから、RBSで学ぶと...</p>
+                    <div class="benefit-tags">
+                        <span class="benefit-tag">#再現性が高い</span>
+                        <span class="benefit-tag">#修正が早い</span>
+                        <span class="benefit-tag">#上達が早い</span>
+                        <span class="benefit-tag">#論理的に学べる</span>
+                    </div>
+                </div>
+                <p class="curriculum-conclusion">調色が整理されると、リペア全体の精度が一段上がります。</p>
+            </div>
+
+
+            <!-- 動画でいつでも 詳細 -->
+            <div class="framework-box" style="margin-top:48px;">
+                <div class="str-header" style="margin-bottom: 16px;">
+                    <span class="str-num">02</span>
+                    <h3 class="str-title">動画でいつでも<br>予習・復習が可能</h3>
+                </div>
+                <h3 class="framework-title">
+                    <span class="framework-badge">POINT</span>
+                    「センス」ではなく「構造」で学ぶ当スクールオリジナルの調色フレームワーク
+                </h3>
+                <p class="framework-desc">
+                    リペアにおいて、調色は非常に重要です。色が合わなければ、どれだけ補修が整っていても評価は下がります。<br>
+                    一般的な色彩理論には色相・明度・彩度といった概念がありますが、正しい理論であっても0から学ぶ人には抽象的で難しいこともあります。<br>
+                    色の要素を分解し、現場で使える形に再構築しています。
+                </p>
+                <ul class="framework-list">
+                    <li><span>✔</span> 色を分解する</li>
+                    <li><span>✔</span> 足りない要素を特定する</li>
+                    <li><span>✔</span> 修正方向を明確にする</li>
+                </ul>
+                <p class="framework-footer">
+                    「なんとなく近づける」のではなく、"なぜその色を足すのか"が理解できる設計です。
+                </p>
+                <div class="benefit-section">
+                    <p class="benefit-title">だから、RBSで学ぶと...</p>
+                    <div class="benefit-tags">
+                        <span class="benefit-tag">#再現性が高い</span>
+                        <span class="benefit-tag">#修正が早い</span>
+                        <span class="benefit-tag">#上達が早い</span>
+                        <span class="benefit-tag">#論理的に学べる</span>
+                    </div>
+                </div>
+                <p class="curriculum-conclusion">調色が整理されると、リペア全体の精度が一段上がります。</p>
+            </div>
+
+
+            <!-- 補修スキルと 詳細 -->
+            <div class="framework-box" style="margin-top:48px;">
+                <div class="str-header" style="margin-bottom: 16px;">
+                    <span class="str-num">03</span>
+                    <h3 class="str-title">補修スキルと<br>経営戦略を同時に学ぶ</h3>
+                </div>
+                <h3 class="framework-title">
+                    <span class="framework-badge">POINT</span>
+                    「センス」ではなく「構造」で学ぶ当スクールオリジナルの調色フレームワーク
+                </h3>
+                <p class="framework-desc">
+                    リペアにおいて、調色は非常に重要です。色が合わなければ、どれだけ補修が整っていても評価は下がります。<br>
+                    一般的な色彩理論には色相・明度・彩度といった概念がありますが、正しい理論であっても0から学ぶ人には抽象的で難しいこともあります。<br>
+                    色の要素を分解し、現場で使える形に再構築しています。
+                </p>
+                <ul class="framework-list">
+                    <li><span>✔</span> 色を分解する</li>
+                    <li><span>✔</span> 足りない要素を特定する</li>
+                    <li><span>✔</span> 修正方向を明確にする</li>
+                </ul>
+                <p class="framework-footer">
+                    「なんとなく近づける」のではなく、"なぜその色を足すのか"が理解できる設計です。
+                </p>
+                <div class="benefit-section">
+                    <p class="benefit-title">だから、RBSで学ぶと...</p>
+                    <div class="benefit-tags">
+                        <span class="benefit-tag">#再現性が高い</span>
+                        <span class="benefit-tag">#修正が早い</span>
+                        <span class="benefit-tag">#上達が早い</span>
+                        <span class="benefit-tag">#論理的に学べる</span>
+                    </div>
+                </div>
+                <p class="curriculum-conclusion">調色が整理されると、リペア全体の精度が一段上がります。</p>
+            </div>
+
+
+            <!-- オンラインサロン -->
+            <div class="online-salon-box" style="margin-top:32px;">
+                <span class="online-salon-badge">COMING SOON</span>
+                <h3 class="online-salon-title">オンラインサロン始動予定</h3>
+                <p class="online-salon-date">2026年2月時点</p>
+                <p class="online-salon-text">
+                    講習終了後も、講師や卒業生と繋がれるコミュニティをご用意。<br>
+                    現場での悩み共有や技術相談など、孤独になりがちな職人活動をサポートします。
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============================================
+         3. 市場環境と将来性 (why-repair風)
+    ============================================ -->
+    <section class="draft-section" style="background:#f8f9fa;">
+        <div class="container">
+            <p class="draft-section-label">Market</p>
+            <h2 class="draft-main-title">市場環境と将来性</h2>
+            <p class="draft-main-subtitle">なぜ今、リペアなのか</p>
+
+            <div class="why-repair-list">
+
+                <div class="why-repair-item">
+                    <div class="item-image">
+                        <img src="assets/market_data_graph.png" alt="市場データ">
+                    </div>
+                    <div class="item-desc">
+                        <h3 class="item-title">迫りくる「2つの波」</h3>
+                        <div class="item-text">
+                            <p>2023年時点では、インフレの影響で住宅価格が10年前と比較して35%も高騰。新築の「建て控え」が加速し、建設業界の収入減少・廃業が増えています。</p>
+                            <p><strong>AIの進化：</strong>10〜20年後にAIによって減少する仕事量は約50%と言われています。</p>
+                            <p><strong>人口減少・高齢化：</strong>10年後には約2万人の人口減少が予測されています。</p>
+                            <p>そんな状況でも、<strong>「なくならない仕事」</strong>があります。それは、<strong>属人性が高い仕事</strong>です。</p>
                         </div>
                     </div>
-
-                    <p class="curriculum-conclusion">
-                        調色が整理されると、リペア全体の精度が一段上がります。
-                    </p>
                 </div>
 
-                <!-- オンラインサロン -->
-                <div class="online-salon-box">
-                    <span class="online-salon-badge">COMING SOON</span>
-
-                    <h3 class="online-salon-title">オンラインサロン始動予定</h3>
-                    <p class="online-salon-date">2026年2月時点</p>
-
-                    <p class="online-salon-text">
-                        講習終了後も、講師や卒業生と繋がれるコミュニティをご用意。<br>
-                        現場での悩み共有や技術相談など、孤独になりがちな職人活動をサポートします。
-                    </p>
+                <div class="why-repair-item">
+                    <div class="item-image">
+                        <img src="assets/after_repair.png" alt="リペア将来性">
+                    </div>
+                    <div class="item-desc">
+                        <h3 class="item-title">リペアが選ばれる理由</h3>
+                        <div class="item-text">
+                            <p>リペアとはありとあらゆる状態のキズや破損を、人の手や感覚によって微調整し、自然な風合いに仕上げていく技術です。いくらAIが発達しても、この現場対応力は代替できません。</p>
+                            <p>さらにリフォーム市場は右肩上がりであり、賃貸や施設メンテナンスなど、リペアが活躍できる場は拡大しています。</p>
+                            <p>「使い捨て」から「大切に使い続ける」持続可能な社会へのシフトが加速する中、リペア業界の将来性は非常に明るい状況です。</p>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-        </div>
-    </section>
-    <!-- Market & Future Section (New Concept) -->
-    <section class="pamphlet-section">
-        <div class="container">
-            <h2 class="section-title-pamphlet">市場環境と将来性</h2>
-            <div class="market-content">
-                <p>
-                    2023年時点では、インフレの影響で住宅価格が10年前と比較して35%も高騰しているというデータがあります。<br>
-                    新築の「建て控え」などの動きが加速し、建設業や職人の収入減少、倒産・廃業が今後一層増えていくと言われています。
-                </p>
-                <div class="highlight-box">
-                    <h3>迫りくる「2つの波」</h3>
-                    <ul>
-                        <li><strong>AIの進化:</strong> 10〜20年後にAIによって減少する仕事量は約50%と言われています。</li>
-                        <li><strong>人口減少・高齢化:</strong> 10年後には約2万人の人口減少が予測されています。</li>
-                    </ul>
-                </div>
 
-                <!-- Market Data Image -->
-                <div class="market-image-wrapper">
-                    <figure>
-                        <img src="assets/market_data_graph.png" alt="市場の推移（住宅価格上昇とAIによる仕事減少予測）">
-                        <figcaption>
-                            出典元: 野村総合研究所 / 国土交通省（イメージ図）
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <p>
-                    建築業界の勢いが下降気味である中、仕事はAIによって代替され、住宅も売れにくくなっていく。<br>
-                    そんな状況で、あなたは今まで通り過ごしますか？
-                </p>
-                <p class="market-text-mt">
-                    しかし、そんな中でも<strong>「なくならない仕事」</strong>があります。<br>
-                    それは、<strong>属人性が高い仕事</strong>です。
-                </p>
-                <p>
-                    リペアという仕事は、ありとあらゆる状態のキズや破損を、人の手や感覚によって微調整し、自然な風合いに仕上げていく技術です。<br>
-                    いくらAIが発達しても、この現場対応力は代替できません。<br>
-                    さらに、リフォーム市場は右肩上がりであり、賃貸や施設メンテナンスなど、リペアが活躍できる場は拡大しています。
-                </p>
-                <p class="market-conclusion">
-                    「代わりの効かない職人」になることで、<br>
-                    安定的かつ継続的に稼いでいく未来を、<br class="sp-br">RBSで実現しませんか？
-                </p>
+            <div class="why-repair-conclusion-v2">
+                <p>「代わりの効かない職人」になることで、<br><strong>安定的かつ継続的に稼いでいく未来を、RBSで実現しませんか？</strong></p>
             </div>
         </div>
     </section>
 
-    <!-- Learning Flow Section -->
-    <section class="pamphlet-section bg-gray">
+    <!-- ============================================
+         5. コース一覧・比較
+    ============================================ -->
+    <section class="draft-section" style="background: #f8f9fa;">
         <div class="container">
-            <h2 class="section-title-pamphlet">学習の流れ</h2>
-            <div class="flow-container">
-                <!-- Step 1 -->
-                <div class="flow-step">
-                    <div class="flow-step-label">STEP<br><span>01</span></div>
-                    <div class="flow-content">
-                        <div class="flow-title">お申込み</div>
-                        <div class="flow-desc">Webフォームまたはメールにてお申込みいただきます。</div>
-                    </div>
-                </div>
+            <p class="draft-section-label">Course</p>
+            <h2 class="draft-main-title">コース一覧・比較</h2>
+            <p class="draft-main-subtitle">あなたの目標に合わせて選べる3つのコース</p>
 
-                <div class="flow-arrow">▼</div>
-
-                <!-- Step 2 -->
-                <div class="flow-step">
-                    <div class="flow-step-label">STEP<br><span>02</span></div>
-                    <div class="flow-content">
-                        <div class="flow-title">事前動画で予習</div>
-                        <div class="flow-desc">講習当日までに、専用の学習動画で基礎知識や道具の使い方を予習します。</div>
-                    </div>
-                </div>
-
-                <div class="flow-arrow">▼</div>
-
-                <!-- Step 3 -->
-                <div class="flow-step">
-                    <div class="flow-step-label">STEP<br><span>03</span></div>
-                    <div class="flow-content">
-                        <div class="flow-title">講習・現場実習</div>
-                        <div class="flow-desc">コースに応じた日数（4日〜8日）で、実技中心の徹底指導を行います。</div>
-                    </div>
-                </div>
-
-                <div class="flow-arrow">▼</div>
-
-                <!-- Step 4 -->
-                <div class="flow-step">
-                    <div class="flow-step-label">STEP<br><span>04</span></div>
-                    <div class="flow-content">
-                        <div class="flow-title">添削サポート・フォロー</div>
-                        <div class="flow-desc">講習後の課題提出や、現場での疑問点などをサポートします。</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Courses Comparison -->
-    <section class="pamphlet-section">
-        <div class="container">
-            <h2 class="section-title-pamphlet">コース一覧・比較</h2>
-            <p class="courses-subtitle">あなたの目標に合わせて選べる3つのコース</p>
-
+            <!-- PC用テーブル -->
             <div class="comparison-table-wrapper pc-only-table">
                 <table class="comparison-table">
                     <thead>
@@ -260,7 +346,6 @@
 
             <!-- SP用カード表示 -->
             <div class="sp-only-cards">
-                <!-- ひよこコース -->
                 <div class="comparison-card">
                     <div class="comparison-card-header hiyoko">ひよこコース</div>
                     <div class="comparison-row profit-row">
@@ -285,7 +370,6 @@
                     </div>
                 </div>
 
-                <!-- コッココース -->
                 <div class="comparison-card">
                     <div class="comparison-card-header cocco">コッココース</div>
                     <div class="comparison-row profit-row">
@@ -310,7 +394,6 @@
                     </div>
                 </div>
 
-                <!-- フェニックスコース -->
                 <div class="comparison-card">
                     <div class="comparison-card-header phoenix">フェニックスコース</div>
                     <div class="comparison-row profit-row">
@@ -341,13 +424,16 @@
         </div>
     </section>
 
-
-    <!-- Work & Revenue -->
-    <section class="pamphlet-section bg-gray">
+    <!-- ============================================
+         6. 仕事例・収益モデル
+    ============================================ -->
+    <section class="draft-section section-bg-light">
         <div class="container">
-            <h2 class="section-title-pamphlet">仕事例・収益モデル</h2>
+            <p class="draft-section-label">Revenue</p>
+            <h2 class="draft-main-title">仕事例・収益モデル</h2>
+            <p class="draft-main-subtitle">リペア事業の収益性</p>
 
-            <!-- Before/After Images -->
+            <!-- Before/After -->
             <div class="before-after-section">
                 <h3 class="before-after-title">リペアによる修復事例</h3>
                 <div class="before-after-grid">
@@ -362,12 +448,11 @@
                 </div>
             </div>
 
-            <!-- 単価目安 -->
             <div class="revenue-box">
                 <h3 class="revenue-box-title">リペア事業の収益性</h3>
                 <p class="revenue-box-desc">
                     リペア事業は利益率が高い（90%〜95%）ビジネスモデルです。<br>
-                    継続的に仕事を安定して受注するのは簡単ではありませんが、経営ノウハウや営業戦略を立てることで、安定した売上を作ることが可能です。
+                    経営ノウハウや営業戦略を立てることで、安定した売上を作ることが可能です。
                 </p>
                 <div class="work-grid-auto">
                     <div class="work-card">
@@ -396,6 +481,8 @@
             </div>
 
             <h3 class="simulation-title">収益シミュレーション例</h3>
+
+            <!-- PC用テーブル -->
             <div class="comparison-table-wrapper pc-only-table simulation-table-wrapper">
                 <table class="comparison-table">
                     <thead>
@@ -441,106 +528,76 @@
                 </table>
             </div>
 
-            <!-- SP用カード表示（収益モデル） -->
+            <!-- SP用カード -->
             <div class="sp-only-cards">
-                <!-- Aさん -->
                 <div class="comparison-card">
                     <div class="comparison-card-header revenue-a">Aさん（副業・スタート）</div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">売上</span>
-                        <span class="comparison-value">650,000円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">原価/材料費</span>
-                        <span class="comparison-value">45,500円</span>
-                    </div>
-                    <div class="comparison-row profit-row">
-                        <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value bold">604,500円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">経費合計</span>
-                        <span class="comparison-value">30,000円</span>
-                    </div>
-                    <div class="comparison-row income-row">
-                        <span class="comparison-label">収入</span>
-                        <span class="comparison-value">¥574,500円</span>
-                    </div>
+                    <div class="comparison-row"><span class="comparison-label">売上</span><span
+                            class="comparison-value">650,000円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">原価/材料費</span><span
+                            class="comparison-value">45,500円</span></div>
+                    <div class="comparison-row profit-row"><span class="comparison-label">粗利益</span><span
+                            class="comparison-value bold">604,500円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">経費合計</span><span
+                            class="comparison-value">30,000円</span></div>
+                    <div class="comparison-row income-row"><span class="comparison-label">収入</span><span
+                            class="comparison-value">¥574,500円</span></div>
                 </div>
-
-                <!-- Bさん -->
                 <div class="comparison-card">
                     <div class="comparison-card-header revenue-b">Bさん（専業・安定）</div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">売上</span>
-                        <span class="comparison-value">1,200,000円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">原価/材料費</span>
-                        <span class="comparison-value">84,000円</span>
-                    </div>
-                    <div class="comparison-row profit-row">
-                        <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value bold">1,116,000円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">経費合計</span>
-                        <span class="comparison-value">40,000円</span>
-                    </div>
-                    <div class="comparison-row income-row">
-                        <span class="comparison-label">収入</span>
-                        <span class="comparison-value">¥1,076,000円</span>
-                    </div>
+                    <div class="comparison-row"><span class="comparison-label">売上</span><span
+                            class="comparison-value">1,200,000円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">原価/材料費</span><span
+                            class="comparison-value">84,000円</span></div>
+                    <div class="comparison-row profit-row"><span class="comparison-label">粗利益</span><span
+                            class="comparison-value bold">1,116,000円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">経費合計</span><span
+                            class="comparison-value">40,000円</span></div>
+                    <div class="comparison-row income-row"><span class="comparison-label">収入</span><span
+                            class="comparison-value">¥1,076,000円</span></div>
                 </div>
-
-                <!-- Cさん -->
                 <div class="comparison-card">
                     <div class="comparison-card-header revenue-c">Cさん（独立・拡大）</div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">売上</span>
-                        <span class="comparison-value">2,000,000円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">原価/材料費</span>
-                        <span class="comparison-value">140,000円</span>
-                    </div>
-                    <div class="comparison-row profit-row">
-                        <span class="comparison-label">粗利益</span>
-                        <span class="comparison-value bold">1,860,000円</span>
-                    </div>
-                    <div class="comparison-row">
-                        <span class="comparison-label">経費合計</span>
-                        <span class="comparison-value">50,000円</span>
-                    </div>
-                    <div class="comparison-row income-row">
-                        <span class="comparison-label">収入</span>
-                        <span class="comparison-value">¥1,810,000円</span>
-                    </div>
+                    <div class="comparison-row"><span class="comparison-label">売上</span><span
+                            class="comparison-value">2,000,000円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">原価/材料費</span><span
+                            class="comparison-value">140,000円</span></div>
+                    <div class="comparison-row profit-row"><span class="comparison-label">粗利益</span><span
+                            class="comparison-value bold">1,860,000円</span></div>
+                    <div class="comparison-row"><span class="comparison-label">経費合計</span><span
+                            class="comparison-value">50,000円</span></div>
+                    <div class="comparison-row income-row"><span class="comparison-label">収入</span><span
+                            class="comparison-value">¥1,810,000円</span></div>
                 </div>
             </div>
 
             <p class="revenue-note">
-                ※上記はモデルケースであり、売上、経費、収入を保証するものではありません。<br>
-                楽して稼げる仕事ではありませんが、本気で取り組むことで結果が出る仕事です。「本気でやりたい！」そんな方達と切磋琢磨しながらお付き合いしたいと思っています。
+                ※上記はモデルケースであり、売上・経費・収入を保証するものではありません。<br>
+                本気で取り組むことで結果が出る仕事です。
             </p>
         </div>
     </section>
 
-    <!-- Instructor & YouTube -->
-    <section class="pamphlet-section">
+    <!-- ============================================
+         7. 講師・メディア紹介
+    ============================================ -->
+    <section class="draft-section" style="background: #f8f9fa;">
         <div class="container">
-            <h2 class="section-title-pamphlet">講師・メディア紹介</h2>
+            <p class="draft-section-label">Instructor</p>
+            <h2 class="draft-main-title">講師・メディア紹介</h2>
+            <p class="draft-main-subtitle">現役プロから直接学べる</p>
+
             <div class="instructor-cards-wrapper">
                 <div class="instructor-card">
                     <h3>講師紹介</h3>
                     <div class="instructor-profile">
-                        <img src="assets/instructor_photo.png" alt="RBS講師 山田 太郎" class="instructor-photo">
+                        <img src="assets/instructor_photo.png" alt="講師" class="instructor-photo">
                         <div>
-                            <p class="instructor-name">山田 太郎 <span class="instructor-name-en">(Yamada Taro)</span></p>
+                            <p class="instructor-name">〇〇 〇〇 <span class="instructor-name-en"></span></p>
                             <p class="instructor-title">現役リペア職人 / <br class="sp-br">スクール代表</p>
                         </div>
                     </div>
-                    <p>年間4,000件以上の施工実績を持つ株式会社TRCのエース職人が直接指導します。現場で本当に使える「実践的な技術」と「お客様に喜ばれる対応力」を伝授します。</p>
+                    <p>年間4,000件以上の施工実績を持つ株式会社TRCのプロ職人が直接指導。現場で本当に使える「実践的な技術」と「お客様に喜ばれる対応力」を伝授します。</p>
                 </div>
                 <div class="youtube-card">
                     <h3>YouTubeチャンネル</h3>
@@ -556,60 +613,115 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq-section bg-gray">
+    <!-- ============================================
+         8. 会社概要
+    ============================================ -->
+    <section class="company-section-v2">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">FAQ</h2>
-                <p class="section-subtitle">よくある質問</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>Q. 未経験でも受講可能ですか</h3>
-                    <p>A. 可能です。基礎から学べるように設計されています。</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 年齢制限はありますか？</h3>
-                    <p>A. ありません。20代から60代まで幅広い年齢層の方が活躍されています。視力や腰痛などの不安があれば事前にご相談ください。</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 受講の際の道具は自分で揃える必要がありますか？</h3>
-                    <p>A. 講習中はスクールの道具をお貸しします。卒業後、ご自身で活動するための推奨ツールセット（有料）もご案内可能です。</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 受講期間はどのくらいですか？</h3>
-                    <p>A. 最短4日のひよこコースから、8日のコッココースなどがございます。ご自身の目標レベルに合わせて選択いただけます。</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 仕事や案件は保証されますか？</h3>
-                    <p>A. 保証制度はありません。その代わりに、再現性のある技術と、仕事として通用する力を身につけられます。</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Q. 地方でも受講できますか？</h3>
-                    <p>A. 東京での対面講習のほか、オンラインでのサポートや、短期集中での合宿形式（宿泊等は各自手配）も相談可能です。</p>
+            <p class="draft-section-label">About Us</p>
+            <h2 class="draft-main-title">会社概要</h2>
+
+            <div class="company-inner">
+                <table class="company-table-v2">
+                    <tr>
+                        <th>運営会社</th>
+                        <td>株式会社TRC</td>
+                    </tr>
+                    <tr>
+                        <th>事業内容</th>
+                        <td>リペア事業 / リペアスクール運営</td>
+                    </tr>
+                    <tr>
+                        <th>施工実績</th>
+                        <td>年間約4,000件 / 累計50,000件以上</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>神奈川県相模原市</td>
+                    </tr>
+                    <tr>
+                        <th>代表</th>
+                        <td>〇〇 〇〇</td>
+                    </tr>
+                </table>
+
+                <div class="company-stats-side">
+                    <div class="company-stat-box">
+                        <div class="company-stat-number">50,000<span>+</span></div>
+                        <div class="company-stat-label">累計施工実績</div>
+                    </div>
+                    <div class="company-stat-box">
+                        <div class="company-stat-number">4,000<span>+</span></div>
+                        <div class="company-stat-label">年間施工件数</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-area-pamphlet">
+    <!-- ============================================
+         9. FAQ
+    ============================================ -->
+    <section id="faq" class="faq-section-v2">
+        <div class="container">
+            <p class="draft-section-label">FAQ</p>
+            <h2 class="draft-main-title">よくある質問</h2>
+            <p class="draft-main-subtitle">お気軽にご確認ください</p>
+
+            <div class="faq-list-v2">
+                <div class="faq-item-v2">
+                    <div class="faq-q">
+                        <span class="faq-q-text">未経験でも受講可能ですか？</span>
+                    </div>
+                    <p class="faq-a">はい、可能です。基礎から学べるカリキュラムを設計しています。受講者の多くが未経験からスタートしています。</p>
+                </div>
+                <div class="faq-item-v2">
+                    <div class="faq-q">
+                        <span class="faq-q-text">年齢制限はありますか？</span>
+                    </div>
+                    <p class="faq-a">ありません。20代から60代まで幅広い年齢層の方が活躍されています。視力や腰痛などの不安があれば事前にご相談ください。</p>
+                </div>
+                <div class="faq-item-v2">
+                    <div class="faq-q">
+                        <span class="faq-q-text">受講の際の道具は必要ですか？</span>
+                    </div>
+                    <p class="faq-a">講習中はスクールの道具をお貸しします。卒業後、ご自身で活動するための推奨ツールセット（有料）もご案内可能です。</p>
+                </div>
+                <div class="faq-item-v2">
+                    <div class="faq-q">
+                        <span class="faq-q-text">地方からでも受講できますか？</span>
+                    </div>
+                    <p class="faq-a">神奈川県相模原市での対面講習のほか、短期集中での合宿形式（宿泊等は各自手配）も相談可能です。</p>
+                </div>
+                <div class="faq-item-v2">
+                    <div class="faq-q">
+                        <span class="faq-q-text">仕事や案件は保証されますか？</span>
+                    </div>
+                    <p class="faq-a">保証制度はありません。その代わりに、再現性のある技術と、仕事として通用する力を身につけられます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         10. 最終CTA
+    ============================================ -->
+    <section class="final-cta-section">
         <div class="container">
             <div class="recruitment-badge">現在、新規受講生を募集中です</div>
             <h2>お申込み・お問い合わせ</h2>
             <p class="cta-lead">あなたのキャリアを変える一歩を、ここから。</p>
-
             <div class="cta-buttons-wrapper">
                 <a href="mailto:rbs.waku.kiku@gmail.com" class="cta-button secondary-cta">
                     <span class="cta-inner">
                         <small>相談してから考えたい方</small>
-                        ✉️ メールで問い合わせる
+                        <i class="fa-solid fa-envelope"></i> <span class="mail-link-text">メールで問い合わせる</span>
                     </span>
                 </a>
                 <a href="https://repair-business-school.com" target="_blank" class="cta-button">
                     <span class="cta-inner">
                         <small>すぐに受講を決めたい方</small>
-                        🌐 公式サイトから申し込む
+                        <i class="fa-solid fa-globe"></i> 公式サイトから申し込む
                     </span>
                 </a>
             </div>
@@ -620,9 +732,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- フッター -->
     <footer>
-        <p>&copy; 2024 Repair Business School. All Rights Reserved.</p>
+        <p>&copy; 2025 Repair Business School. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
