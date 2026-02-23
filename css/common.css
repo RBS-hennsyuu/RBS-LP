@@ -263,40 +263,6 @@ a {
     margin: 0 auto;
 }
 
-/* secondary-cta（メールボタン）共通設定 */
-.cta-button.secondary-cta {
-    padding: 14px 32px;
-    line-height: 1.4;
-    background: #fff;
-    color: #2C5F7C;
-    border: none;
-    font-weight: 700;
-    box-shadow: none;
-    transition: background 0.2s, color 0.2s, transform 0.2s;
-    border-radius: 12px;
-    margin: 0 8px;
-    box-sizing: border-box;
-}
-
-.cta-button.secondary-cta:hover {
-    background: var(--accent-color);
-    color: #fff;
-    border: none;
-    opacity: 1;
-    transform: translateY(-2px);
-}
-
-.cta-button.secondary-cta .cta-inner small,
-.cta-button.secondary-cta .fa-envelope,
-.cta-button.secondary-cta .mail-link-text {
-    color: #2C5F7C;
-}
-
-.cta-button.secondary-cta:hover .cta-inner small,
-.cta-button.secondary-cta:hover .fa-envelope,
-.cta-button.secondary-cta:hover .mail-link-text {
-    color: #fff;
-}
 
 /* ================================================== */
 /*                NAVIGATION HEADER                  */

@@ -878,7 +878,7 @@
 
 .final-cta-section h2,
 .final-cta-section .cta-lead {
-    color: #fff !important;
+    color: #fff;
 }
 
 .final-cta-section .final-cta-title {
@@ -935,7 +935,7 @@
 }
 
 .cta-note {
-    color: #fff !important;
+    color: #fff;
 }
 
 /* ================================================== */
