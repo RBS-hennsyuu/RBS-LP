@@ -44,6 +44,7 @@
     .course-description-blocks {
         flex-direction: column;
         gap: 24px;
+        display: block;
     }
 }
 /* コースカラー変数の明示定義（common.cssの:rootと同値） */
