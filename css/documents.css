@@ -360,7 +360,7 @@
 }
 
 .strength-card-v2 {
-    background: #f8f9fa;
+    background: #fff;
     border-radius: 16px;
     padding: 32px 28px;
     border: 1.5px solid var(--border-blue);
@@ -565,8 +565,9 @@
     background: var(--course-dark);
 }
 
-.comparison-card-header.revenue-c {
-    background: #C0392B;
+.sp-only-cards .comparison-card .income-row .comparison-value {
+    color: #C0392B;
+    font-weight: bold;
 }
 
 .comparison-row {
