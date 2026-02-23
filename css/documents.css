@@ -1,3 +1,155 @@
+@media (min-width: 901px) {
+    .course-description-blocks {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 36px;
+    }
+    .course-description-blocks > div {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1 1 0;
+        max-width: 420px;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    .hiyoko-salon-box, .cocco-salon-box, .phoenix-salon-box {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        flex: 1 1 0;
+        max-width: 420px;
+        min-width: 0;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+    .hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .course-modal-btn {
+        margin-top: auto;
+        margin-bottom: 0;
+        align-self: center;
+    }
+}
+@media (min-width: 901px) {
+    .course-description-blocks {
+        display: flex;
+        gap: 32px;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 36px;
+    }
+    .course-description-blocks > div {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .course-modal-btn {
+        margin-top: auto;
+    }
+}
+.hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+    width: 100%;
+}
+.course-modal-btn {
+    align-self: center;
+}
+/* =============================== */
+/* コース紹介ボタン装飾 */
+/* =============================== */
+.course-modal-btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 26px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    letter-spacing: 0.07em;
+}
+.course-modal-btn[data-course="hiyoko"] {
+    background: var(--course-green, #5CB85C);
+}
+.course-modal-btn[data-course="cocco"] {
+    background: var(--course-teal, #4DBCC5);
+}
+.course-modal-btn[data-course="phoenix"] {
+    background: var(--course-dark, #2C3E50);
+}
+.course-modal-btn:hover {
+    opacity: 0.88;
+    transform: translateY(-2px) scale(1.03);
+}
+/* =============================== */
+/* コース紹介モーダル */
+/* =============================== */
+.course-modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.45);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s;
+}
+.course-modal-overlay.active {
+    display: flex;
+}
+.course-modal-content {
+    background: #fff;
+    border-radius: 14px;
+    max-width: 420px;
+    width: 90vw;
+    padding: 32px 24px 24px 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    animation: modalFadeIn 0.2s;
+}
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.course-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.course-modal-close:hover {
+    color: #222;
+}
+/* PC比較表の価格・期間セルにも背景色 */
+.comparison-table .profit-row .row-header,
+.comparison-table .period-row .row-header {
+    background-color: var(--profit-bg);
+}
+/* PC比較表の価格・期間行にSPカードと同じ背景色（trに適用） */
+.comparison-table .profit-row,
+.comparison-table .period-row {
+    background-color: var(--profit-bg);
+}
 /* コースラベル共通デザイン */
 .course-labels {
     margin: 8px 0 0 0;
@@ -29,16 +181,10 @@
 }
 /* コース説明3カード横並び（PCのみ） */
 .course-description-blocks {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    align-items: stretch;
-    margin-bottom: 36px;
+    /* SP時はblock表示 */
 }
 .course-description-blocks > div {
-    flex: 1 1 0;
-    min-width: 0;
-    max-width: 420px;
+    /* SP時はblock表示 */
 }
 @media (max-width: 900px) {
     .course-description-blocks {
@@ -61,8 +207,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 36px;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,8 +245,6 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 36px;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -150,14 +292,12 @@
 /* ひよこコース用オンラインサロン風カード */
 .hiyoko-salon-box {
     background: #f8f9fa;
-    border: 2px solid var(--course-green, #7cb342);
+    border: 3.5px solid var(--course-green, #7cb342);
     border-radius: 12px;
     padding: 30px;
     text-align: center;
     position: relative;
     overflow: hidden;
-    margin-bottom: 36px;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -331,13 +471,12 @@
 .comparison-table .income-highlight td:not(.row-header) {
     color: #C0392B;
     font-weight: bold;
-}
+/* ================================================== */
 /* ================================================== */
 /*      documents.html / documents_draft.html 専用    */
 /* ================================================== */
-
-/* ================================================== */
 /*                 ヒーローセクション                   */
+}
 /* ================================================== */
 
 .pamphlet-hero {
@@ -805,6 +944,23 @@
 .comparison-table-wrapper {
     overflow-x: auto;
     margin-top: 40px;
+}
+
+/* 表示切り替え用ユーティリティ */
+.sp-only {
+    display: none;
+}
+.pc-only {
+    display: inline;
+}
+
+@media (max-width: 900px) {
+    .sp-only {
+        display: inline;
+    }
+    .pc-only {
+        display: none;
+    }
 }
 
 .comparison-table {

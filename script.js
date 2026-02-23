@@ -6,6 +6,48 @@ const CONFIG = {
 
 // Modal functionality
 document.addEventListener('DOMContentLoaded', function () {
+        // コース紹介モーダル
+        const courseModal = document.getElementById('courseModal');
+        const courseModalBody = document.getElementById('courseModalBody');
+        const courseModalClose = document.querySelector('.course-modal-close');
+        const courseBtns = document.querySelectorAll('.course-modal-btn');
+
+        // コースごとの内容
+        const courseContents = {
+            hiyoko: `<h2>ひよこコース紹介</h2><p>リペア初心者から中級者向け。3日間の集中的なトレーニングと事前予習、添削サポートで基礎から実践まで学べます。</p>`,
+            cocco: `<h2>コッココース紹介</h2><p>中級者から上級者向け。8日間で高度な補修技術や弱点克服トレーニング、復習キットも充実。</p>`,
+            phoenix: `<h2>フェニックスコース紹介</h2><p>独立・経営者向けの完全コンサルティング。市場調査や戦略作成、定期フォローでビジネス成長を徹底サポート。</p>`
+        };
+
+        courseBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const course = btn.getAttribute('data-course');
+                courseModalBody.innerHTML = courseContents[course] || '';
+                courseModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        if (courseModalClose) {
+            courseModalClose.addEventListener('click', function() {
+                courseModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+        // モーダル外クリックで閉じる
+        courseModal.addEventListener('click', function(e) {
+            if (e.target === courseModal) {
+                courseModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        // ESCキーで閉じる
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && courseModal.classList.contains('active')) {
+                courseModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
     // Hamburger Menu
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');

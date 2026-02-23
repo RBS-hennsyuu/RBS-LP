@@ -337,6 +337,7 @@
                         事前に配信するRBSのリペア技法を予習することで、実際の講習では手を動かす時間を最大限に確保し、濃密な時間を過ごすことができます。<br>
                         さらに、研修後も郵送での添削を通じて技術の精度を高めることができます。
                     </p>
+                    <button class="course-modal-btn" data-course="hiyoko">コースの紹介を見る</button>
                 </div>
                 <div class="cocco-salon-box">
                     <span class="cocco-salon-badge">コッココース</span>
@@ -352,6 +353,7 @@
                         建材シートの張り替えや建具の陥没、石材の破損など、通常の補修業者が手掛けないような難易度の高い作業も学べます。<br>
                         復習キットを使って研修後もスキルの精度を高め続けることができ、弱点克服トレーニングも充実しています。
                     </p>
+                    <button class="course-modal-btn" data-course="cocco">コースの紹介を見る</button>
                 </div>
                 <div class="phoenix-salon-box">
                     <span class="phoenix-salon-badge">フェニックスコース</span>
@@ -367,6 +369,7 @@
                         あなたのビジネスを成長させるための戦略を一緒に立て、実行に移します。<br>
                         20年以上の経験を持つ講師が、あなたの経営を成功に導くための具体的なアドバイスを提供します。
                     </p>
+                    <button class="course-modal-btn" data-course="phoenix">コースの紹介を見る</button>
                 </div>
             </div>
 
@@ -772,7 +775,7 @@
                 </a>
             </div>
             <p class="cta-note">
-                「どのコースがいいか迷っている」「まずは相談したい」という方は、<br class="pc-only">
+                「どのコースがいいか迷っている」<br class="sp-only">「まずは相談したい」という方は、<br>
                 お気軽にメールにてご連絡ください。
             </p>
         </div>
@@ -787,4 +790,14 @@
 
 </body>
 
+    <!-- コース紹介モーダル -->
+    <div id="courseModal" class="course-modal-overlay">
+        <div class="course-modal-content">
+            <button class="course-modal-close" aria-label="閉じる">&times;</button>
+            <div id="courseModalBody">
+                <!-- JSで内容を切り替え -->
+            </div>
+        </div>
+    </div>
+</body>
 </html>
