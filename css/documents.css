@@ -1,3 +1,23 @@
+/* PC用収益シミュレーション表 粗利益行 装飾 */
+.comparison-table .profit-highlight {
+    background-color: var(--profit-bg);
+}
+.comparison-table .profit-highlight td {
+    background-color: transparent;
+    color: #222;
+    font-weight: bold;
+}
+/* PC用収益シミュレーション表 収入行 装飾 */
+.comparison-table .income-highlight {
+    background-color: var(--income-bg);
+}
+.comparison-table .income-highlight td {
+    background-color: transparent;
+}
+.comparison-table .income-highlight td:not(.row-header) {
+    color: #C0392B;
+    font-weight: bold;
+}
 /* ================================================== */
 /*      documents.html / documents_draft.html 専用    */
 /* ================================================== */
@@ -554,14 +574,6 @@
 }
 
 .comparison-card-header.phoenix {
-    background: var(--course-dark);
-}
-
-.comparison-card-header.revenue-a {
-    background: var(--course-teal);
-}
-
-.comparison-card-header.revenue-b {
     background: var(--course-dark);
 }
 
@@ -1148,7 +1160,7 @@
 @media (max-width: 600px) {
     .cta-buttons-wrapper {
         flex-direction: column;
-        gap: 12px;
+        gap: 28px;
         align-items: center;
     }
 }
@@ -1252,6 +1264,11 @@
         gap: 12px;
         max-width: 320px;
         margin: 0 auto;
+    }
+
+    /* コース比較カードの値を左寄せ */
+    .sp-only-cards .comparison-value {
+        text-align: left;
     }
 
     .benefit-tag {
