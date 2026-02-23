@@ -13,6 +13,18 @@
     text-align: center;
 }
 
+/* ヒーローセクション用タイトル・ラベル・サブタイトル */
+.pamphlet-hero .draft-section-label {
+    color: #fff;
+}
+.pamphlet-hero .draft-main-title {
+    color: #fff;
+    font-size: clamp(24px, 5vw, 44px);
+}
+.pamphlet-hero .draft-main-subtitle {
+    color: #fff;
+    margin-top: 12px;
+}
 .pamphlet-hero h1 {
     font-size: clamp(24px, 5vw, 40px);
     margin-bottom: 20px;
