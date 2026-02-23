@@ -1,3 +1,316 @@
+/* コースラベル共通デザイン */
+.course-labels {
+    margin: 8px 0 0 0;
+    display: flex;
+    gap: 8px;
+}
+.course-label {
+    display: inline-block;
+    padding: 2px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 999px;
+    background: var(--course-green, #2CB67D);
+    letter-spacing: 0.05em;
+}
+.hiyoko-salon-box .course-label {
+    background: var(--course-green, #2CB67D);
+}
+.cocco-salon-box .course-label {
+    background: var(--course-teal, #2C5F7C);
+}
+.phoenix-salon-box .course-label {
+    background: var(--course-dark, #22223B);
+}
+/* コースカード内キャラ画像の上マージン調整 */
+.course-description-blocks .course-desc-img {
+    margin-top: 30px;
+}
+/* コース説明3カード横並び（PCのみ） */
+.course-description-blocks {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 36px;
+}
+.course-description-blocks > div {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 420px;
+}
+@media (max-width: 900px) {
+    .course-description-blocks {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+/* コースカラー変数の明示定義（common.cssの:rootと同値） */
+:root {
+    --course-teal: #4DBCC5;
+    --course-dark: #2C3E50;
+}
+/* コッコ・フェニックスコース用オンラインサロン風カード */
+.cocco-salon-box {
+    background: #f8f9fa;
+    border: 3.5px solid var(--course-teal, #009999);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 36px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cocco-salon-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--course-teal, #26b6b6);
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 13px 36px 13px 22px;
+    border-bottom-right-radius: 14px;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    box-shadow: 0 2px 8px rgba(38,182,182,0.10);
+}
+.cocco-salon-title {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+.cocco-salon-desc {
+    text-align: left;
+    line-height: 1.8;
+    color: #444;
+    max-width: 95%;
+    margin: 40px 10px 0;
+}
+.phoenix-salon-box {
+    background: #f8f9fa;
+    border: 3.5px solid var(--course-dark, #1a3550);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 36px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.phoenix-salon-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--course-dark, #2C5F7C);
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 13px 36px 13px 22px;
+    border-bottom-right-radius: 14px;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    box-shadow: 0 2px 8px rgba(44,95,124,0.10);
+}
+.phoenix-salon-title {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+.phoenix-salon-desc {
+    text-align: left;
+    line-height: 1.8;
+    color: #444;
+    max-width: 95%;
+    margin: 40px 10px 0;
+}
+@media (max-width: 600px) {
+    .cocco-salon-box, .phoenix-salon-box {
+        padding: 18px 6px;
+        border-radius: 8px;
+    }
+    .cocco-salon-title, .phoenix-salon-title {
+        font-size: 1.08rem;
+    }
+    .cocco-salon-badge, .phoenix-salon-badge {
+        font-size: 1.02rem;
+        padding: 9px 18px 9px 12px;
+        border-bottom-right-radius: 8px;
+    }
+}
+/* ひよこコース用オンラインサロン風カード */
+.hiyoko-salon-box {
+    background: #f8f9fa;
+    border: 2px solid var(--course-green, #7cb342);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 36px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hiyoko-salon-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--course-green, #7cb342);
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 13px 36px 13px 22px;
+    border-bottom-right-radius: 14px;
+    font-weight: bold;
+    letter-spacing: 0.10em;
+    box-shadow: 0 2px 8px rgba(124,179,66,0.10);
+}
+.hiyoko-salon-title {
+    color: var(--navy);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+.hiyoko-salon-desc {
+    text-align: left;
+    line-height: 1.8;
+    color: #444;
+    max-width: 95%;
+    margin: 40px 10px 0;
+}
+@media (max-width: 600px) {
+    .hiyoko-salon-box {
+        padding: 18px 6px;
+        border-radius: 8px;
+    }
+    .hiyoko-salon-title {
+        font-size: 1.08rem;
+    }
+    .hiyoko-salon-badge {
+        font-size: 1.02rem;
+        padding: 9px 18px 9px 12px;
+        border-bottom-right-radius: 8px;
+    }
+}
+/* ひよこコース外枠カード（オンラインサロンCOMING SOONの反転デザイン） */
+.hiyoko-invert-card {
+    background: #fff;
+    border-left: 10px solid var(--accent-color, #F9B233);
+    border-radius: 16px;
+    padding: 32px 24px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 16px rgba(249,178,51,0.10);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hiyoko-invert-title {
+    color: var(--accent-color, #F9B233);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 14px;
+    letter-spacing: 0.08em;
+}
+@media (max-width: 600px) {
+    .hiyoko-invert-card {
+        padding: 20px 10px;
+        border-radius: 10px;
+        border-left-width: 7px;
+    }
+    .hiyoko-invert-title {
+        font-size: 1.1rem;
+    }
+}
+/* ひよこコースバッジ（サロンCOMING SOON風・左枠） */
+.hiyoko-badge {
+    display: inline-block;
+    background: var(--accent-color, #F9B233);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 28px 8px 18px;
+    border-radius: 0 18px 18px 0;
+    border-left: 8px solid #fff;
+    margin-bottom: 18px;
+    margin-left: 0;
+    letter-spacing: 0.08em;
+    box-shadow: 0 2px 8px rgba(249,178,51,0.10);
+}
+@media (max-width: 600px) {
+    .hiyoko-badge {
+        font-size: 1rem;
+        padding: 7px 18px 7px 12px;
+        border-radius: 0 12px 12px 0;
+        border-left-width: 6px;
+    }
+}
+/* =============================== */
+/*   ひよこコース専用カード         */
+/* =============================== */
+.course-feature-card {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    background: #fffbe7;
+    border: 2px solid var(--course-green, #aee571);
+    border-radius: 18px;
+    padding: 32px 24px;
+    margin-bottom: 36px;
+    box-shadow: 0 4px 16px rgba(200,200,100,0.07);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.course-feature-img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 16px;
+    background: #fff;
+    border: 1.5px solid #e0e0a0;
+    flex-shrink: 0;
+}
+.course-feature-body {
+    flex: 1;
+}
+.course-feature-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--course-green, #7cb342);
+    margin-bottom: 10px;
+}
+.course-feature-desc {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.8;
+}
+@media (max-width: 600px) {
+    .course-feature-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 10px;
+        gap: 16px;
+    }
+    .course-feature-img {
+        width: 90px;
+        height: 90px;
+    }
+    .course-feature-title {
+        font-size: 1.1rem;
+    }
+    .course-feature-desc {
+        font-size: 0.97rem;
+    }
+}
 /* PC用収益シミュレーション表 粗利益行 装飾 */
 .comparison-table .profit-highlight {
     background-color: var(--profit-bg);
@@ -571,10 +884,14 @@
 
 .comparison-card-header.cocco {
     background: var(--course-teal);
+    border: 3.5px solid var(--course-teal);
+    border-radius: 12px 12px 0 0;
 }
 
 .comparison-card-header.phoenix {
     background: var(--course-dark);
+    border: 3.5px solid var(--course-dark);
+    border-radius: 12px 12px 0 0;
 }
 
 .sp-only-cards .comparison-card .income-row .comparison-value {
