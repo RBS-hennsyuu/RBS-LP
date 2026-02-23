@@ -203,6 +203,7 @@
 .why-repair-section {
     background-color: var(--bg-light);
     text-align: center;
+    padding-bottom: 80px;
 }
 
 .why-repair-list {
@@ -256,7 +257,7 @@
 /*                 ドラフトLP共通スタイル               */
 /* ================================================== */
 
-.draft-section {
+.pamphlet-section {
     padding: 80px 0;
 }
 
@@ -288,7 +289,7 @@
     font-size: 14px;
     color: #666;
     text-align: center;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
 }
 
 /* ================================================== */
@@ -381,10 +382,6 @@
 /* ================================================== */
 /*                 講習概要                             */
 /* ================================================== */
-
-.pamphlet-section {
-    padding: 80px 0;
-}
 
 .overview-layout {
     max-width: 860px;
@@ -740,7 +737,7 @@
 
 .company-section-v2 .draft-main-title {
     color: #fff;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
 }
 
 .company-inner {
@@ -1360,11 +1357,12 @@
     }
 
     .why-repair-conclusion-v2 {
+        margin: 20px auto 0;
         padding: 28px 0 0;
         text-align: left;
     }
 
-    .draft-section {
+    .pamphlet-section {
         padding: 56px 0;
     }
 

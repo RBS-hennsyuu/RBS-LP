@@ -9,7 +9,7 @@
 .pamphlet-hero {
     background-color: var(--navy);
     color: #fff;
-    padding: 120px 0 60px;
+    padding: 120px 0 0;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .section-bg-light {
-    padding: 0 0 80px 0;
+    padding: 80px 0 80px 0;
 }
 
 .draft-section-label {
@@ -63,7 +63,7 @@
     font-size: 14px;
     color: #666;
     text-align: center;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
 }
 
 /* ================================================== */
@@ -334,6 +334,10 @@
 /* ================================================== */
 /*                 RBSの強み（ドキュメント版）          */
 /* ================================================== */
+
+#strengths {
+    background: #fbe0e0;
+}
 
 .strengths-grid-2x2 {
     display: grid;
@@ -759,7 +763,7 @@
 }
 
 .work-card {
-    background: var(--bg-light);
+    background: #fff;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -974,7 +978,7 @@
 
 .company-section-v2 .draft-main-title {
     color: #fff;
-    margin-bottom: 52px;
+    padding-bottom: 52px;
 }
 
 .company-inner {
@@ -1085,7 +1089,7 @@
 }
 
 .cta-button.secondary-cta:hover {
-    background: var(--accent-color);
+    background: var(--teal-light);
     color: #fff;
     border: none;
     opacity: 1;
@@ -1209,7 +1213,7 @@
     }
 
     .section-bg-light {
-        padding: 0 0 56px 0;
+        padding: 56px 0 56px 0;
     }
 
     .curriculum-card h3 {
