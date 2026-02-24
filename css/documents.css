@@ -175,6 +175,11 @@
     --course-teal: #4DBCC5;
     --course-dark: #2C3E50;
 }
+/* Anchor offset for fixed header: jump targets shouldn't be hidden */
+#courses { scroll-margin-top: 110px; }
+@media (max-width: 900px) {
+    #courses { scroll-margin-top: 90px; }
+}
 /* コッコ・フェニックスコース用オンラインサロン風カード */
 .cocco-salon-box {
     background: #f8f9fa;
