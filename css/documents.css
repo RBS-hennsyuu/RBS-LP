@@ -1646,14 +1646,6 @@
     color: #666;
 }
 
-.final-cta-btn-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 24px;
-    text-align: center;
-}
-
 /* ================================================== */
 /*              PC RESPONSIVE - Documents            */
 /* ================================================== */
@@ -1864,10 +1856,6 @@
         .course-modal-btn {
             margin-top: auto !important;
         }
-    }
-
-    .final-cta-btn-wrap {
-        margin-top: 24px;
     }
 }
 
