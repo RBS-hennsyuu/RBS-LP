@@ -93,6 +93,26 @@
     opacity: 0.88;
     transform: translateY(-2px) scale(1.03);
 }
+/* リンク版ボタン（リンクをボタンとして表示） */
+.course-modal-link {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 26px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 999px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    text-align: center;
+}
+.course-modal-link[data-course="hiyoko"] { background: var(--course-green, #5CB85C); }
+.course-modal-link[data-course="cocco"] { background: var(--course-teal, #4DBCC5); }
+.course-modal-link[data-course="phoenix"] { background: var(--course-dark, #2C3E50); }
+.course-modal-link:hover { opacity: 0.88; transform: translateY(-2px) scale(1.03); }
 /* =============================== */
 /* コース紹介モーダル */
 /* =============================== */
@@ -118,6 +138,10 @@
     max-width: 420px;
     width: 90vw;
     padding: 32px 24px 24px 24px;
+    /* モーダル本文が長い場合は内部でスクロールさせる */
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     box-shadow: 0 8px 32px rgba(0,0,0,0.18);
     position: relative;
     animation: modalFadeIn 0.2s;
