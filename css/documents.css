@@ -113,57 +113,7 @@
 .course-modal-link[data-course="cocco"] { background: var(--course-teal, #4DBCC5); }
 .course-modal-link[data-course="phoenix"] { background: var(--course-dark, #2C3E50); }
 .course-modal-link:hover { opacity: 0.88; transform: translateY(-2px) scale(1.03); }
-/* =============================== */
-/* コース紹介モーダル */
-/* =============================== */
-.course-modal-overlay {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0,0,0,0.45);
-    justify-content: center;
-    align-items: center;
-    transition: opacity 0.2s;
-}
-.course-modal-overlay.active {
-    display: flex;
-}
-.course-modal-content {
-    background: #fff;
-    border-radius: 14px;
-    max-width: 420px;
-    width: 90vw;
-    padding: 32px 24px 24px 24px;
-    /* モーダル本文が長い場合は内部でスクロールさせる */
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-    position: relative;
-    animation: modalFadeIn 0.2s;
-}
-@keyframes modalFadeIn {
-    from { opacity: 0; transform: translateY(40px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.course-modal-close {
-    position: absolute;
-    top: 12px;
-    right: 18px;
-    background: none;
-    border: none;
-    font-size: 2rem;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-.course-modal-close:hover {
-    color: #222;
-}
+/* course modal styles removed (feature disabled) */
 /* PC比較表の価格・期間セルにも背景色 */
 .comparison-table .profit-row .row-header,
 .comparison-table .period-row .row-header {
