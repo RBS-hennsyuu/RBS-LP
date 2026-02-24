@@ -692,6 +692,11 @@ footer {
     }
 }
 
+/* Small icon helper classes */
+.icon-lead { margin-right: 0.5em; color: #2c3e50; }
+.icon-youtube { color: #FF0000; }
+.icon-teal { color: #2C5F7C; margin-right: 8px; }
+
 /* 募集状況バッジ */
 .recruitment-badge {
     display: inline-block;
