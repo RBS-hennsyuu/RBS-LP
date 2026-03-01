@@ -595,6 +595,8 @@
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 30px;
+    border-left: 4px solid var(--accent-color);
+    border-top: 3px solid var(--accent-color);
 }
 
 .framework-title {
