@@ -1,0 +1,619 @@
+/* ================================================== */
+/*   courses.css – コース紹介ページ共通スタイル         */
+/*   index.html / documents.html のデザイン体系に統一   */
+/* ================================================== */
+
+/* ---- コースページ専用ナビ（常時白背景） ---- */
+body .nav-header {
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+body .nav-menu li a {
+    color: var(--navy);
+}
+
+body .hamburger span {
+    background: var(--navy);
+}
+
+/* ---- ナビ上部スペーサ ---- */
+.course-wrap {
+    padding-top: 80px;
+    /* nav-header の高さ分 */
+}
+
+@media (max-width: 900px) {
+    .course-wrap {
+        padding-top: 60px;
+    }
+}
+
+/* =============================== */
+/*   ヒーロー                       */
+/* =============================== */
+.course-hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 72px 0 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.course-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.course-hero-badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 12px;
+}
+
+.course-hero h1 {
+    font-size: clamp(22px, 5vw, 38px);
+    font-weight: 900;
+    line-height: 1.35;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.course-hero-subtitle {
+    font-size: clamp(14px, 2.5vw, 17px);
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 28px;
+}
+
+.course-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.course-hero-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1.5px solid rgba(255, 255, 255, 0.32);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+}
+
+/* 戻るリンク */
+.course-back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+    margin-top: 12px;
+}
+
+.course-back-link:hover {
+    color: #fff;
+}
+
+/* =============================== */
+/*   コースヒーロー画像             */
+/* =============================== */
+.course-hero-img-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.course-hero-img-wrap img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.28));
+}
+
+@media (max-width: 600px) {
+    .course-hero-img-wrap img {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* =============================== */
+/*   セクション共通                 */
+/* =============================== */
+.course-section {
+    padding: 72px 0;
+}
+
+.course-section+.course-section {
+    border-top: 1px solid var(--border-subtle);
+}
+
+.course-section.bg-light {
+    background: var(--bg-light);
+}
+
+/* セクションタイトル */
+.course-section-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.course-section-title {
+    font-size: clamp(20px, 3.5vw, 28px);
+    font-weight: 900;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.course-section-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* =============================== */
+/*   コース概要カード               */
+/* =============================== */
+.course-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .course-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+}
+
+.course-overview-card {
+    background: #fff;
+    border: 1.5px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 24px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s;
+    /* transformは無効化（カードが動かないように） */
+}
+
+.course-overview-card:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    /* ホバー時も通常と同じ影にして変化をなくす */
+    /* transformを削除して位置を固定（動かない） */
+}
+
+.course-overview-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.icon-bg-green {
+    background: rgba(92, 184, 92, 0.12);
+    color: var(--course-green, #5CB85C);
+}
+
+.icon-bg-teal {
+    background: rgba(77, 188, 197, 0.12);
+    color: var(--course-teal, #4DBCC5);
+}
+
+.icon-bg-orange {
+    background: rgba(255, 107, 53, 0.12);
+    color: var(--accent-color);
+}
+
+.icon-bg-navy {
+    background: rgba(27, 58, 87, 0.10);
+    color: var(--navy);
+}
+
+.course-overview-label {
+    font-size: 12px;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.course-overview-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+/* =============================== */
+/*   ステップ（学習フロー）         */
+/* =============================== */
+.course-steps {
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.course-step {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    position: relative;
+}
+
+/* コネクタライン */
+.course-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 44px;
+    bottom: -2px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-color) 0%, var(--border-subtle) 100%);
+}
+
+.course-step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(27, 58, 87, 0.18);
+}
+
+.course-step-body {
+    background: #fff;
+    border: 1.5px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 24px;
+    flex: 1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.course-step-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.course-step-desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* =============================== */
+/*   特徴リスト                     */
+/* =============================== */
+.course-feature-list {
+    list-style: none;
+    padding: 0;
+    max-width: 720px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.course-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    border: 1.5px solid var(--border-subtle);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    font-size: 15px;
+    color: #444;
+    line-height: 1.7;
+}
+
+.course-feature-list li::before {
+    content: '✓';
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* =============================== */
+/*   コース説明テキスト（文章形式） */
+/* =============================== */
+.course-desc-text {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.course-desc-text p {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 1.4em;
+}
+
+.course-desc-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* =============================== */
+/*   コース画像ギャラリー（2枚）   */
+/* =============================== */
+.course-img-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    max-width: 720px;
+    margin: 36px auto 0;
+}
+
+.course-img-gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+}
+
+@media (max-width: 600px) {
+    .course-img-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =============================== */
+/*   特典ボックス                   */
+/* =============================== */
+.course-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.course-benefit-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    border: 1.5px solid var(--border-subtle);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.course-benefit-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.course-benefit-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.course-benefit-desc {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* =============================== */
+/*   料金セクション                 */
+/* =============================== */
+.course-price-box {
+    max-width: 520px;
+    margin: 0 auto;
+    background: var(--navy);
+    border-radius: 20px;
+    padding: 40px 36px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(27, 58, 87, 0.22);
+    position: relative;
+    overflow: hidden;
+}
+
+.course-price-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: none;
+    /* グラデーションを削除して単色表示にする */
+    pointer-events: none;
+}
+
+.course-price-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+.course-price-value {
+    font-size: clamp(30px, 6vw, 48px);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -0.02em;
+    margin-bottom: 6px;
+}
+
+.course-price-tax {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+}
+
+.course-price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.course-price-row span:last-child {
+    font-weight: 700;
+    color: #fff;
+}
+
+/* =============================== */
+/*   CTA セクション                 */
+/* =============================== */
+.course-cta-section {
+    background: var(--navy);
+    padding: 72px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.course-cta-title {
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.course-cta-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.course-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 16px 40px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(255, 107, 53, 0.35);
+}
+
+.course-cta-btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.45);
+}
+
+/* =============================== */
+/*   コース画像（メインビジュアル） */
+/* =============================== */
+.course-images {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.course-images img {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+}
+
+/* =============================== */
+/*   フッター                       */
+/* =============================== */
+.course-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* =============================== */
+/*   コースカラーアクセント変数     */
+/* =============================== */
+.hiyoko-accent {
+    color: var(--course-green, #5CB85C);
+}
+
+.kokko-accent {
+    color: var(--course-teal, #4DBCC5);
+}
+
+.phoenix-accent {
+    color: var(--course-dark, #2C3E50);
+}
+
+.hiyoko-accent-bg {
+    background: var(--course-green, #5CB85C);
+}
+
+.kokko-accent-bg {
+    background: var(--course-teal, #4DBCC5);
+}
+
+.phoenix-accent-bg {
+    background: var(--course-dark, #2C3E50);
+}
+
+.step-accent.hiyoko .course-step-num {
+    background: var(--course-green, #5CB85C);
+}
+
+.step-accent.kokko .course-step-num {
+    background: var(--course-teal, #4DBCC5);
+}
+
+.step-accent.phoenix .course-step-num {
+    background: var(--course-dark, #2C3E50);
+}

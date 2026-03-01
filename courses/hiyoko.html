@@ -1,40 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ひよこコース | RBS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ひよこコース（基礎技術習得コース）| RBS</title>
+  <meta name="description" content="ひよこコースは、リペア未経験の方から中級者の方を対象とした基礎技術習得コース。4日間の実技講習で現場で使えるリペア技術の基礎を学びます。">
+  <link rel="icon" href="../assets/static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/documents.css">
-  <style>
-    /* 上部ナビ非表示時のスペーサ */
-    main#courseContent { padding-top: 40px; }
-    @media (min-width: 901px) { main#courseContent { padding-top: 80px; } }
-  </style>
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <main id="courseContent" class="container">
-    <div class="course-page-content">
-      <h1>ひよこコース（基礎技術習得コース）</h1>
 
-      <a href="../documents.html#courses" class="course-back-link">← 資料に戻る</a>
-
-      <p>ひよこコースは、リペア未経験の方から中級者の方までを対象とした基礎技術習得コースです。RBS研修施設にて、計4日間の実技講習を通じて、現場で活用できるリペア技術の基礎を学びます。</p>
-
-      <p>研修期間を最大限有効に活用するため、受講前にRBS技術講師が監修した「5つの技法」解説動画をご視聴いただきます。事前に技術の考え方や作業の流れを理解しておくことで、講習当日は実践に集中しながら技術の習得を進めることができます。</p>
-
-      <p>講習では、実際の補修を想定した課題に取り組みながら、道具の扱い方、補修工程、仕上げの精度などを段階的に習得していきます。限られた期間の中で、技術の基礎を確実に身につけることを目的としたカリキュラムです。</p>
-
-      <p>また、講習終了後も技術向上を継続していただけるよう、アフターフォローとして作業添削サポートをご用意しています。ご自宅に補修用サンプルをお送りし、作業後に返送いただいた内容をもとに、講師が添削とアドバイスを行います。</p>
-
-      <p>予習・実技・復習のサイクルを通じて、技術を確実に身につけていくための環境を整えています。本気でリペア技術を習得したい方に向けて設計されたコースです。</p>
-
-      <div class="course-images">
-        <img src="../assets/images/course/hiyoko.png" alt="ひよこ画像">
+  <!-- ナビゲーション -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../assets/images/common/logo.png" alt="RBS Logo" class="logo-img">
+        </a>
       </div>
-
+      <ul class="nav-menu">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </main>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="course-wrap">
+
+    <!-- ======== ヒーロー ======== -->
+    <section class="course-hero hiyoko">
+      <div class="container">
+        <p class="course-hero-badge">Course – Hiyoko</p>
+        <h1>ひよこコース<br><small style="font-size:0.6em; font-weight:700; opacity:.85;">基礎技術習得コース</small></h1>
+
+        <div class="course-hero-img-wrap">
+          <img src="../assets/images/course/hiyoko.png" alt="ひよこコース キャラクター">
+        </div>
+
+        <a href="../documents.html#courses" class="course-back-link">
+          <i class="fa-solid fa-arrow-left"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== コース概要 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Overview</p>
+        <h2 class="course-section-title">コース概要</h2>
+        <p class="course-section-subtitle">ひよこコースの基本情報</p>
+
+        <div class="course-overview-grid">
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-green">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">対象者</p>
+              <p class="course-overview-value">リペア未経験〜中級者</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-orange">
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">講習期間</p>
+              <p class="course-overview-value">計 4日間（実技中心）</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-navy">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">開催地</p>
+              <p class="course-overview-value">神奈川県相模原市 TRCビル 2F</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-teal">
+              <i class="fa-solid fa-yen-sign"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">受講料</p>
+              <p class="course-overview-value">190,000円（税別）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== コース説明 ======== -->
+    <section class="course-section bg-light">
+      <div class="container">
+        <p class="course-section-label">About</p>
+        <h2 class="course-section-title">コースについて</h2>
+        <p class="course-section-subtitle">ひよこコースでは何を学ぶのか</p>
+
+        <div class="course-desc-text">
+          <p>ひよこコースはリペア初心者から中級者向けのコースになっていて、RBS研修施設にて計4日間技術講習を受けていただきます。</p>
+          <p>皆様の限られた研修期間を最大限有効活用していただくために、リペア歴20年以上のRBS技術講師が作り出した「5つの技法」——こちらの動画を研修開始までに視聴して予習をします。</p>
+          <p>
+            一般的なリペアスクールではまず講師の作業を見てからやり方を教わって、やっと自身の練習時間に入ります。事前に内容を把握することで、限られた研修期間をできる限り実際に手を動かした練習に充てることが可能です。そして皆様には他のリペアスクールにはない濃い4日間を過ごして、リペアの技術を習得していただきます。
+          </p>
+          <p>
+            そして技術を自身のものにしていくので非常に大切なものが「復習」です。研修が終わった後でも技術の精度をさらに上げるため、アフターフォローとして郵送で行う作業添削がございます。ご自宅にリペアサンプルが届き、それを補修後に送り返していただきまして、その作業の添削アドバイスをしてさらに技術を高めていきます。
+          </p>
+          <p>限られた期間でリペアを覚えるにはどうすればいいのかを考え、本気で作ったカリキュラムになります。是非とも本気でリペアを覚えたい・身につけたい方、RBSはそんなあなたを待っています。</p>
+        </div>
+        <div class="course-img-gallery">
+          <img src="../assets/images/course/hiyoko_1.png" alt="ひよこコース 講習風景1">
+          <img src="../assets/images/course/hiyoko_2.png" alt="ひよこコース 講習風景2">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 学習ステップ ======== -->
+    <section class="course-section step-accent hiyoko">
+      <div class="container">
+        <p class="course-section-label">Flow</p>
+        <h2 class="course-section-title">学習の流れ</h2>
+        <p class="course-section-subtitle">予習→実技→復習のサイクルで確実に身につける</p>
+
+        <div class="course-steps">
+
+          <div class="course-step">
+            <div class="course-step-num">1</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-play hiyoko-accent" style="margin-right:8px;"></i>
+                お申込み後：「5つの技法」動画で事前学習
+              </p>
+              <p class="course-step-desc">
+                受講前に、RBS技術講師が監修した「5つの技法」解説動画を視聴します。
+                技術の考え方・作業の流れを事前に理解することで、講習当日は実践に全集中できる状態をつくります。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">2</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-map-pin" style="color:#4DBCC5; margin-right:8px;"></i>
+                神奈川県相模原市で4日間の実技講習
+              </p>
+              <p class="course-step-desc">
+                講師の直接指導のもと、反復練習とフィードバックを繰り返します。
+                道具の扱い方・補修工程・調色・仕上げ精度などを実際の課題を通じて段階的に習得します。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">3</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-pen-to-square hiyoko-accent" style="margin-right:8px;"></i>
+                卒業後：作業添削サポート
+              </p>
+              <p class="course-step-desc">
+                ご自宅に補修用サンプルをお送りし、実際に作業していただきます。
+                返送いただいた内容をもとに講師が添削・アドバイスを行い、技術の定着をサポートします。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">4</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-star" style="color:#F9B233; margin-right:8px;"></i>
+                現場デビュー・独立へ
+              </p>
+              <p class="course-step-desc">
+                習得した基礎技術を活かして現場へ。さらにスキルを高めたい方は上位のコッココース・フェニックスコースへのステップアップも可能です。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 特典セクションは削除されました -->
+
+    <!-- ======== 料金 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Price</p>
+        <h2 class="course-section-title">受講料</h2>
+
+        <div class="course-price-box" style="max-width: 400px; margin: 0 auto; text-align: center;">
+          <p class="course-price-label">受講料（税別）</p>
+          <p class="course-price-value">¥190,000</p>
+          <p class="course-price-tax">※ 別途消費税が加算されます</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="course-cta-section">
+      <div class="container">
+        <p class="course-section-label" style="color: var(--accent-color);">Next Step</p>
+        <h2 class="course-cta-title">まずは資料で詳細を確認する</h2>
+        <p class="course-cta-text">
+          コース内容・スケジュール・お申込み方法は<br>
+          資料ページにてご確認いただけます。
+        </p>
+        <a href="../documents.html#courses" class="course-cta-btn">
+          <i class="fa-solid fa-file-lines"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /.course-wrap -->
+
+  <!-- フッター -->
+  <footer class="course-footer">
+    <p>&copy; 2025 Repair Business School. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // ハンバーガーメニュー
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+    }
+  </script>
 
 </body>
+
 </html>

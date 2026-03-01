@@ -15,7 +15,7 @@
         min-width: 0;
         box-sizing: border-box;
     }
-    .hiyoko-salon-box, .cocco-salon-box, .phoenix-salon-box {
+    .hiyoko-salon-box, .kokko-salon-box, .phoenix-salon-box {
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -25,7 +25,7 @@
         box-sizing: border-box;
         margin-bottom: 0;
     }
-    .hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+    .hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
         flex: 1 1 auto;
         display: flex;
         flex-direction: column;
@@ -57,7 +57,7 @@
         margin-top: auto;
     }
 }
-.hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+.hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
     width: 100%;
 }
 .course-modal-btn {
@@ -83,7 +83,7 @@
 .course-modal-btn[data-course="hiyoko"] {
     background: var(--course-green, #5CB85C);
 }
-.course-modal-btn[data-course="cocco"] {
+.course-modal-btn[data-course="kokko"] {
     background: var(--course-teal, #4DBCC5);
 }
 .course-modal-btn[data-course="phoenix"] {
@@ -110,7 +110,7 @@
     text-align: center;
 }
 .course-modal-link[data-course="hiyoko"] { background: var(--course-green, #5CB85C); }
-.course-modal-link[data-course="cocco"] { background: var(--course-teal, #4DBCC5); }
+.course-modal-link[data-course="kokko"] { background: var(--course-teal, #4DBCC5); }
 .course-modal-link[data-course="phoenix"] { background: var(--course-dark, #2C3E50); }
 .course-modal-link:hover { opacity: 0.88; transform: translateY(-2px) scale(1.03); }
 /* course modal styles removed (feature disabled) */
@@ -143,7 +143,7 @@
 .hiyoko-salon-box .course-label {
     background: var(--course-green, #2CB67D);
 }
-.cocco-salon-box .course-label {
+.kokko-salon-box .course-label {
     background: var(--course-teal, #2C5F7C);
 }
 .phoenix-salon-box .course-label {
@@ -181,7 +181,7 @@
     #courses { scroll-margin-top: 90px; }
 }
 /* コッコ・フェニックスコース用オンラインサロン風カード */
-.cocco-salon-box {
+.kokko-salon-box {
     background: #f8f9fa;
     border: 3.5px solid var(--course-teal, #009999);
     border-radius: 12px;
@@ -192,7 +192,7 @@
     margin-left: auto;
     margin-right: auto;
 }
-.cocco-salon-badge {
+.kokko-salon-badge {
     position: absolute;
     top: 0;
     left: 0;
@@ -205,14 +205,14 @@
     letter-spacing: 0.10em;
     box-shadow: 0 2px 8px rgba(38,182,182,0.10);
 }
-.cocco-salon-title {
+.kokko-salon-title {
     color: var(--navy);
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-top: 18px;
     font-weight: bold;
 }
-.cocco-salon-desc {
+.kokko-salon-desc {
     text-align: left;
     line-height: 1.8;
     color: #444;
@@ -258,14 +258,14 @@
     margin: 40px 10px 0;
 }
 @media (max-width: 600px) {
-    .cocco-salon-box, .phoenix-salon-box {
+    .kokko-salon-box, .phoenix-salon-box {
         padding: 18px 6px;
         border-radius: 8px;
     }
-    .cocco-salon-title, .phoenix-salon-title {
+    .kokko-salon-title, .phoenix-salon-title {
         font-size: 1.08rem;
     }
-    .cocco-salon-badge, .phoenix-salon-badge {
+    .kokko-salon-badge, .phoenix-salon-badge {
         font-size: 1.02rem;
         padding: 9px 18px 9px 12px;
         border-bottom-right-radius: 8px;
@@ -1021,7 +1021,7 @@
     background: var(--course-green);
 }
 
-.comparison-card-header.cocco {
+.comparison-card-header.kokko {
     background: var(--course-teal);
     border: 3.5px solid var(--course-teal);
     border-radius: 12px 12px 0 0;
@@ -1847,7 +1847,7 @@
             margin: 30px auto 0;
             flex: 0 0 auto;
         }
-        .hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+        .hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
             display: flex !important;
             flex-direction: column !important;
             flex: 1 1 auto !important;
@@ -1936,7 +1936,7 @@
         width: 100% !important;
         max-width: none !important;
     }
-    .hiyoko-salon-desc, .cocco-salon-desc, .phoenix-salon-desc {
+    .hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
         display: flex !important;
         flex-direction: column !important;
         flex: 1 1 auto !important;
