@@ -828,7 +828,7 @@
 /* ================================================== */
 
 #strengths {
-    background: #fce9c7;
+    background: #fdeed6;
 }
 
 .strengths-grid-2x2 {
@@ -1472,8 +1472,9 @@
 
 .faq-a {
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.8;
-    color: #555;
+    color: #4b5563;
     padding: 0 4px 22px 36px;
 }
 

@@ -240,15 +240,16 @@
     text-align: center;
     color: #fff;
     padding: 16px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgb(255 255 255);
     border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
 .stat-number {
     font-size: clamp(24px, 4vw, 32px);
     font-weight: 900;
     line-height: 1;
-    color: #fff;
+    color: #1c3a57;
 }
 
 .stat-number span {
@@ -257,9 +258,10 @@
 
 .stat-label {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgb(28 58 87);
     margin-top: 8px;
     font-weight: 500;
+    letter-spacing: 0.02em;
 }
 
 .stat-divider {
@@ -420,8 +422,8 @@
 }
 
 .section-bg-light {
-    padding: 0 0 80px 0;
-    background: #fce9c7;
+    padding: 80px 0 80px 0;
+    /*background: #fce9c7;*/
 }
 
 .draft-section-label {
@@ -455,7 +457,7 @@
 /* ================================================== */
 
 #strengths {
-    background: #fce9c7;
+    background: #fdeed6;
 }
 
 .strengths-grid-2x2 {
@@ -725,7 +727,7 @@
     height: 60px;
     min-width: 60px;
     border-radius: 50%;
-    background: #f1f5f9;
+    background: #fff;
     border: 2px solid #cbd5e1;
     display: flex;
     align-items: center;
@@ -1025,8 +1027,9 @@
 
 .faq-a {
     font-size: 14px;
+    font-weight: 500;
     line-height: 1.8;
-    color: #555;
+    color: #4b5563;
     padding: 0 4px 22px 36px;
 }
 
