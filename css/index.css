@@ -421,7 +421,7 @@
 
 .section-bg-light {
     padding: 0 0 80px 0;
-    background: #fbe0e0;
+    background: #fce9c7;
 }
 
 .draft-section-label {
@@ -455,7 +455,7 @@
 /* ================================================== */
 
 #strengths {
-    background: #fbe0e0;
+    background: #fce9c7;
 }
 
 .strengths-grid-2x2 {
@@ -822,7 +822,7 @@
 }
 
 .voices-section .testimonial-card {
-    background: #f8f9fa;
+    background: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
