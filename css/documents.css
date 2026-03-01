@@ -854,6 +854,7 @@
     padding: 32px 28px;
     border: 1.5px solid var(--border-blue);
     border-left: 4px solid var(--accent-color);
+    border-top: 3px solid var(--accent-color);
     position: relative;
 }
 
