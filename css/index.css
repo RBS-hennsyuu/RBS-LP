@@ -359,7 +359,7 @@
 .why-repair-section {
     background-color: var(--bg-light);
     text-align: center;
-    padding-bottom: 80px;
+    padding: 80px 0 80px 0;
 }
 
 .why-repair-list {
@@ -1274,7 +1274,6 @@
 
     .why-repair-list {
         gap: 120px;
-        margin-top: 80px;
     }
 
     .why-repair-item {
