@@ -153,13 +153,7 @@
 .course-description-blocks .course-desc-img {
     margin-top: 30px;
 }
-/* コース説明3カード横並び（PCのみ） */
-.course-description-blocks {
-    /* SP時はblock表示 */
-}
-.course-description-blocks > div {
-    /* SP時はblock表示 */
-}
+
 @media (max-width: 900px) {
     .course-description-blocks {
         flex-direction: column;
@@ -182,7 +176,7 @@
 }
 /* コッコ・フェニックスコース用オンラインサロン風カード */
 .kokko-salon-box {
-    background: #f8f9fa;
+    background: #fff;
     border: 3.5px solid var(--course-teal, #009999);
     border-radius: 12px;
     padding: 30px;
@@ -220,7 +214,7 @@
     margin: 40px 10px 0;
 }
 .phoenix-salon-box {
-    background: #f8f9fa;
+    background: #fff;
     border: 3.5px solid var(--course-dark, #1a3550);
     border-radius: 12px;
     padding: 30px;
@@ -273,7 +267,7 @@
 }
 /* ひよこコース用オンラインサロン風カード */
 .hiyoko-salon-box {
-    background: #f8f9fa;
+    background: #fff;
     border: 3.5px solid var(--course-green, #7cb342);
     border-radius: 12px;
     padding: 30px;
@@ -1665,14 +1659,11 @@
     margin-bottom: 12px;
 }
 
-.cta-note {
-    text-align: center;
-    margin-top: 8px;
-}
-
-.cta-note {
-    color: #fff !important;
-}
+    .cta-note {
+        text-align: center;
+        margin-top: 8px;
+        color: #fff;
+    }
 
 .cta-area-pamphlet .cta-lead {
     margin-bottom: 30px;
@@ -1860,19 +1851,19 @@
     /* 強制：PC横並び時にコースカードの高さを揃える（優先度高め） */
     @media (min-width: 901px) {
         .course-description-blocks {
-            display: flex !important;
+            display: flex;
             gap: 32px;
-            align-items: stretch !important;
+            align-items: stretch;
             justify-content: center;
         }
         .course-description-blocks > div {
-            display: flex !important;
-            flex-direction: column !important;
-            box-sizing: border-box !important;
-            flex: 1 1 0 !important;
-            min-height: 0 !important;
-            min-width: 0 !important;
-            align-items: stretch !important;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            flex: 1 1 0;
+            min-height: 0;
+            min-width: 0;
+            align-items: stretch;
         }
         .course-description-blocks img.course-desc-img {
             display: block;
@@ -1882,13 +1873,13 @@
             flex: 0 0 auto;
         }
         .hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
-            display: flex !important;
-            flex-direction: column !important;
-            flex: 1 1 auto !important;
-            min-height: 0 !important;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            min-height: 0;
         }
         .course-modal-btn {
-            margin-top: auto !important;
+            margin-top: auto;
         }
     }
 }
@@ -1906,47 +1897,47 @@
     }
     /* カード群は必ず縦積み・幅100%にする */
     .course-description-blocks {
-        display: block !important;
+        display: block;
         gap: 24px;
     }
     .course-description-blocks > div {
-        display: block !important;
-        width: 100% !important;
-        max-width: none !important;
-        box-sizing: border-box !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        display: block;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
     }
     /* 画像ははみ出さない */
     .course-desc-img, .course-description-blocks img {
-        max-width: 100% !important;
-        height: auto !important;
+        max-width: 100%;
+        height: auto;
     }
     /* 比較カードのヘッダーの負のマージンで崩れる場合を吸収 */
     .comparison-card {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        margin-left: 0;
+        margin-right: 0;
     }
     .comparison-card-header {
-        margin: 0 -16px 12px -16px !important;
-        padding: 12px 16px !important;
-        border-radius: 8px 8px 0 0 !important;
+        margin: 0 -16px 12px -16px;
+        padding: 12px 16px;
+        border-radius: 8px 8px 0 0;
     }
 }
 
 /* タブレット小〜モバイルは1列（1100px未満は1列にする） */
 @media (max-width: 1079px) {
     .course-description-blocks {
-        display: block !important;
+        display: block;
         gap: 24px;
     }
     .course-description-blocks > div {
-        display: block !important;
-        width: 100% !important;
-        max-width: none !important;
-        box-sizing: border-box !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        display: block;
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 32px;
     }
 }
@@ -1957,26 +1948,26 @@
 */
 @media (min-width: 1080px) {
     .course-description-blocks {
-        display: grid !important;
+        display: grid;
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 32px;
         align-items: stretch;
         justify-items: stretch;
     }
     .course-description-blocks > div {
-        display: flex !important;
-        flex-direction: column !important;
-        box-sizing: border-box !important;
-        width: 100% !important;
-        max-width: none !important;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: none;
     }
     .hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
-        display: flex !important;
-        flex-direction: column !important;
-        flex: 1 1 auto !important;
-        min-height: 0 !important;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        min-height: 0;
     }
     .course-modal-btn {
-        margin-top: auto !important;
+        margin-top: auto;
     }
 }
