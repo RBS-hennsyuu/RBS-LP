@@ -214,11 +214,11 @@ body .hamburger span {
 .course-overview-icon {
     width: 44px;
     height: 44px;
-    border-radius: 10px;
+    border-radius: 50%; /* 円形に統一 */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 18px;
     flex-shrink: 0;
 }
 
@@ -254,6 +254,21 @@ body .hamburger span {
     font-weight: 700;
     color: var(--navy);
     line-height: 1.4;
+}
+
+.course-overview-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.course-overview-note.inline {
+    display: inline;
+    margin-top: 0;
+    margin-left: 8px;
+    font-size: 13px;
+    color: #666;
 }
 
 /* =============================== */
@@ -425,8 +440,16 @@ body .hamburger span {
 }
 
 .course-benefit-icon {
-    font-size: 32px;
-    margin-bottom: 12px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: 0 auto 12px auto;
+    background: rgba(0,0,0,0.04);
+    color: var(--navy);
 }
 
 .course-benefit-title {
@@ -523,7 +546,7 @@ body .hamburger span {
 
 .course-cta-text {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.75);
+    color: #fff;
     margin-bottom: 32px;
     line-height: 1.8;
 }
@@ -566,6 +589,53 @@ body .hamburger span {
     border-radius: 16px;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
     margin: 0 auto;
+}
+
+/* ページ固有のインラインスタイルを移動 */
+.course-hero h1 small {
+    font-size: 0.6em;
+    font-weight: 700;
+    opacity: 0.85;
+}
+
+/* ひよこコースのサブタイトルを白にする */
+.course-hero.hiyoko h1 small {
+    color: #fff;
+}
+
+/* コッココースのサブタイトルも白にする */
+.course-hero.kokko h1 small {
+    color: #fff;
+}
+
+/* フェニックスコースのサブタイトルも白にする */
+.course-hero.phoenix h1 small {
+    color: #fff;
+}
+
+/* 各コースページで小見出しの透過を解除（完全な白にする） */
+.course-hero.hiyoko h1 small,
+.course-hero.kokko h1 small,
+.course-hero.phoenix h1 small {
+    opacity: 1;
+}
+
+/* アイコンの右マージン（共通化） */
+.course-step-title i,
+.course-step .course-step-title i {
+    margin-right: 8px;
+}
+
+/* compactな価格ボックス（ページ単位で幅を狭めるためのユーティリティ） */
+.course-price-box.compact {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* セクションラベルのアクセント色ユーティリティ */
+.course-section-label.accent {
+    color: var(--accent-color);
 }
 
 /* =============================== */
@@ -616,4 +686,9 @@ body .hamburger span {
 
 .step-accent.phoenix .course-step-num {
     background: var(--course-dark, #2C3E50);
+}
+
+/* 星アイコンの共通アクセント色（アンバー） */
+.star-accent {
+    color: #F9B233;
 }

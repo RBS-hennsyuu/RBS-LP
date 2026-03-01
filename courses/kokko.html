@@ -1,51 +1,262 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>コッココース | RBS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>コッココース（応用技術習得コース）| RBS</title>
+  <meta name="description" content="コッココースは、中級者から上級者を対象とした応用技術習得コース。計8日間の実技講習で幅広いリペア技術を習得します。">
+  <link rel="icon" href="../assets/static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/documents.css">
-  <style>
-    /* 読み込みが速く、ページ単体でナビに隠れないように上部余白を確保 */
-    main#courseContent {
-      padding-top: 110px;
-    }
-
-    @media (max-width: 900px) {
-      main#courseContent {
-        padding-top: 90px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <main id="courseContent" class="container">
-    <div class="course-page-content">
-      <h1>コッココース（応用技術習得コース）</h1>
-
-      <a href="../documents.html#courses" class="course-back-link">← 資料に戻る</a>
-      <p>コッココースは、基礎技術を習得された方や、より高度なリペア技術の習得を目指す方に向けた応用技術習得コースです。講習は6日間と2日間の計8日間に分けて実施し、実践を重ねながら対応できる補修領域を広げていきます。</p>
-
-      <p>
-        本コースでは、一般的な補修に加えて、建材シートの張り替え、建具の陥没補修、石材の補修など、より専門性の高い技術についても学びます。さまざまな補修技術と知識を体系的に習得することで、現場ごとに適切な対応ができる実践力を身につけることを目的としています。
-      </p>
-
-      <p>また、講習終了後の技術定着をサポートするため、添削キットによる作業添削を計5回実施します。反復練習と講師からのフィードバックを通じて、補修精度の向上と技術の定着を図ります。</p>
-
-      <p>カリキュラムには、各受講者の習熟度に応じた弱点克服トレーニングも含まれており、それぞれの成長段階に合わせて技術を伸ばしていくことができます。</p>
-
-      <p>受講者一人ひとりが確実に技術を習得できるよう、講習は少人数制で実施しています。より幅広い補修に対応できる技術力を身につけ、現場での対応力を高めたい方に向けたコースです。</p>
-
-      <div class="course-images">
-        <img src="../assets/images/course/kokko.png" alt="コッコ画像">
+  <!-- ナビゲーション -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../assets/images/common/logo.png" alt="RBS Logo" class="logo-img">
+        </a>
       </div>
-
+      <ul class="nav-menu">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </main>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="course-wrap">
+
+    <!-- ======== ヒーロー ======== -->
+    <section class="course-hero kokko">
+      <div class="container">
+        <p class="course-hero-badge">Course – Kokko</p>
+        <h1>コッココース<br><small>応用技術習得コース</small></h1>
+
+        <div class="course-hero-img-wrap">
+          <img src="../assets/images/course/kokko.png" alt="コッココース キャラクター">
+        </div>
+
+        <a href="../documents.html#courses" class="course-back-link">
+          <i class="fa-solid fa-arrow-left"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== コース概要 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Overview</p>
+        <h2 class="course-section-title">コース概要</h2>
+        <p class="course-section-subtitle">コッココースの基本情報</p>
+
+        <div class="course-overview-grid">
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-teal">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">対象者</p>
+              <p class="course-overview-value">中級者〜上級者</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-orange">
+              <i class="fa-regular fa-calendar-days"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">講習期間</p>
+              <p class="course-overview-value">計 8日間（6日間＋2日間）</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-navy">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">開催地</p>
+              <p class="course-overview-value">神奈川県相模原市 TRCビル 2F</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-teal">
+              <i class="fa-solid fa-yen-sign"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">受講料</p>
+              <p class="course-overview-value">45万円（税別）</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== コース説明 ======== -->
+    <section class="course-section bg-light">
+      <div class="container">
+        <p class="course-section-label">About</p>
+        <h2 class="course-section-title">コースについて</h2>
+        <p class="course-section-subtitle">コッここースでは何を学ぶのか</p>
+
+        <div class="course-desc-text">
+          <p>コッここースでは、中級者から上級者の方にオススメなコースになっています。6日間と2日間の2回に分けて計8日間受講して、他社には負けない圧倒的なスキルを身に付けていきます。</p>
+          <p>
+            通常の補修屋さんではやらないような建材シートの張り替え、建具の陥没、石材の破損。他にも様々ありますが、幅広い知識ノウハウを学べますので、その中でもご自身のスキルを組み合わせて他に代わりの効かない職人になり、今までにない経営の安定性や成長に繋げていくことが可能です。
+          </p>
+          <p>
+            「復習」である添削キットは5回行い、研修が終わった後でも反復してスキルの精度を高めていきます。カリキュラムの中には弱点克服トレーニングもあり、各自の成長に合わせてその方に合わせたメニューを組んでいくので安心してスキルを習得することができます。
+          </p>
+          <p>みなさんが確実にスキルを身につけていくために受講できる人数には定員があります。お客様に選ばれる職人になるための講義を作りました。</p>
+          <p>ですので本気で本物のリペア職人になりたい！そんなあなたの応募をお待ちしております。</p>
+        </div>
+
+        <div class="course-img-gallery">
+          <img src="../assets/images/course/hiyoko_1.png" alt="コッここース 講習風景1">
+          <img src="../assets/images/course/hiyoko_2.png" alt="コッここース 講習風景2">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======== 学習ステップ ======== -->
+    <section class="course-section step-accent kokko">
+      <div class="container">
+        <p class="course-section-label">Flow</p>
+        <h2 class="course-section-title">学習の流れ</h2>
+        <p class="course-section-subtitle">6日間＋2日間＋添削5回で圧倒的なスキルへ</p>
+
+        <div class="course-steps">
+
+          <div class="course-step">
+            <div class="course-step-num">1</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-play kokko-accent"></i>
+                お申込み後：事前学習・準備
+              </p>
+              <p class="course-step-desc">
+                受講前に必要な基礎知識を確認し、講習当日から実践に集中できる状態を整えます。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">2</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-map-pin hiyoko-accent"></i>
+                第1期：6日間の集中実技講習
+              </p>
+              <p class="course-step-desc">
+                建材シートの張り替え・建具の陥没・石材補修など、専門性の高い技術を集中的に習得。講師の直接指導のもと反復練習を積み重ねます。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">3</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-map-pin kokko-accent"></i>
+                第2期：2日間の応用・仕上げ講習
+              </p>
+              <p class="course-step-desc">
+                第1期で習得した技術を応用し、より難易度の高い補修に対応できるスキルを磨きます。弱点克服トレーニングも実施。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">4</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-pen-to-square kokko-accent"></i>
+                卒業後：添削キット×5回
+              </p>
+              <p class="course-step-desc">
+                ご自宅に補修用サンプルをお送りし、計5回の添削サポートを実施。反復練習と講師のフィードバックで技術を定着させます。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">5</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-star star-accent"></i>
+                他に代わりのきかない職人へ
+              </p>
+              <p class="course-step-desc">
+                幅広いスキルを武器に現場へ。お客様に選ばれる職人として、経営の安定と成長を実現します。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 料金 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Price</p>
+        <h2 class="course-section-title">受講料</h2>
+
+        <div class="course-price-box compact">
+          <p class="course-price-label">受講料（税別）</p>
+          <p class="course-price-value">¥450,000</p>
+          <p class="course-price-tax">※ 別途消費税が加算されます</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="course-cta-section">
+      <div class="container">
+        <p class="course-section-label accent">Next Step</p>
+        <h2 class="course-cta-title">引き続き資料で詳細を確認する</h2>
+        <p class="course-cta-text">
+          コース内容・スケジュール・お申込み方法は<br>
+          資料ページにてご確認いただけます。
+        </p>
+        <a href="../documents.html#courses" class="course-cta-btn">
+          <i class="fa-solid fa-file-lines"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /.course-wrap -->
+
+  <!-- フッター -->
+  <footer class="course-footer">
+    <p>&copy; 2025 Repair Business School. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+    }
+  </script>
 
 </body>
 

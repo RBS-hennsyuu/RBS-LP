@@ -1,56 +1,285 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>フェニックスコース | RBS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フェニックスコース（完全コンサル）| RBS</title>
+  <meta name="description" content="フェニックスコースは、リペア業界20年以上の実績を持つ講師がマンツーマンで事業成長をサポートする完全コンサル型コースです。">
+  <link rel="icon" href="../assets/static/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/documents.css">
-  <style>
-    /* 読み込みが速く、ページ単体でナビに隠れないように上部余白を確保 */
-    main#courseContent { padding-top: 110px; }
-    @media (max-width: 900px) { main#courseContent { padding-top: 90px; } }
-  </style>
+  <link rel="stylesheet" href="../css/courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <main id="courseContent" class="container">
-    <div class="course-page-content">
-      <h1>フェニックスコース（事業成長支援コンサルティング）</h1>
-
-      <a href="../documents.html#courses" class="course-back-link">← 資料に戻る</a>
-
-      <p>フェニックスコースは、リペア技術の習得に加えて、事業としての成長と安定した運営を目指す方に向けたコンサルティング型コースです。リペア業界で20年以上の実績を持つ講師が、マンツーマンで事業戦略の構築と実行をサポートします。</p>
-
-      <p>本コースでは、受講者の活動エリアや経験、現在の受注状況などをもとに、個別に最適化された事業戦略を設計し、継続的な成長を支援します。</p>
-
-      <div class="course-images">
-        <img src="../assets/images/course/phoenix.png" alt="フェニックス画像">
+  <!-- ナビゲーション -->
+  <nav class="nav-header">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">
+          <img src="../assets/images/common/logo.png" alt="RBS Logo" class="logo-img">
+        </a>
       </div>
-
-      <h2>サポート内容</h2>
-
-      <p><strong>STEP1｜市場調査・現状分析（対面）</strong><br>活動エリアにおける市場環境（人口動向、住宅価格、補修単価など）を調査し、現状の課題と今後の方向性を整理します。分析結果をもとに、目標達成に向けた具体的な改善ポイントと対策を明確化します。</p>
-
-      <p><strong>STEP2｜戦略プログラムの設計</strong><br>地域特性、経験値、受注内容などを踏まえ、事業の強みを活かした戦略プログラムを作成します。継続的に受注できる体制の構築を目的とした事業設計を行います。</p>
-
-      <p><strong>STEP3｜定期ミーティング・進捗確認</strong><br>月2回（各30分）のオンラインミーティングを実施し、進捗の確認と課題への対策を検討します。状況に応じて追加の相談にも対応し、実行段階でのサポートを行います。</p>
-
-      <p><strong>STEP4｜繁忙期・閑散期対策の策定（年間）</strong><br>売上推移や取引状況を分析し、年間を通じて安定した事業運営ができるよう、繁忙期・閑散期それぞれに向けた対策を計画します。</p>
-
-      <p><strong>STEP5｜次年度に向けた改善計画の策定</strong><br>年間の実績とKPI（業績評価指標）をもとに、次年度に向けた改善計画を策定し、継続的な事業成長を支援します。</p>
-
-      <h3>コース特典</h3>
-      <ul>
-        <li>RBS動画コンテンツの全開放</li>
-        <li>実際の現場での実習機会の提供</li>
+      <ul class="nav-menu">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
       </ul>
-
-      <p>フェニックスコースは、技術の習得にとどまらず、事業としての基盤を整え、継続的な成長を目指す方に向けて設計されたコースです。受講者一人ひとりに合わせたサポートを行うため、対応可能な人数には限りがあります。</p>
-
+      <button class="hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </main>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-menu-list">
+        <li><a href="../documents.html">資料に戻る</a></li>
+        <li><a href="../index.html">トップページ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="course-wrap">
+
+    <!-- ======== ヒーロー ======== -->
+    <section class="course-hero phoenix">
+      <div class="container">
+        <p class="course-hero-badge">Course – Phoenix</p>
+        <h1>フェニックスコース<br><small>完全コンサル</small></h1>
+
+        <div class="course-hero-img-wrap">
+          <img src="../assets/images/course/phoenix.png" alt="フェニックスコース キャラクター">
+        </div>
+
+        <a href="../documents.html#courses" class="course-back-link">
+          <i class="fa-solid fa-arrow-left"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+    <!-- ======== コース概要 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Overview</p>
+        <h2 class="course-section-title">コース概要</h2>
+        <p class="course-section-subtitle">フェニックスコースの基本情報</p>
+
+        <div class="course-overview-grid">
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-navy">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">対象者</p>
+              <p class="course-overview-value">現役リペア職人・事業者</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-orange">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">形式</p>
+              <p class="course-overview-value">完全マンツーマンコンサル</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-navy">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">実施方法</p>
+              <p class="course-overview-value">対面（初回）＋ リモート</p>
+            </div>
+          </div>
+          <div class="course-overview-card">
+            <div class="course-overview-icon icon-bg-teal">
+              <i class="fa-solid fa-yen-sign" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="course-overview-label">受講料</p>
+              <p class="course-overview-value">１３０万円〜 <span class="course-overview-note inline">(要問い合わせ)</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== コース説明 ======== -->
+    <section class="course-section bg-light">
+      <div class="container">
+        <p class="course-section-label">About</p>
+        <h2 class="course-section-title">コースについて</h2>
+        <p class="course-section-subtitle">フェニックスコースでは何をするのか</p>
+
+        <div class="course-desc-text">
+          <p>完全コンサルのフェニックスコースでは、リペア業界の第一線で20年以上成長させ続けている講師が徹底コンサルで、あなたを今以上に成長できるようマンツーマンでサポートしていくコースになります。</p>
+          <p>
+            今現在補修屋として活動している法人・個人事業は数多くいます。その理由は参入障壁の低さからあります。道具や材料は安価で揃えられ、建築業種の中では比較的高めの単価で受注できるので、稼げると思ってリペア業界に参入してくる人は多いです。
+          </p>
+          <p>
+            しかし、職人は飽和状態になっているので思うように仕事が受注できなかったり、仕事を他社に奪われてしまったりとうまく行かない方も多くいます。そんな埋もれてしまう職人にならないように、この「完全コンサルフェニックスコース」を受けていただければ、同業他社との差別化や他社にない戦略・経営方法をRBSが直接サポートさせていただきます。
+          </p>
+          <p>なお完全コンサルという形式のため、対応できる人数に限りがございます。申込可能かは状況により異なりますので、まずはお問い合わせください。</p>
+        </div>
+
+        <div class="course-img-gallery">
+          <img src="../assets/images/course/hiyoko_1.png" alt="フェニックスコース 講習風景1">
+          <img src="../assets/images/course/hiyoko_2.png" alt="フェニックスコース 講習風景2">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======== コンサルステップ ======== -->
+    <section class="course-section step-accent phoenix">
+      <div class="container">
+        <p class="course-section-label">Flow</p>
+        <h2 class="course-section-title">コンサルの流れ</h2>
+        <p class="course-section-subtitle">市場調査から翌年度対策まで伴走サポート</p>
+
+        <div class="course-steps">
+
+          <div class="course-step">
+            <div class="course-step-num">1</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-magnifying-glass phoenix-accent"></i>
+                市場調査（対面）
+              </p>
+              <p class="course-step-desc">
+                仕事のメインエリアに伺い、市場調査（人口・住宅価格・単価・SWOT分析）を実施。今後の目標に向けての問題点を洗い出し、課題を明確化し、解決に向けての対策を決めていきます。<br>
+                <small style="color: var(--text-muted);">※ オフラインの対面で行います</small>
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">2</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-file-pen phoenix-accent"></i>
+                戦略プログラム作成
+              </p>
+              <p class="course-step-desc">
+                地域や場所、経験、単価、依頼内容などを考慮し、同業他社より優位性のある経営をしていくための戦略プログラムを作成します。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">3</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-comments phoenix-accent"></i>
+                経過報告・対策相談（月2回）
+              </p>
+              <p class="course-step-desc">
+                その後は月2回のリモート（各30分）にて話し合いを行います。状況により緊急相談にも対応します。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">4</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-chart-line phoenix-accent"></i>
+                繁忙期・閑散期対策（年間12ヶ月）
+              </p>
+              <p class="course-step-desc">
+                前年度と比較し、売上状況や取引先の種類などから繁忙期と閑散期に向けた対策を策定します。
+              </p>
+            </div>
+          </div>
+
+          <div class="course-step">
+            <div class="course-step-num">5</div>
+            <div class="course-step-body">
+              <p class="course-step-title">
+                <i class="fa-solid fa-star star-accent"></i>
+                翌年度の対策策定
+              </p>
+              <p class="course-step-desc">
+                前年度との比較とKPI（業績評価指数）に対して、翌期に取り組む対策を策定します。継続的な成長をサポートします。
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 2大特典 ======== -->
+    <section class="course-section bg-light">
+      <div class="container">
+        <p class="course-section-label">Benefits</p>
+        <h2 class="course-section-title">2大特典</h2>
+        <p class="course-section-subtitle">フェニックスコース受講者限定の特典</p>
+
+        <div class="course-benefits-grid" style="max-width: 600px; margin: 0 auto; grid-template-columns: repeat(2, 1fr);">
+          <div class="course-benefit-card">
+            <div class="course-benefit-icon"><i class="fa-solid fa-film" aria-hidden="true"></i></div>
+            <p class="course-benefit-title">RBS動画コンテンツ<br>全開放</p>
+            <p class="course-benefit-desc">RBSが保有するすべての技術解説動画コンテンツを閲覧できます。</p>
+          </div>
+          <div class="course-benefit-card">
+            <div class="course-benefit-icon"><i class="fa-solid fa-hard-hat" aria-hidden="true"></i></div>
+            <p class="course-benefit-title">実際の現場での<br>体験実習</p>
+            <p class="course-benefit-desc">実際の施工現場での体験実習の機会を提供します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== 料金 ======== -->
+    <section class="course-section">
+      <div class="container">
+        <p class="course-section-label">Price</p>
+        <h2 class="course-section-title">受講料</h2>
+
+        <div class="course-price-box compact">
+          <p class="course-price-label">受講料（税別）</p>
+          <p class="course-price-value">¥1,300,000〜</p>
+          <p class="course-price-tax">※ 完全コンサルのため、内容により金額が変動します</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CTA ======== -->
+    <section class="course-cta-section">
+      <div class="container">
+        <p class="course-section-label accent">Next Step</p>
+        <h2 class="course-cta-title">引き続き資料で詳細を確認する</h2>
+        <p class="course-cta-text">
+          コース内容・お申込み方法は<br>
+          資料ページにてご確認いただけます。
+        </p>
+        <a href="../documents.html#courses" class="course-cta-btn">
+          <i class="fa-solid fa-file-lines"></i> 資料ページに戻る
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /.course-wrap -->
+
+  <!-- フッター -->
+  <footer class="course-footer">
+    <p>&copy; 2025 Repair Business School. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+      });
+    }
+  </script>
 
 </body>
+
 </html>
