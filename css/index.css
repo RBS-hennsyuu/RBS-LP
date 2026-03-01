@@ -652,6 +652,15 @@
     align-items: flex-start;
 }
 
+/* PC: constrain learning flow width to match overview-layout */
+@media (min-width: 901px) {
+    .learning-flow-wrapper {
+        max-width: 860px;
+        margin: 48px auto 0;
+        box-sizing: border-box;
+    }
+}
+
 .learning-flow-left {
     order: 1;
     flex: 0 0 320px;
