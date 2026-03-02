@@ -634,8 +634,9 @@
 }
 
 .voices-section .testimonial-card .occupation {
-    font-size: 13px;
-    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-color);
     margin: 0;
     font-weight: bold;
 }
