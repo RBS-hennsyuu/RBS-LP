@@ -1023,7 +1023,7 @@
     display: flex;
     gap: 24px;
     align-items: stretch;
-    max-width: 560px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -1079,10 +1079,6 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 12px;
-    padding: 10px 14px;
-    border-radius: 999px;
-    background: rgba(204, 0, 0, 0.06);
-    border: 1px solid rgba(204, 0, 0, 0.14);
 }
 
 .yt-card {
@@ -1115,7 +1111,7 @@
 
 .yt-title {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--navy);
     margin-bottom: 10px;
 }
