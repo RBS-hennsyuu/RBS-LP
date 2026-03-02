@@ -119,8 +119,9 @@ a {
 
 .container {
     max-width: 1000px;
-    margin: 0 auto;
     padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ================================================== */
@@ -228,6 +229,8 @@ a {
 .mt-24 { margin-top: 24px; }
 .mt-32 { margin-top: 32px; }
 .mt-48 { margin-top: 48px; }
+.mt-64 { margin-top: 64px; }
+.mt-80 { margin-top: 80px; }
 
 
 
@@ -582,8 +585,25 @@ footer {
     margin-top: 10px;
 }
 
+/* Modal contact form: center the submit button and avoid full-width in desktop */
+.contact-form .form-submit-button {
+    display: block;
+    width: auto;
+    max-width: 320px;
+    margin: 10px auto 0;
+}
+
+@media (max-width: 768px) {
+    .contact-form .form-submit-button {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
+}
+
 /* Success Message Styles */
 .success-message {
+    display: none;
     text-align: center;
     padding: 20px;
 }
@@ -705,8 +725,9 @@ footer {
 
     .container {
         max-width: 1080px;
-        margin: 0 auto;
         padding: 0 40px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footer-cta-container {

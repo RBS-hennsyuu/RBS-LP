@@ -598,25 +598,11 @@ body .hamburger span {
     opacity: 0.85;
 }
 
-/* ひよこコースのサブタイトルを白にする */
-.course-hero.hiyoko h1 small {
-    color: #fff;
-}
-
-/* コッココースのサブタイトルも白にする */
-.course-hero.kokko h1 small {
-    color: #fff;
-}
-
-/* フェニックスコースのサブタイトルも白にする */
-.course-hero.phoenix h1 small {
-    color: #fff;
-}
-
-/* 各コースページで小見出しの透過を解除（完全な白にする） */
+/* 各コースページで小見出しを白・透過解除 */
 .course-hero.hiyoko h1 small,
 .course-hero.kokko h1 small,
 .course-hero.phoenix h1 small {
+    color: #fff;
     opacity: 1;
 }
 

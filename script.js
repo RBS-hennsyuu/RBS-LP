@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             e.preventDefault();
             modal.classList.add('active');
             lockBodyScroll(); // Prevent background scrolling (mobile-safe)
+
+            // Reset form / success state on open (in case previous state persisted)
+            if (contactForm) contactForm.style.display = 'block';
+            const successEl = document.getElementById('successMessage');
+            if (successEl) successEl.style.display = 'none';
         });
     });
 

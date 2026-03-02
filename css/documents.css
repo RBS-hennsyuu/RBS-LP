@@ -39,30 +39,7 @@
         align-self: center;
     }
 }
-@media (min-width: 901px) {
-    .course-description-blocks {
-        display: flex;
-        gap: 32px;
-        justify-content: center;
-        align-items: stretch;
-        margin-bottom: 36px;
-    }
-    .course-description-blocks > div {
-        flex: 1 1 0;
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .course-modal-btn {
-        margin-top: auto;
-    }
-}
-.hiyoko-salon-desc, .kokko-salon-desc, .phoenix-salon-desc {
-    width: 100%;
-}
-.course-modal-btn {
-    align-self: center;
-}
+
 /* =============================== */
 /* コース紹介ボタン装飾 */
 /* =============================== */
@@ -164,20 +141,18 @@
         margin-bottom: 32px;
     }
 }
-/* コースカラー変数の明示定義（common.cssの:rootと同値） */
-:root {
-    --course-teal: #4DBCC5;
-    --course-dark: #2C3E50;
-}
+
 /* Anchor offset for fixed header: jump targets shouldn't be hidden */
 #courses { scroll-margin-top: 110px; }
 @media (max-width: 900px) {
     #courses { scroll-margin-top: 90px; }
 }
-/* コッコ・フェニックスコース用オンラインサロン風カード */
-.kokko-salon-box {
+/* サロンカード：個別クラス（HTML側でそのまま使用）
+   共通プロパティをまとめて定義する */
+/* 既存の個別クラスが HTML 側で単体使用されているため、
+   個別セレクタにも共通プロパティを付与して崩れを防ぐ */
+.kokko-salon-box, .phoenix-salon-box, .hiyoko-salon-box {
     background: #fff;
-    border: 3.5px solid var(--course-teal, #009999);
     border-radius: 12px;
     padding: 30px;
     text-align: center;
@@ -185,134 +160,49 @@
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
-.kokko-salon-badge {
+.kokko-salon-badge, .phoenix-salon-badge, .hiyoko-salon-badge {
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--course-teal, #26b6b6);
     color: #fff;
     font-size: 1.25rem;
     padding: 13px 36px 13px 22px;
     border-bottom-right-radius: 14px;
     font-weight: bold;
     letter-spacing: 0.10em;
-    box-shadow: 0 2px 8px rgba(38,182,182,0.10);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
-.kokko-salon-title {
+.kokko-salon-title, .phoenix-salon-title, .hiyoko-salon-title {
     color: var(--navy);
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-top: 18px;
     font-weight: bold;
 }
-.kokko-salon-desc {
+.kokko-salon-desc, .phoenix-salon-desc, .hiyoko-salon-desc {
     text-align: left;
     line-height: 1.8;
     color: #444;
     max-width: 95%;
     margin: 40px 10px 0;
 }
-.phoenix-salon-box {
-    background: #fff;
-    border: 3.5px solid var(--course-dark, #1a3550);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-.phoenix-salon-badge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--course-dark, #2C5F7C);
-    color: #fff;
-    font-size: 1.25rem;
-    padding: 13px 36px 13px 22px;
-    border-bottom-right-radius: 14px;
-    font-weight: bold;
-    letter-spacing: 0.10em;
-    box-shadow: 0 2px 8px rgba(44,95,124,0.10);
-}
-.phoenix-salon-title {
-    color: var(--navy);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    margin-top: 18px;
-    font-weight: bold;
-}
-.phoenix-salon-desc {
-    text-align: left;
-    line-height: 1.8;
-    color: #444;
-    max-width: 95%;
-    margin: 40px 10px 0;
-}
+
+/* 個別アクセント（色・ボーダーなど） */
+.kokko-salon-box { border: 3.5px solid var(--course-teal, #009999); }
+.kokko-salon-badge { background: var(--course-teal, #26b6b6); }
+.phoenix-salon-box { border: 3.5px solid var(--course-dark, #1a3550); }
+.phoenix-salon-badge { background: var(--course-dark, #2C5F7C); }
+.hiyoko-salon-box { border: 3.5px solid var(--course-green, #7cb342); }
+.hiyoko-salon-badge { background: var(--course-green, #7cb342); }
 @media (max-width: 600px) {
-    .kokko-salon-box, .phoenix-salon-box {
+    .salon-box, .kokko-salon-box, .phoenix-salon-box, .hiyoko-salon-box {
         padding: 18px 6px;
         border-radius: 8px;
     }
-    .kokko-salon-title, .phoenix-salon-title {
-        font-size: 1.08rem;
-    }
-    .kokko-salon-badge, .phoenix-salon-badge {
-        font-size: 1.02rem;
-        padding: 9px 18px 9px 12px;
-        border-bottom-right-radius: 8px;
-    }
-}
-/* ひよこコース用オンラインサロン風カード */
-.hiyoko-salon-box {
-    background: #fff;
-    border: 3.5px solid var(--course-green, #7cb342);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-}
-.hiyoko-salon-badge {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: var(--course-green, #7cb342);
-    color: #fff;
-    font-size: 1.25rem;
-    padding: 13px 36px 13px 22px;
-    border-bottom-right-radius: 14px;
-    font-weight: bold;
-    letter-spacing: 0.10em;
-    box-shadow: 0 2px 8px rgba(124,179,66,0.10);
-}
-.hiyoko-salon-title {
-    color: var(--navy);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    margin-top: 18px;
-    font-weight: bold;
-}
-.hiyoko-salon-desc {
-    text-align: left;
-    line-height: 1.8;
-    color: #444;
-    max-width: 95%;
-    margin: 40px 10px 0;
-}
-@media (max-width: 600px) {
-    .hiyoko-salon-box {
-        padding: 18px 6px;
-        border-radius: 8px;
-    }
-    .hiyoko-salon-title {
-        font-size: 1.08rem;
-    }
-    .hiyoko-salon-badge {
+    .salon-title, .kokko-salon-title, .phoenix-salon-title, .hiyoko-salon-title { font-size: 1.08rem; }
+    .salon-badge, .kokko-salon-badge, .phoenix-salon-badge, .hiyoko-salon-badge {
         font-size: 1.02rem;
         padding: 9px 18px 9px 12px;
         border-bottom-right-radius: 8px;
@@ -486,6 +376,7 @@
 
 .pamphlet-section {
     padding: 80px 0;
+    background: #edf3f9;
 }
 
 .bg-gray {
@@ -836,10 +727,10 @@
 }
 
 /* desktop: ensure framework-box width matches strengths grid */
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     #strengths .framework-box {
         max-width: 860px;
-        margin: 0 auto;
+        margin: 20px auto;
         box-sizing: border-box;
     }
 }
@@ -1707,6 +1598,7 @@
 
     .pamphlet-section {
         padding: 40px 0;
+        background: #edf3f9;
     }
 
     .draft-section {
