@@ -989,7 +989,6 @@
     padding: 30px;
     border-radius: 8px;
     margin-bottom: 40px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .revenue-box-title {
@@ -1018,6 +1017,9 @@
     border-radius: 8px;
     text-align: center;
     border: 2px solid var(--teal-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .work-card-price {
@@ -1276,7 +1278,6 @@
 
     .pamphlet-section {
         padding: 40px 0;
-        background: #edf3f9;
     }
 
     .draft-section {
