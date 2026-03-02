@@ -743,7 +743,7 @@
 }
 
 .voices-section .testimonial-card {
-    background: #fff;
+    background: #e1f0ff;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -754,11 +754,17 @@
     flex-direction: column;
 }
 
-.voices-section .testimonial-card .card-header {
+.voices-section .testimonial-card .card-body {
+    border-bottom: 1px solid #f7f9fa;
+    margin-bottom: 20px;
+}
+
+.voices-section .testimonial-card .card-footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 15px 0;
 }
 
 .voices-section .testimonial-card .avatar-img {
@@ -770,15 +776,15 @@
 }
 
 .voices-section .testimonial-card .badge {
-    background: var(--accent-color);
+    background: var(--navy);
     color: var(--white);
-    font-size: 11px;
-    font-weight: 900;
+    font-size: 14px;
+    font-weight: 700;
     padding: 4px 14px;
-    border-radius: 16px;
     letter-spacing: 0.05em;
     align-self: flex-start;
     margin-bottom: 4px;
+    border-radius: 6px;
 }
 
 .voices-section .testimonial-card .name-age {
@@ -799,8 +805,9 @@
     font-size: 14px;
     line-height: 1.8;
     color: var(--text-color);
-    margin: 0 0 24px 0;
+    margin: 24px 0 24px 0;
     flex: 1;
+    font-weight: 700;
 }
 
 .testimonial-cta {
