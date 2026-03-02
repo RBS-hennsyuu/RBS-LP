@@ -212,10 +212,6 @@ a {
     text-align: left;
 }
 
-.testimonial-cta {
-    text-align: center;
-}
-
 .header .cta-button {
     margin: 0 auto;
 }
@@ -797,8 +793,7 @@ footer {
     }
 
     .cta-container,
-    .footer-cta-container,
-    .testimonial-cta {
+    .footer-cta-container {
         text-align: center;
     }
 
