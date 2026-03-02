@@ -159,6 +159,32 @@ a {
     font-weight: normal;
 }
 
+/* LP セクションヘッダー（全ページ共通） */
+.draft-section-label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: var(--navy);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.draft-main-title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 900;
+    color: var(--navy);
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.35;
+}
+
+.draft-main-subtitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
 /* ================================================== */
 /*                   CTA BUTTONS                     */
 /* ================================================== */
@@ -228,7 +254,27 @@ a {
 .mt-64 { margin-top: 64px; }
 .mt-80 { margin-top: 80px; }
 
+/* アイコン色ユーティリティ */
+.icon-green  { color: #10b981; }
+.icon-blue   { color: #3b82f6; }
+.icon-amber  { color: #f59e0b; }
 
+/* CTA グループレイアウト */
+.cta-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.cta-note {
+    text-align: center;
+    margin-top: 8px;
+    color: #fff;
+}
 
 /* ================================================== */
 /*                NAVIGATION HEADER                  */
@@ -707,6 +753,289 @@ footer {
 }
 
 /* ================================================== */
+/*          共通コンポーネント（複数ページ共有）         */
+/* ================================================== */
+
+/* LP共通レイアウト */
+.pamphlet-section {
+    padding: 80px 0;
+    background: #edf3f9;
+}
+
+.section-bg-light {
+    padding: 80px 0 80px 0;
+    background: #f6f8fb;
+}
+
+/* RBSの強み */
+#strengths {
+    background: #fdeed6;
+}
+
+.strengths-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.strength-card-v2 {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    border: 1.5px solid var(--border-blue);
+    border-left: 4px solid var(--accent-color);
+    border-top: 3px solid var(--accent-color);
+    position: relative;
+}
+
+.strength-card-v2.featured {
+    background: var(--navy);
+    border: none;
+    color: #fff;
+}
+
+.strength-card-v2.featured .str-num,
+.strength-card-v2.featured .str-title,
+.strength-card-v2.featured .str-desc,
+.strength-card-v2.featured .str-arrow { color: #fff; }
+
+.str-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+.str-num {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    color: var(--accent-color);
+    flex-shrink: 0;
+    min-width: 50px;
+    line-height: 1;
+}
+
+.str-title {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 0;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.str-desc {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #555;
+}
+
+.str-arrow {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 16px;
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+/* Why Repair 共通 */
+.why-repair-list {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.why-repair-item {
+    text-align: left;
+}
+
+.why-repair-conclusion-v2 {
+    max-width: 860px;
+    margin: 60px auto 0;
+    border-top: 1px solid var(--border-teal);
+    padding: 40px 0 0;
+    text-align: left;
+}
+
+.why-repair-conclusion-v2 p {
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.8;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+.why-repair-conclusion-v2 strong {
+    color: var(--accent-color);
+    font-size: 1.2em;
+}
+
+/* FAQアコーディオン */
+.faq-section-v2 {
+    background: #f8f9fa;
+    padding: 80px 0;
+}
+
+.faq-list-v2 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.faq-item-v2 {
+    border-bottom: 1px solid #e8edf2;
+}
+
+.faq-q {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 4px;
+    cursor: pointer;
+    gap: 16px;
+}
+
+.faq-q-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--navy);
+    line-height: 1.4;
+}
+
+.faq-q-text::before {
+    content: 'Q';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.faq-a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #4b5563;
+    padding: 0 4px 22px 36px;
+}
+
+/* 会社概要 */
+.company-section-v2 {
+    background: var(--navy);
+    padding: 80px 0;
+    color: #fff;
+}
+
+.company-section-v2 .draft-section-label {
+    color: #fff;
+}
+
+.company-section-v2 .draft-main-title {
+    color: #fff;
+    padding-bottom: 52px;
+}
+
+.company-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.company-table-v2 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.company-table-v2 tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-table-v2 th {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    padding: 14px 0;
+    width: 110px;
+    vertical-align: top;
+}
+
+.company-table-v2 td {
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 0;
+    line-height: 1.55;
+}
+
+.company-stats-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.company-stat-box {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 22px 28px;
+    text-align: center;
+}
+
+.company-stat-number {
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+.company-stat-number span {
+    color: var(--accent-color);
+}
+
+.company-stat-label {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 6px;
+}
+
+/* 最終CTA */
+.final-cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.final-cta-section h2,
+.final-cta-section .cta-lead {
+    color: #fff;
+}
+
+.final-cta-section .cta-button {
+    background: var(--accent-color);
+}
+
+.final-cta-section .cta-button:hover {
+    background: var(--accent-dark);
+}
+
+.final-cta-title,
+.final-cta-text {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* ================================================== */
 /*                PC RESPONSIVE - COMMON             */
 /* ================================================== */
 
@@ -748,6 +1077,14 @@ footer {
 /* ================================================== */
 /*                SP RESPONSIVE - COMMON             */
 /* ================================================== */
+
+@media (max-width: 600px) {
+    .cta-buttons-wrapper {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+}
 
 @media (max-width: 350px) {
 
