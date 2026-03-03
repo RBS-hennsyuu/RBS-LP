@@ -265,12 +265,6 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .empathy-item-v2 p {
-        font-size: 12px;
-    }
-}
-
 .empathy-conclusion-v2 {
     text-align: center;
     padding: 36px 0 0;
