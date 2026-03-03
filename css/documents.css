@@ -1,3 +1,8 @@
+/* documents ページ専用コンテナ幅 */
+.doc-container {
+    max-width: 860px;
+}
+
 @media (min-width: 901px) {
     .course-description-blocks {
         display: flex;
@@ -557,9 +562,13 @@
 /*                 オンラインサロン                     */
 /* ================================================== */
 
+.online-salon-section {
+    background: #cae0fa;
+}
+
 .online-salon-box {
     background: #f8f9fa;
-    border: 2px solid var(--accent-color);
+    border: 2px solid var(--navy);
     border-radius: 12px;
     padding: 30px;
     text-align: center;
@@ -571,7 +580,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: var(--accent-color);
+    background: var(--navy);
     color: #fff;
     font-size: 0.8rem;
     padding: 5px 15px;
@@ -583,16 +592,6 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     margin-top: 15px;
-}
-
-.online-salon-date {
-    display: inline-block;
-    background: var(--border-subtle);
-    color: #666;
-    padding: 2px 10px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    margin-bottom: 15px;
 }
 
 .online-salon-text {
@@ -1461,7 +1460,7 @@
         box-sizing: border-box;
         overflow-x: hidden;
     }
-    .container {
+    .doc-container {
         box-sizing: border-box;
         padding-left: 16px;
         padding-right: 16px;
