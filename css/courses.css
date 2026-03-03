@@ -755,6 +755,10 @@ body .hamburger span {
     background: var(--course-teal, #4DBCC5);
 }
 
+.course-section.bg-benefits-phoenix {
+    background: #f2f6fb;
+}
+
 .step-accent.phoenix {
     background: #edf3f9;
 }
