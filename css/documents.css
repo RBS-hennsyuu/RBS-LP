@@ -682,7 +682,7 @@
 @media (min-width: 960px) {
     #strengths .framework-box {
         max-width: 860px;
-        margin: 20px auto;
+        margin: 40px auto;
         box-sizing: border-box;
     }
 }
