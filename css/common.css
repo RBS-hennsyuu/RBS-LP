@@ -171,7 +171,7 @@ a {
 
 .draft-main-title {
     font-size: clamp(22px, 4vw, 32px);
-    font-weight: 900;
+    font-weight: 700;
     color: var(--navy);
     text-align: center;
     margin-bottom: 40px;
@@ -810,7 +810,7 @@ footer {
 
 .str-num {
     font-size: 40px;
-    font-weight: 900;
+    font-weight: 800;
     letter-spacing: 0.05em;
     color: var(--accent-color);
     flex-shrink: 0;
@@ -820,7 +820,7 @@ footer {
 
 .str-title {
     font-size: 17px;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--navy);
     margin-bottom: 0;
     line-height: 1.45;
@@ -911,7 +911,7 @@ footer {
     background: var(--accent-color);
     color: #fff;
     font-size: 12px;
-    font-weight: 900;
+    font-weight: 800;
     border-radius: 50%;
     text-align: center;
     line-height: 24px;
@@ -993,7 +993,7 @@ footer {
 
 .company-stat-number {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 800;
     color: #fff;
     line-height: 1;
 }
@@ -1056,7 +1056,7 @@ footer {
 
 .instructor-name {
     font-size: 22px;
-    font-weight: 900;
+    font-weight: 800;
     color: var(--navy);
     margin-bottom: 4px;
 }

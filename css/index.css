@@ -172,7 +172,7 @@
 
 .stat-number {
     font-size: clamp(24px, 4vw, 32px);
-    font-weight: 900;
+    font-weight: 800;
     line-height: 1;
     color: #1c3a57;
 }
@@ -209,11 +209,18 @@
 
 .empathy-section-v2 .empathy-main-title {
     font-size: clamp(22px, 4vw, 32px);
-    font-weight: 900;
+    font-weight: bold;
     color: var(--navy);
     text-align: center;
     margin-bottom: 50px;
     line-height: 1.35;
+}
+
+@media (max-width: 768px) {
+    .empathy-section-v2 .empathy-main-title {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
 }
 
 .empathy-list-v2 {
@@ -250,11 +257,17 @@
 }
 
 .empathy-item-v2 p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--navy);
     line-height: 1.55;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .empathy-item-v2 p {
+        font-size: 12px;
+    }
 }
 
 .empathy-conclusion-v2 {
@@ -266,7 +279,7 @@
 
 .empathy-conclusion-v2 .empathy-lead {
     font-size: clamp(18px, 3vw, 24px);
-    font-weight: 800;
+    font-weight: 700;
     color: var(--navy);
     line-height: 1.6;
     margin-bottom: 12px;
@@ -285,8 +298,7 @@
 }
 
 .empathy-conclusion-v2 .empathy-text {
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 20px;
     color: var(--navy);
     line-height: 1.75;
 }
@@ -347,7 +359,7 @@
 
 .overview-main-title {
     font-size: clamp(20px, 3.2vw, 26px);
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     margin-bottom: 12px;
     line-height: 1.35;
@@ -662,7 +674,7 @@
 
 .final-cta-section .final-cta-title {
     font-size: clamp(20px, 3.5vw, 28px);
-    font-weight: 900;
+    font-weight: 700;
     color: #fff;
     margin-bottom: 12px;
     line-height: 1.4;
@@ -911,6 +923,14 @@
 
     .empathy-conclusion-v2 {
         padding: 40px 20px;
+    }
+
+    .empathy-conclusion-v2 .empathy-lead {
+        font-size: 15px;
+    }
+
+    .empathy-conclusion-v2 .empathy-text {
+        font-size: 11px;
     }
 
     .why-repair-section {
