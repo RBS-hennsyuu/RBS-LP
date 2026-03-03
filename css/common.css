@@ -1357,3 +1357,57 @@ footer {
         font-weight: 600;
     }
 }
+
+/* ================================================== */
+/*                   ITEM TITLE                      */
+/* ================================================== */
+.item-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--black);
+}
+
+.why-repair-section {
+    background-color: var(--bg-light);
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+@media (max-width: 768px) {
+    .why-repair-section {
+        padding: 40px 0 40px 0;
+    }
+}
+
+.item-image {
+    order: 1;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .item-title {
+        text-align: left;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .item-image {
+        flex: 0 0 48%;
+        max-width: 550px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

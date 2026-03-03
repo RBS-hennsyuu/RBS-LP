@@ -308,12 +308,6 @@
 /*                 WHY REPAIR SECTION                */
 /* ================================================== */
 
-.why-repair-section {
-    background-color: var(--bg-light);
-    text-align: center;
-    padding: 80px 0 80px 0;
-}
-
 .why-repair-item .item-image {
     width: 100%;
     max-width: 700px;
@@ -771,21 +765,6 @@
         flex-direction: row-reverse;
     }
 
-    .item-title {
-        text-align: left;
-        font-size: 24px;
-        margin-bottom: 30px;
-    }
-
-    .item-image {
-        flex: 0 0 48%;
-        max-width: 550px;
-        margin-bottom: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .item-text {
         flex: 1;
     }
@@ -934,10 +913,6 @@
         font-size: 11px;
     }
 
-    .why-repair-section {
-        padding: 40px 0 40px 0;
-    }
-
     .why-repair-list {
         gap: 60px;
         margin-top: 0;
@@ -951,37 +926,8 @@
         text-align: left;
     }
 
-    .item-image {
-        order: 1;
-        margin-bottom: 25px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
-
     .item-desc {
         order: 2;
-    }
-
-    .item-title {
-        font-size: 22px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 25px;
-        color: var(--black);
-    }
-
-    .item-image img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-    .item-text p {
-        font-size: 15px;
-        line-height: 1.8;
-        color: #333;
-        margin-bottom: 20px;
     }
 
     .why-repair-conclusion-v2 {
