@@ -49,16 +49,6 @@ body .hamburger span {
     pointer-events: none;
 }
 
-.course-hero-badge {
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    margin-bottom: 12px;
-}
-
 .course-hero h1 {
     font-size: clamp(22px, 5vw, 38px);
     font-weight: 800;
@@ -97,15 +87,20 @@ body .hamburger span {
 .course-back-link {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 8px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
-    transition: color 0.2s;
-    margin-top: 12px;
+    transition: background 0.2s, color 0.2s;
+    margin-top: 24px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.7);
+    color: #fff;
 }
 
 .course-back-link:hover {
+    background: rgba(255,255,255,0.15);
     color: #fff;
 }
 
@@ -115,20 +110,19 @@ body .hamburger span {
 .course-hero-img-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 36px;
 }
 
 .course-hero-img-wrap img {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
     object-fit: contain;
     filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.28));
 }
 
 @media (max-width: 600px) {
     .course-hero-img-wrap img {
-        width: 130px;
-        height: 130px;
+        width: 230px;
+        height: 230px;
     }
 }
 
@@ -139,39 +133,8 @@ body .hamburger span {
     padding: 72px 0;
 }
 
-.course-section+.course-section {
-    border-top: 1px solid var(--border-subtle);
-}
-
 .course-section.bg-light {
     background: var(--bg-light);
-}
-
-/* セクションタイトル */
-.course-section-label {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.course-section-title {
-    font-size: clamp(20px, 3.5vw, 28px);
-    font-weight: 800;
-    color: var(--navy);
-    text-align: center;
-    margin-bottom: 10px;
-    line-height: 1.4;
-}
-
-.course-section-subtitle {
-    font-size: 14px;
-    color: #666;
-    text-align: center;
-    margin-bottom: 48px;
 }
 
 /* =============================== */
@@ -194,7 +157,7 @@ body .hamburger span {
 
 .course-overview-card {
     background: #fff;
-    border: 1.5px solid var(--border-subtle);
+    border: 2px solid var(--teal-light);
     border-radius: 14px;
     padding: 24px 22px;
     display: flex;
@@ -417,6 +380,9 @@ body .hamburger span {
     .course-img-gallery {
         grid-template-columns: 1fr;
     }
+    .course-benefits-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* =============================== */
@@ -468,64 +434,115 @@ body .hamburger span {
 /* =============================== */
 /*   料金セクション                 */
 /* =============================== */
-.course-price-box {
-    max-width: 520px;
-    margin: 0 auto;
-    background: var(--navy);
-    border-radius: 20px;
-    padding: 40px 36px;
+.course-price-card-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #236fb7 100%);
+    padding: 36px 36px 32px;
     text-align: center;
     color: #fff;
-    box-shadow: 0 8px 32px rgba(27, 58, 87, 0.22);
-    position: relative;
+}
+
+.course-price-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    border: 1.5px solid rgba(255,255,255,0.35);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    padding: 4px 16px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+}
+
+.course-price-card.hiyoko .course-price-badge {
+    background: var(--course-green, #5CB85C);
+    border-color: var(--course-green, #5CB85C);
+}
+
+.course-price-card.kokko .course-price-badge {
+    background: var(--course-teal, #4DBCC5);
+    border-color: var(--course-teal, #4DBCC5);
+}
+
+.course-price-card.phoenix .course-price-badge {
+    background: #fff;
+    border-color: #fff;
+    color: var(--navy);
+}
+.course-price-card {
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 20px;
     overflow: hidden;
+    box-shadow: 0 8px 40px rgba(27, 58, 87, 0.15);
+    border: 1.5px solid #e2eaf3;
 }
 
-.course-price-box::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: none;
-    /* グラデーションを削除して単色表示にする */
-    pointer-events: none;
+.course-price-card-header {
+    background: linear-gradient(135deg, var(--navy) 0%, #236fb7 100%);
+    padding: 36px 36px 32px;
+    text-align: center;
+    color: #fff;
 }
 
-.course-price-label {
+.course-price-card-label {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--accent-color);
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 8px;
 }
 
-.course-price-value {
-    font-size: clamp(30px, 6vw, 48px);
+.course-price-card-value {
+    font-size: clamp(34px, 7vw, 52px);
     font-weight: 800;
     color: #fff;
     letter-spacing: -0.02em;
     margin-bottom: 6px;
+    line-height: 1;
 }
 
-.course-price-tax {
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 24px;
-}
-
-.course-price-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.14);
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.course-price-row span:last-child {
-    font-weight: 700;
+.course-price-card-tax {
+    font-size: 12px;
     color: #fff;
+    margin: 0;
+}
+
+.course-price-card-body {
+    background: #fff;
+    padding: 28px 36px;
+}
+
+.course-price-includes {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.course-price-includes li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+.course-price-includes li i {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #e8f4e8;
+    color: #22c55e;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 /* =============================== */
@@ -540,7 +557,7 @@ body .hamburger span {
 
 .course-cta-title {
     font-size: clamp(20px, 4vw, 30px);
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -566,7 +583,7 @@ body .hamburger span {
     border: none;
     cursor: pointer;
     transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 14px rgba(255, 107, 53, 0.35);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .course-cta-btn:hover {
@@ -598,12 +615,76 @@ body .hamburger span {
     opacity: 0.85;
 }
 
-/* 各コースページで小見出しを白・透過解除 */
-.course-hero.hiyoko h1 small,
+/* コッここースヒーロー */
+.course-hero.kokko {
+    background: #fdeed6;
+}
+
+.course-hero.kokko h1,
 .course-hero.kokko h1 small,
-.course-hero.phoenix h1 small {
-    color: #fff;
+.course-hero.kokko .course-back-link {
+    color: var(--navy);
     opacity: 1;
+}
+
+.course-hero.kokko .course-back-link {
+    border-color: var(--navy);
+}
+
+.course-hero.kokko .course-back-link:hover {
+    background: rgba(28,58,87,0.08);
+}
+
+.course-hero.kokko .course-hero-img-wrap img {
+    filter: none;
+}
+
+/* ひよこコースヒーロー */
+.course-hero.hiyoko {
+    background: #fdeed6;
+}
+
+.course-hero.hiyoko h1,
+.course-hero.hiyoko h1 small,
+.course-hero.hiyoko .course-back-link {
+    color: var(--navy);
+    opacity: 1;
+}
+
+.course-hero.hiyoko .course-back-link {
+    border-color: var(--navy);
+}
+
+.course-hero.hiyoko .course-back-link:hover {
+    background: rgba(28,58,87,0.08);
+}
+
+.course-hero.hiyoko .course-hero-img-wrap img {
+    filter: none;
+}
+
+/* フェニックスコースヒーロー */
+.course-hero.phoenix {
+    background: #fdeed6;
+}
+
+.course-hero.phoenix h1,
+.course-hero.phoenix h1 small,
+.course-hero.phoenix .course-back-link {
+    color: var(--navy);
+    opacity: 1;
+}
+
+.course-hero.phoenix .course-back-link {
+    border-color: var(--navy);
+}
+
+.course-hero.phoenix .course-back-link:hover {
+    background: rgba(28,58,87,0.08);
+}
+
+.course-hero.phoenix .course-hero-img-wrap img {
+    filter: none;
 }
 
 /* アイコンの右マージン（共通化） */
@@ -613,14 +694,10 @@ body .hamburger span {
 }
 
 /* compactな価格ボックス（ページ単位で幅を狭めるためのユーティリティ） */
-.course-price-box.compact {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-}
+
 
 /* セクションラベルのアクセント色ユーティリティ */
-.course-section-label.accent {
+.draft-section-label.accent {
     color: var(--accent-color);
 }
 
@@ -662,6 +739,14 @@ body .hamburger span {
     background: var(--course-dark, #2C3E50);
 }
 
+.step-accent.hiyoko {
+    background: #edf3f9;
+}
+
+.step-accent.kokko {
+    background: #edf3f9;
+}
+
 .step-accent.hiyoko .course-step-num {
     background: var(--course-green, #5CB85C);
 }
@@ -670,8 +755,24 @@ body .hamburger span {
     background: var(--course-teal, #4DBCC5);
 }
 
+.step-accent.phoenix {
+    background: #edf3f9;
+}
+
 .step-accent.phoenix .course-step-num {
     background: var(--course-dark, #2C3E50);
+}
+
+.course-section.bg-price-phoenix {
+    background: #cae0fa;
+}
+
+.course-section.bg-price-hiyoko {
+    background: #cae0fa;
+}
+
+.course-section.bg-price-kokko {
+    background: #cae0fa;
 }
 
 /* 星アイコンの共通アクセント色（アンバー） */
