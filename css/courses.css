@@ -155,17 +155,21 @@ body .hamburger span {
     }
 }
 
+.course-wrap.hiyoko .course-overview-card { border-left-color: #5CB85C; }
+.course-wrap.kokko .course-overview-card  { border-left-color: #4DBCC5; }
+.course-wrap.phoenix .course-overview-card { border-left-color: #2C3E50; }
+
 .course-overview-card {
     background: #fff;
-    border: 2px solid var(--teal-light);
+    border: none;
+    border-left: 4px solid var(--teal-light);
     border-radius: 14px;
     padding: 24px 22px;
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
     transition: box-shadow 0.2s;
-    /* transformは無効化（カードが動かないように） */
 }
 
 .course-overview-card:hover {
@@ -536,8 +540,8 @@ body .hamburger span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e8f4e8;
-    color: #22c55e;
+    background: #009f00;
+    color: #ffffff;
     font-size: 10px;
     display: flex;
     align-items: center;
