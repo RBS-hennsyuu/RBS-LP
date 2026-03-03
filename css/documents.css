@@ -324,30 +324,26 @@
     }
 }
 /* PC用収益シミュレーション表 粗利益行 装飾 */
-.comparison-table .profit-highlight {
-    background-color: var(--profit-bg);
-}
 .comparison-table .profit-highlight td {
-    background-color: transparent;
-    color: #222;
-    font-weight: bold;
+    background-color: var(--profit-bg);
+    color: #1a5c3a;
+    font-weight: 700;
 }
 /* PC用収益シミュレーション表 収入行 装飾 */
-.comparison-table .income-highlight {
-    background-color: var(--income-bg);
-}
 .comparison-table .income-highlight td {
-    background-color: transparent;
+    background-color: var(--income-bg);
 }
 .comparison-table .income-highlight td:not(.row-header) {
     color: #C0392B;
-    font-weight: bold;
+    font-weight: 700;
+}
+
 /* ================================================== */
 /* ================================================== */
 /*      documents.html / documents_draft.html 専用    */
 /* ================================================== */
 /*                 ヒーローセクション                   */
-}
+/* ================================================== */
 /* ================================================== */
 
 .pamphlet-hero {
@@ -720,8 +716,11 @@
 /* ================================================== */
 
 .comparison-table-wrapper {
-    overflow-x: auto;
+    overflow: hidden;
     margin-top: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+    border: 1px solid #e2e8f0;
 }
 
 /* 表示切り替え用ユーティリティ */
@@ -745,32 +744,49 @@
     width: 100%;
     border-collapse: collapse;
     min-width: 600px;
-    background: #f8f9fa;
+    background: #fff;
 }
 
 .comparison-table th,
 .comparison-table td {
-    border: 1px solid var(--border);
-    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #eaeff4;
+    padding: 16px 20px;
     text-align: center;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .comparison-table th {
     background-color: var(--navy);
     color: #fff;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    border-bottom: none;
+    padding: 18px 20px;
 }
 
 .comparison-table .row-header {
-    background-color: var(--bg-gray);
-    color: #333;
-    font-weight: bold;
+    background-color: #f8fafc;
+    color: #374151;
+    font-weight: 600;
     text-align: left;
     width: 150px;
+    border-right: 1px solid #eaeff4;
+}
+
+.comparison-table th.row-header {
+    background-color: var(--navy);
+    color: rgba(255,255,255,0.75);
+    border-right: 1px solid rgba(255,255,255,0.15);
 }
 
 .comparison-table td.text-left {
     text-align: left;
+    line-height: 1.8;
 }
 
 .pc-only-table {
@@ -1039,10 +1055,12 @@
 
 .work-card {
     background: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 20px 24px;
+    border-radius: 14px;
     text-align: center;
-    border: 2px solid var(--teal-light);
+    border: none;
+    border-left: 4px solid var(--navy);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1080,7 +1098,7 @@
 
 .revenue-note {
     font-size: 12px;
-    color: #666;
+    color: #333;
     margin-top: 10px;
     line-height: 1.6;
     text-align: left;
