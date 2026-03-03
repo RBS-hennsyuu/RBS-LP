@@ -567,36 +567,64 @@
 }
 
 .online-salon-box {
-    background: #f8f9fa;
-    border: 2px solid var(--navy);
-    border-radius: 12px;
-    padding: 30px;
+    background: linear-gradient(135deg, #0f2744 0%, #1c3a57 100%);
+    border-radius: 16px;
+    padding: 40px 36px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 8px 32px rgba(28, 58, 87, 0.25);
 }
 
-.online-salon-badge {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--navy);
+.online-salon-coming-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.35);
     color: #fff;
-    font-size: 0.8rem;
-    padding: 5px 15px;
-    border-bottom-left-radius: 8px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    padding: 8px 20px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.online-salon-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex-shrink: 0;
+    animation: salon-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes salon-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.7); }
 }
 
 .online-salon-title {
-    color: var(--navy);
-    font-size: 1.3rem;
-    margin-bottom: 10px;
-    margin-top: 15px;
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.online-salon-title i {
+    color: #93c5fd;
+    margin-right: 6px;
 }
 
 .online-salon-text {
+    color: #fff;
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.9;
+    font-size: 14px;
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 /* ================================================== */
