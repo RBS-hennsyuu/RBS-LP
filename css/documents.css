@@ -134,6 +134,7 @@
 /* コースカード内キャラ画像の上マージン調整 */
 .course-description-blocks .course-desc-img {
     margin-top: 30px;
+    visibility: hidden;
 }
 
 @media (max-width: 900px) {
