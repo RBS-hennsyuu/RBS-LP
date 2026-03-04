@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Modal functionality
     const modal = document.getElementById('contactModal');
-    const ctaButtons = document.querySelectorAll('#ctaButton1, #ctaButton2, #ctaButton3');
+    const ctaButtons = document.querySelectorAll('#ctaButton1, #ctaButton2, #ctaButton3, .nav-cta, .mobile-cta');
     const closeBtn = document.querySelector('.modal-close');
     const contactForm = document.getElementById('contactForm');
 
