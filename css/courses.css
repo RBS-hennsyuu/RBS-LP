@@ -553,7 +553,7 @@ body .hamburger span {
 /*   CTA セクション                 */
 /* =============================== */
 .course-cta-section {
-    background: var(--navy);
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
     padding: 72px 0;
     text-align: center;
     color: #fff;
@@ -593,7 +593,7 @@ body .hamburger span {
 .course-cta-btn:hover {
     background: var(--accent-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.45);
+    box-shadow: none;
 }
 
 /* =============================== */

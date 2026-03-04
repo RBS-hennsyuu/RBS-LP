@@ -1362,11 +1362,11 @@ footer {
 /*                   ITEM TITLE                      */
 /* ================================================== */
 .item-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 25px;
-    color: var(--black);
+    color: var(--navy);
 }
 
 .why-repair-section {
