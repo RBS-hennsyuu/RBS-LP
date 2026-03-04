@@ -1005,8 +1005,7 @@
     }
 
     .company-inner {
-        grid-template-columns: 1fr;
-        gap: 36px;
+        gap: 16px;
     }
 
     .faq-section-v2 {
