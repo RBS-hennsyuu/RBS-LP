@@ -477,7 +477,7 @@ body .hamburger span {
 .course-price-card {
     max-width: 480px;
     margin: 0 auto;
-    border-radius: 20px;
+    border-radius: 6px;
     overflow: hidden;
     box-shadow: 0 8px 40px rgba(27, 58, 87, 0.15);
     border: 1.5px solid #e2eaf3;
