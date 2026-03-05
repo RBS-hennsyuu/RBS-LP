@@ -864,6 +864,14 @@ footer {
     text-align: left;
 }
 
+.item-text p {
+    margin-bottom: 1em;
+}
+
+.item-text p:last-child {
+    margin-bottom: 0;
+}
+
 .why-repair-conclusion-v2 {
     max-width: 860px;
     margin: 60px auto 0;
