@@ -759,6 +759,15 @@
         flex-direction: row-reverse;
     }
 
+    .why-repair-item .item-image {
+        max-width: 550px;
+        margin: 0;
+    }
+
+    .why-repair-item .item-image img {
+        max-width: 100%;
+    }
+
     .item-text {
         flex: 1;
     }
