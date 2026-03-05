@@ -204,7 +204,7 @@ a {
     padding: 14px 32px;
     background: var(--navy);
     color: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
@@ -525,7 +525,7 @@ footer {
     background-color: #f8f9fa;
     margin: 20px;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 6px;
     width: 90%;
     max-width: 600px;
     position: relative;
@@ -794,7 +794,7 @@ footer {
 
 .strength-card-v2 {
     background: #fff;
-    border-radius: 16px;
+    border-radius: 6px;
     padding: 32px 28px;
     border: 1.5px solid var(--border-blue);
     border-left: 4px solid var(--accent-color);
@@ -1035,7 +1035,7 @@ footer {
 .company-stat-box {
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 22px 28px;
     text-align: center;
     flex: 1;
@@ -1146,7 +1146,7 @@ footer {
 .instructor-parent-card {
     background: linear-gradient(180deg, #ffffff 0%, #f7f9fc 100%);
     border: 1px solid #e6edf4;
-    border-radius: 16px;
+    border-radius: 6px;
     padding: 32px 28px;
     display: flex;
     flex-direction: column;
@@ -1349,7 +1349,7 @@ footer {
         padding: 0;
         background: var(--navy);
         color: #fff;
-        border-radius: 12px;
+        border-radius: 6px;
         font-weight: bold;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         margin: 0 auto;
@@ -1569,7 +1569,7 @@ footer {
     max-width: 900px;
     margin: 0 auto;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 24px 28px;
     border: 2px solid #1a3066;
 }

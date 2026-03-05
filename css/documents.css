@@ -158,7 +158,7 @@
    個別セレクタにも共通プロパティを付与して崩れを防ぐ */
 .kokko-salon-box, .phoenix-salon-box, .hiyoko-salon-box {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 30px;
     text-align: center;
     position: relative;
@@ -217,7 +217,7 @@
 .hiyoko-invert-card {
     background: #fff;
     border-left: 10px solid var(--accent-color, #F9B233);
-    border-radius: 16px;
+    border-radius: 6px;
     padding: 32px 24px;
     margin-bottom: 36px;
     box-shadow: 0 4px 16px rgba(249,178,51,0.10);
@@ -286,7 +286,7 @@
     width: 120px;
     height: 120px;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 6px;
     background: #fff;
     border: 1.5px solid #e0e0a0;
     flex-shrink: 0;
@@ -408,7 +408,7 @@
 .curriculum-card {
     background: #f8f9fa;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     margin-bottom: 50px;
 }
@@ -444,7 +444,7 @@
 .framework-box {
     background: #fff;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 6px;
     margin: 30px 0;
     border-left: 4px solid var(--accent-color);
     border-top: 3px solid var(--accent-color);
@@ -564,7 +564,7 @@
 
 .online-salon-box {
     background: linear-gradient(135deg, #0f2744 0%, #1c3a57 100%);
-    border-radius: 16px;
+    border-radius: 6px;
     padding: 40px 36px;
     text-align: center;
     position: relative;
@@ -718,7 +718,7 @@
 .comparison-table-wrapper {
     overflow: hidden;
     margin-top: 40px;
-    border-radius: 14px;
+    border-radius: 6px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.09);
     border: 1px solid #e2e8f0;
 }
@@ -810,7 +810,7 @@
 /* SPカード */
 .comparison-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 20px;
     margin-bottom: 32px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -1070,7 +1070,7 @@
     align-items: flex-start;
     gap: 16px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 18px 22px;
     border-left: 4px solid var(--navy);
     box-shadow: 0 4px 16px rgb(0 0 0 / 6%);
@@ -1113,7 +1113,7 @@
 .work-card {
     background: #fff;
     padding: 20px 24px;
-    border-radius: 14px;
+    border-radius: 6px;
     text-align: center;
     border: none;
     border-left: 4px solid var(--navy);
@@ -1184,7 +1184,7 @@
     min-width: 300px;
     background: var(--white);
     padding: 20px;
-    border-radius: 16px;
+    border-radius: 6px;
     border: 5px solid var(--navy);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -1274,7 +1274,7 @@
     font-weight: 700;
     box-shadow: none;
     transition: background 0.2s, color 0.2s, transform 0.2s;
-    border-radius: 12px;
+    border-radius: 6px;
     margin: 0 8px;
     box-sizing: border-box;
 }

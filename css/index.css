@@ -7,7 +7,7 @@
 /* ================================================== */
 
 .header {
-    background: url('../assets/s-2400x1371_v-frms_webp_dad3fd6d-a9e5-411e-94b9-309dc7fe2180.webp');
+    background: url('../assets/images/lp/RBS_top.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +166,7 @@
     color: #fff;
     padding: 16px;
     background: rgb(255 255 255);
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
@@ -236,7 +236,7 @@
     align-items: flex-start;
     gap: 16px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 18px 22px;
     border-left: 4px solid var(--navy);
 }
@@ -333,7 +333,7 @@
 
 .overview-main-card {
     background: var(--navy);
-    border-radius: 16px;
+    border-radius: 6px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 340px;
@@ -376,7 +376,7 @@
 
 .overview-sub-card {
     background: #fff;
-    border-radius: 14px;
+    border-radius: 6px;
     padding: 26px 22px;
     border: 1.5px solid var(--border-blue);
 }
@@ -461,7 +461,7 @@
     margin-bottom: 24px;
     padding: 20px;
     background: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
@@ -584,7 +584,7 @@
 
 .voices-section .testimonial-card {
     background: #ffffff;
-    border-radius: 15px;
+    border-radius: 6px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
@@ -807,7 +807,7 @@
 
 @media (max-width: 768px) {
     .header {
-        background: url('../assets/s-2400x1371_v-frms_webp_dad3fd6d-a9e5-411e-94b9-309dc7fe2180.webp');
+        background: url('../assets/images/lp/RBS_top.png');
         background-size: cover;
         background-position: 65% center;
         background-repeat: no-repeat;
@@ -1040,7 +1040,7 @@
         width: 100%;
         background: #fff;
         padding: 20px;
-        border-radius: 12px;
+        border-radius: 6px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     }
 
