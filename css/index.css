@@ -358,7 +358,7 @@
 }
 
 .empathy-conclusion-v2 .empathy-text {
-    font-size: 20px;
+    font-size: clamp(18px, 3vw, 24px);
     color: var(--navy);
     line-height: 1.75;
 }
@@ -785,7 +785,7 @@
     .headline-small,
     .headline-large {
         display: block;
-        font-size: 2.5rem;
+        font-size: clamp(1.8rem, 2.3vw, 2.5rem);
         font-weight: 700;
         line-height: 1.3;
     }
@@ -801,6 +801,12 @@
     .subtitle br {
         display: none;
     }
+
+@media (max-width: 940px) {
+    .subtitle br {
+        display: inline;
+    }
+}
 
     .header .cta-container {
         text-align: left;
@@ -969,7 +975,7 @@
     }
 
     .empathy-section-v2 {
-        padding: 0 0 56px;
+        padding: 0;
     }
 
     .empathy-problem-wrap {
@@ -1151,6 +1157,7 @@
 @media (max-width: 480px) {
     .header {
         background-image: url('../assets/images/lp/RBS_top_sp.png');
+        padding-bottom: 0;
     }
 
     .header h1 {
@@ -1158,11 +1165,11 @@
     }
 
     .headline-small {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .headline-large {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .header-content {
@@ -1171,6 +1178,7 @@
 
     .cta-container {
         padding-top: 40px;
+        padding-bottom: 0;
     }
 
     .cta-wrapper {

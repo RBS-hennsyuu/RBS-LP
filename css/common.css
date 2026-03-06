@@ -160,7 +160,7 @@ a {
 }
 
 /* LP セクションヘッダー（全ページ共通） */
-.draft-section-label {
+.section-label {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -169,7 +169,7 @@ a {
     text-align: center;
 }
 
-.draft-main-title {
+.section-title {
     font-size: clamp(22px, 4vw, 32px);
     font-weight: 700;
     color: var(--navy);
@@ -178,11 +178,10 @@ a {
     line-height: 1.35;
 }
 
-.draft-main-subtitle {
-    font-size: 14px;
-    color: #666;
+.section-subtitle {
+    font-size: 17px;
+    color: #333;
     text-align: center;
-    padding-bottom: 32px;
 }
 
 /* ================================================== */
@@ -745,6 +744,17 @@ footer {
     }
 }
 
+/* SP専用表示 */
+.sp-only {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sp-only {
+        display: inline;
+    }
+}
+
 /* Small icon helper classes */
 .icon-lead { margin-right: 0.5em; color: #2c3e50; }
 .icon-youtube { color: #FF0000; }
@@ -830,6 +840,7 @@ footer {
     align-items: center;
     gap: 25px;
     margin-bottom: 12px;
+    width: 100%;
 }
 
 .str-num {
@@ -843,7 +854,7 @@ footer {
 }
 
 .str-title {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--navy);
     margin-bottom: 0;
@@ -966,11 +977,11 @@ footer {
     color: #fff;
 }
 
-.company-section-v2 .draft-section-label {
+.company-section-v2 .section-label {
     color: #fff;
 }
 
-.company-section-v2 .draft-main-title {
+.company-section-v2 .section-title {
     color: #fff;
 }
 
@@ -1700,10 +1711,79 @@ footer {
     color: var(--accent-color);
 }
 
-.framework-img {
-    max-width: 100px;
-    display: block;
+.framework-card-row {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.framework-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1.5px solid #d0d0d0;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.framework-list-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.framework-side-img {
+    width: 420px;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .framework-card-row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .framework-card {
+        width: 100%;
+    }
+    .framework-side-img {
+        width: 100%;
+        height: auto;
+    }
+    .str-title {
+        font-size: 15px;
+    }
+    .str-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .str-title {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+.framework-img-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
     margin-bottom: 16px;
+}
+
+.framework-img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: contain;
 }
 
 .attendance-img {
@@ -1721,6 +1801,9 @@ footer {
     margin: 30px 0;
     border-left: 4px solid var(--accent-color);
     border-top: 3px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .framework-title {
@@ -1742,7 +1825,7 @@ footer {
 
 .framework-desc {
     margin-bottom: 15px;
-    font-weight: bold;
+    width: 100%;
 }
 
 .stack-gap {
@@ -1757,7 +1840,7 @@ footer {
 .framework-list {
     list-style: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-top: 30px;
     font-weight: 500;
 }
 
