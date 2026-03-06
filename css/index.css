@@ -152,6 +152,23 @@
     pointer-events: none;
 }
 
+.headline-pin-img--cta {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    h1 .headline-pin-img {
+        display: none;
+    }
+
+    .headline-pin-img--cta {
+        display: block;
+        max-width: 260px;
+        height: auto;
+        margin: 0 auto 16px;
+    }
+}
+
 @media (max-width: 480px) {
     .header .recruitment-badge--header::after {
         border-width: 6px 6px 0 6px;
@@ -197,7 +214,7 @@
     padding: 16px;
     background: rgb(255 255 255);
     border-radius: 6px;
-    box-shadow: 8px 8px 0 #edbe87, 0 4px 12px rgba(14, 32, 53, 0.18);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .stat-number {
@@ -853,6 +870,7 @@
 /*                SP RESPONSIVE - LP                 */
 /* ================================================== */
 
+
 @media (max-width: 768px) {
     .header {
         background: url('../assets/images/lp/RBS_top.png');
@@ -1127,5 +1145,35 @@
 
     .learning-flow-item-desc {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        background-image: url('../assets/images/lp/RBS_top_sp.png');
+    }
+
+    .header h1 {
+        margin-bottom: 33px;
+    }
+
+    .headline-small {
+        font-size: 28px;
+    }
+
+    .headline-large {
+        font-size: 28px;
+    }
+
+    .header-content {
+        min-height: 700px;
+    }
+
+    .cta-container {
+        padding-top: 40px;
+    }
+
+    .cta-wrapper {
+        margin-top: 40px;
     }
 }
