@@ -202,16 +202,17 @@ a {
     height: auto;
     min-height: 70px;
     padding: 14px 32px;
-    background: var(--navy);
+    background: linear-gradient(135deg, #2C5280 0%, #1B3A57 50%, #0e2035 100%);
     color: #fff;
     border-radius: 6px;
     font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 0 #0e2035, 0 6px 14px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     font-size: 18px;
     text-align: center;
     border: none;
-    transition: transform 0.2s;
+    transform: translateY(0);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
     box-sizing: border-box;
 }
 
@@ -229,8 +230,15 @@ a {
 }
 
 .cta-button:hover {
-    transform: translateY(-2px);
-    background: #0F2438;
+    transform: translateY(3px);
+    filter: brightness(0.88);
+    box-shadow: 0 3px 0 #0e2035, 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button:active {
+    transform: translateY(6px);
+    filter: brightness(0.78);
+    box-shadow: 0 0px 0 #0e2035, 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta-container,
@@ -1087,11 +1095,21 @@ footer {
 }
 
 .final-cta-section .cta-button {
-    background: var(--accent-color);
+    background: linear-gradient(135deg, #FF8C42 0%, var(--accent-color) 50%, #E55A28 100%);
+    box-shadow: 0 6px 0 #b84a1e, 0 6px 14px rgba(255, 107, 53, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
 }
 
 .final-cta-section .cta-button:hover {
-    background: var(--accent-dark);
+    filter: brightness(0.92);
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #b84a1e, 0 4px 10px rgba(255, 107, 53, 0.15);
+}
+
+.final-cta-section .cta-button:active {
+    filter: brightness(0.85);
+    transform: translateY(6px);
+    box-shadow: 0 0px 0 #b84a1e, 0 2px 4px rgba(255, 107, 53, 0.1);
 }
 
 .final-cta-title,
@@ -1351,7 +1369,7 @@ footer {
         color: #fff;
         border-radius: 6px;
         font-weight: bold;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 6px 0 #0e2035, 0 10px 20px rgba(0, 0, 0, 0.2);
         margin: 0 auto;
         box-sizing: border-box;
         font-size: 20px;

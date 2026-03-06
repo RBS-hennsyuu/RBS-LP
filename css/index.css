@@ -53,11 +53,22 @@
 /* ================================================== */
 
 .header .cta-button {
-    background: var(--accent-color);
+    background: linear-gradient(135deg, #FF8C42 0%, var(--accent-color) 50%, #E55A28 100%);
+    box-shadow: 0 6px 0 #b84a1e, 0 6px 14px rgba(255, 107, 53, 0.2);
+    transform: translateY(0);
+    transition: transform 0.1s ease, box-shadow 0.1s ease, filter 0.1s ease;
 }
 
 .header .cta-button:hover {
-    background: var(--accent-dark);
+    filter: brightness(0.92);
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #b84a1e, 0 4px 10px rgba(255, 107, 53, 0.15);
+}
+
+.header .cta-button:active {
+    filter: brightness(0.85);
+    transform: translateY(6px);
+    box-shadow: 0 0px 0 #b84a1e, 0 2px 4px rgba(255, 107, 53, 0.1);
 }
 
 /* ヘッダー用：CTAと募集ラベルをグループ化して上下配置 */
@@ -148,7 +159,7 @@
 /* ================================================== */
 
 .stats-banner {
-    background: var(--navy);
+    background: linear-gradient(135deg, var(--navy) 0%, #2C5F7C 100%);
     padding: 32px 0;
 }
 
@@ -696,8 +707,8 @@
 
     .header-content {
         max-width: 1000px;
-        margin: 0 auto;
-        padding-left: 60px;
+        margin: 0;
+        padding: 120px 0 40px 60px;
         text-align: left;
         display: flex;
         flex-direction: column;
