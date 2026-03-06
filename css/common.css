@@ -1852,9 +1852,10 @@ footer {
     position: relative;
 }
 
-.framework-list li span {
+.framework-list li i {
     position: absolute;
     left: 0;
+    top: 3px;
     color: var(--accent-color);
 }
 
