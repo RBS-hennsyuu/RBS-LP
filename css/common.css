@@ -1716,6 +1716,7 @@ footer {
     align-items: stretch;
     gap: 24px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .framework-card {
@@ -1727,6 +1728,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
+    min-width: 0;
 }
 
 .framework-list-row {
@@ -1776,7 +1779,6 @@ footer {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 16px;
 }
 
 .framework-img {

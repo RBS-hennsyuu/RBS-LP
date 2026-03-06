@@ -3,6 +3,11 @@
     max-width: 860px;
 }
 
+/* strengths セクションはframework-boxを860pxにするためコンテナを広げる */
+#strengths .doc-container {
+    max-width: 940px;
+}
+
 @media (min-width: 901px) {
     .course-description-blocks {
         display: flex;
