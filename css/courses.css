@@ -155,8 +155,8 @@ body .hamburger span {
     }
 }
 
-.course-wrap.hiyoko .course-overview-card { border-left-color: #d8a63d; }
-.course-wrap.kokko .course-overview-card  { border-left-color: #a0a1a1; }
+.course-wrap.hiyoko .course-overview-card { border-left-color: #a0a1a1; }
+.course-wrap.kokko .course-overview-card  { border-left-color: #d8a63d; }
 .course-wrap.phoenix .course-overview-card { border-left-color: #ff5657; }
 
 .course-overview-card {
@@ -190,13 +190,13 @@ body .hamburger span {
 }
 
 .icon-bg-green {
-    background: rgba(216, 166, 61, 0.12);
-    color: var(--course-green, #d8a63d);
+    background: rgba(160, 161, 161, 0.12);
+    color: var(--course-teal, #a0a1a1);
 }
 
 .icon-bg-teal {
-    background: rgba(160, 161, 161, 0.12);
-    color: var(--course-teal, #a0a1a1);
+    background: rgba(216, 166, 61, 0.12);
+    color: var(--course-green, #d8a63d);
 }
 
 .icon-bg-orange {
@@ -460,13 +460,13 @@ body .hamburger span {
 }
 
 .course-price-card.hiyoko .course-price-badge {
-    background: var(--course-green, #d8a63d);
-    border-color: var(--course-green, #d8a63d);
+    background: var(--course-teal, #a0a1a1);
+    border-color: var(--course-teal, #a0a1a1);
 }
 
 .course-price-card.kokko .course-price-badge {
-    background: var(--course-teal, #a0a1a1);
-    border-color: var(--course-teal, #a0a1a1);
+    background: var(--course-green, #d8a63d);
+    border-color: var(--course-green, #d8a63d);
 }
 
 .course-price-card.phoenix .course-price-badge {
@@ -720,11 +720,11 @@ body .hamburger span {
 /*   コースカラーアクセント変数     */
 /* =============================== */
 .hiyoko-accent {
-    color: var(--course-green, #d8a63d);
+    color: var(--course-teal, #a0a1a1);
 }
 
 .kokko-accent {
-    color: var(--course-teal, #a0a1a1);
+    color: var(--course-green, #d8a63d);
 }
 
 .phoenix-accent {
@@ -732,11 +732,11 @@ body .hamburger span {
 }
 
 .hiyoko-accent-bg {
-    background: var(--course-green, #d8a63d);
+    background: var(--course-teal, #a0a1a1);
 }
 
 .kokko-accent-bg {
-    background: var(--course-teal, #a0a1a1);
+    background: var(--course-green, #d8a63d);
 }
 
 .phoenix-accent-bg {
@@ -752,11 +752,11 @@ body .hamburger span {
 }
 
 .step-accent.hiyoko .course-step-num {
-    background: var(--course-green, #d8a63d);
+    background: var(--course-teal, #a0a1a1);
 }
 
 .step-accent.kokko .course-step-num {
-    background: var(--course-teal, #a0a1a1);
+    background: var(--course-green, #d8a63d);
 }
 
 .course-section.bg-benefits-phoenix {

@@ -96,8 +96,8 @@
     text-decoration: none;
     text-align: center;
 }
-.course-modal-link[data-course="hiyoko"] { background: var(--course-green, #5CB85C); }
-.course-modal-link[data-course="kokko"] { background: var(--course-teal, #4DBCC5); }
+.course-modal-link[data-course="hiyoko"] { background: var(--course-teal, #a0a1a1); }
+.course-modal-link[data-course="kokko"] { background: var(--course-green, #d8a63d); }
 .course-modal-link[data-course="phoenix"] { background: var(--course-dark, #2C3E50); }
 .course-modal-link:hover { opacity: 0.88; transform: translateY(-2px) scale(1.03); }
 /* course modal styles removed (feature disabled) */
@@ -128,10 +128,10 @@
     letter-spacing: 0.05em;
 }
 .hiyoko-salon-box .course-label {
-    background: var(--course-green, #2CB67D);
+    background: var(--course-teal, #a0a1a1);
 }
 .kokko-salon-box .course-label {
-    background: var(--course-teal, #2C5F7C);
+    background: var(--course-green, #d8a63d);
 }
 .phoenix-salon-box .course-label {
     background: var(--course-dark, #22223B);
@@ -200,12 +200,12 @@
 }
 
 /* 個別アクセント（色・ボーダーなど） */
-.kokko-salon-box { border: 3.5px solid var(--course-teal, #009999); }
-.kokko-salon-badge { background: var(--course-teal, #26b6b6); }
+.kokko-salon-box { border: 3.5px solid var(--course-green, #d8a63d); }
+.kokko-salon-badge { background: var(--course-green, #d8a63d); }
 .phoenix-salon-box { border: 3.5px solid var(--course-dark, #1a3550); }
 .phoenix-salon-badge { background: var(--course-dark, #2C5F7C); }
-.hiyoko-salon-box { border: 3.5px solid var(--course-green, #7cb342); }
-.hiyoko-salon-badge { background: var(--course-green, #7cb342); }
+.hiyoko-salon-box { border: 3.5px solid var(--course-teal, #a0a1a1); }
+.hiyoko-salon-badge { background: var(--course-teal, #a0a1a1); }
 @media (max-width: 600px) {
     .salon-box, .kokko-salon-box, .phoenix-salon-box, .hiyoko-salon-box {
         padding: 18px 6px;
@@ -696,12 +696,12 @@
 }
 
 .comparison-card-header.hiyoko {
-    background: var(--course-green);
+    background: var(--course-teal);
 }
 
 .comparison-card-header.kokko {
-    background: var(--course-teal);
-    border: 3.5px solid var(--course-teal);
+    background: var(--course-green);
+    border: 3.5px solid var(--course-green);
     border-radius: 12px 12px 0 0;
 }
 
