@@ -155,9 +155,9 @@ body .hamburger span {
     }
 }
 
-.course-wrap.hiyoko .course-overview-card { border-left-color: #5CB85C; }
-.course-wrap.kokko .course-overview-card  { border-left-color: #4DBCC5; }
-.course-wrap.phoenix .course-overview-card { border-left-color: #2C3E50; }
+.course-wrap.hiyoko .course-overview-card { border-left-color: #d8a63d; }
+.course-wrap.kokko .course-overview-card  { border-left-color: #a0a1a1; }
+.course-wrap.phoenix .course-overview-card { border-left-color: #ff5657; }
 
 .course-overview-card {
     background: #fff;
@@ -190,13 +190,13 @@ body .hamburger span {
 }
 
 .icon-bg-green {
-    background: rgba(92, 184, 92, 0.12);
-    color: var(--course-green, #5CB85C);
+    background: rgba(216, 166, 61, 0.12);
+    color: var(--course-green, #d8a63d);
 }
 
 .icon-bg-teal {
-    background: rgba(77, 188, 197, 0.12);
-    color: var(--course-teal, #4DBCC5);
+    background: rgba(160, 161, 161, 0.12);
+    color: var(--course-teal, #a0a1a1);
 }
 
 .icon-bg-orange {
@@ -460,19 +460,18 @@ body .hamburger span {
 }
 
 .course-price-card.hiyoko .course-price-badge {
-    background: var(--course-green, #5CB85C);
-    border-color: var(--course-green, #5CB85C);
+    background: var(--course-green, #d8a63d);
+    border-color: var(--course-green, #d8a63d);
 }
 
 .course-price-card.kokko .course-price-badge {
-    background: var(--course-teal, #4DBCC5);
-    border-color: var(--course-teal, #4DBCC5);
+    background: var(--course-teal, #a0a1a1);
+    border-color: var(--course-teal, #a0a1a1);
 }
 
 .course-price-card.phoenix .course-price-badge {
-    background: #fff;
-    border-color: #fff;
-    color: var(--navy);
+    background: var(--course-dark, #ff5657);
+    border-color: var(--course-dark, #ff5657);
 }
 .course-price-card {
     max-width: 480px;
@@ -721,27 +720,27 @@ body .hamburger span {
 /*   コースカラーアクセント変数     */
 /* =============================== */
 .hiyoko-accent {
-    color: var(--course-green, #5CB85C);
+    color: var(--course-green, #d8a63d);
 }
 
 .kokko-accent {
-    color: var(--course-teal, #4DBCC5);
+    color: var(--course-teal, #a0a1a1);
 }
 
 .phoenix-accent {
-    color: var(--course-dark, #2C3E50);
+    color: var(--course-dark, #ff5657);
 }
 
 .hiyoko-accent-bg {
-    background: var(--course-green, #5CB85C);
+    background: var(--course-green, #d8a63d);
 }
 
 .kokko-accent-bg {
-    background: var(--course-teal, #4DBCC5);
+    background: var(--course-teal, #a0a1a1);
 }
 
 .phoenix-accent-bg {
-    background: var(--course-dark, #2C3E50);
+    background: var(--course-dark, #ff5657);
 }
 
 .step-accent.hiyoko {
@@ -753,11 +752,11 @@ body .hamburger span {
 }
 
 .step-accent.hiyoko .course-step-num {
-    background: var(--course-green, #5CB85C);
+    background: var(--course-green, #d8a63d);
 }
 
 .step-accent.kokko .course-step-num {
-    background: var(--course-teal, #4DBCC5);
+    background: var(--course-teal, #a0a1a1);
 }
 
 .course-section.bg-benefits-phoenix {
@@ -769,7 +768,7 @@ body .hamburger span {
 }
 
 .step-accent.phoenix .course-step-num {
-    background: var(--course-dark, #2C3E50);
+    background: var(--course-dark, #ff5657);
 }
 
 .course-section.bg-price-phoenix {
