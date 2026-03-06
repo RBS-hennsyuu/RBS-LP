@@ -428,132 +428,6 @@
     margin-bottom: 30px;
 }
 
-.curriculum-conclusion {
-    text-align: left;
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: var(--accent-color);
-            text-align: center;
-}
-
-/* ================================================== */
-/*                 フレームワーク                       */
-/* ================================================== */
-
-.framework-box {
-    background: #fff;
-    padding: 25px;
-    border-radius: 6px;
-    margin: 30px 0;
-    border-left: 4px solid var(--accent-color);
-    border-top: 3px solid var(--accent-color);
-}
-
-.framework-title {
-    color: var(--accent-color);
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    line-height: 1.4;
-}
-
-.framework-badge {
-    background: var(--accent-color);
-    color: #fff;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    margin-right: 8px;
-}
-
-.framework-desc {
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-/* utility: replace double <br><br> with a controllable spacer */
-.stack-gap {
-    display: block;
-    height: 16px; /* default gap for stacked breaks */
-}
-
-/* small on mobile */
-@media (max-width: 768px) {
-    .stack-gap {
-        height: 12px;
-    }
-}
-
-/* larger variant if needed */
-.stack-gap--large {
-    height: 28px;
-}
-
-.framework-list {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.framework-list li {
-    margin-bottom: 8px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.framework-list li span {
-    position: absolute;
-    left: 0;
-    color: var(--accent-color);
-}
-
-/* ================================================== */
-/*                 ベネフィットタグ                     */
-/* ================================================== */
-
-.benefit-section {
-    margin-bottom: 20px;
-}
-
-.benefit-title {
-    text-align: center;
-    font-weight: bold;
-    margin: 30px 0 5px 0;
-    color: #666;
-}
-
-.benefit-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-}
-
-.benefit-tag {
-    background: var(--navy);
-    color: var(--white);
-    border-radius: 8px;
-    padding: 4px 12px;
-    margin: 2px 6px;
-    font-size: 0.95rem;
-    display: inline-block;
-}
-
-/* PC 画面幅ではベネフィット関連を左寄せにする */
-@media (min-width: 1024px) {
-    .benefit-tags {
-        justify-content: flex-start;
-    }
-    .benefit-title {
-        text-align: left;
-    }
-    .benefit-section .curriculum-conclusion {
-        text-align: left;
-    }
-}
-
 /* ================================================== */
 /*                 オンラインサロン                     */
 /* ================================================== */
@@ -696,19 +570,6 @@
     color: var(--navy);
     text-align: center;
     margin: 32px 0 0 0;
-}
-
-/* ================================================== */
-/*                 RBSの強み（ドキュメント版）          */
-/* ================================================== */
-
-/* desktop: ensure framework-box width matches strengths grid */
-@media (min-width: 960px) {
-    #strengths .framework-box {
-        max-width: 860px;
-        margin: 40px auto;
-        box-sizing: border-box;
-    }
 }
 
 /* ================================================== */
@@ -1396,35 +1257,9 @@
         letter-spacing: -0.05em;
     }
 
-    .framework-badge {
-        display: inline-block;
-        margin-bottom: 6px;
-    }
-
-    .framework-title {
-        font-size: 1.1rem;
-        letter-spacing: -0.05em;
-    }
-
-    .benefit-tags {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
     /* コース比較カードの値を左寄せ */
     .sp-only-cards .comparison-value {
         text-align: left;
-    }
-
-    .benefit-tag {
-        font-size: 1rem;
-        padding: 12px 15px;
-        text-align: center;
-        width: 100%;
-        display: block;
     }
 
 
