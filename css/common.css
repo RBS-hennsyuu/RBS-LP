@@ -1700,6 +1700,20 @@ footer {
     color: var(--accent-color);
 }
 
+.framework-img {
+    max-width: 100px;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.attendance-img {
+    width: 100%;
+    max-width: 860px;
+    display: block;
+    margin: 24px auto;
+    border-radius: 8px;
+}
+
 .framework-box {
     background: #fff;
     padding: 25px;

@@ -178,7 +178,7 @@
 
 .stats-banner {
     background: linear-gradient(315deg, var(--navy) 0%, #2C5F7C 100%);
-    background: #ffc17a;
+    background: #ffefdc;
     padding: 32px 0;
 }
 
@@ -197,7 +197,7 @@
     padding: 16px;
     background: rgb(255 255 255);
     border-radius: 6px;
-    box-shadow: 8px 8px 0 #ce8d42, 0 4px 12px rgba(14, 32, 53, 0.18);
+    box-shadow: 8px 8px 0 #edbe87, 0 4px 12px rgba(14, 32, 53, 0.18);
 }
 
 .stat-number {
