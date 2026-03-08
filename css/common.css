@@ -1741,7 +1741,7 @@ footer {
     background: #fff;
     border-radius: 12px;
     border: 1.5px solid #d0d0d0;
-    padding: 24px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1861,7 +1861,7 @@ footer {
 .framework-list {
     list-style: none;
     padding: 0;
-    margin-top: 30px;
+    margin-top: 10px;
     font-weight: 500;
 }
 
@@ -1911,6 +1911,29 @@ footer {
         max-width: 860px;
         margin: 50px auto;
         box-sizing: border-box;
+    }
+
+    .framework-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .framework-box .str-header {
+        flex-basis: 100%;
+    }
+
+    .framework-box .framework-desc {
+        flex: 1 1 0%;
+        min-width: 0;
+        margin-right: 32px;
+        margin-bottom: 0;
+    }
+
+    .framework-box .framework-card-row {
+        flex: 0 0 40%;
+        width: 40%;
+        margin-bottom: 0;
     }
 
     .benefit-tags {
