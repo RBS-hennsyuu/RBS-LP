@@ -362,6 +362,18 @@ body .hamburger span {
     margin-bottom: 0;
 }
 
+.course-desc-list {
+    list-style: disc;
+    padding-left: 2em;
+    margin: 0 0 1.4em;
+}
+
+.course-desc-list li {
+    font-size: 15px;
+    line-height: 1.9;
+    color: #444;
+}
+
 /* =============================== */
 /*   コース画像ギャラリー（2枚）   */
 /* =============================== */

@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             // Reset form / success state on open (in case previous state persisted)
             if (contactForm) contactForm.style.display = 'block';
+            const modalHeaderOnOpen = modal.querySelector('.modal-header');
+            if (modalHeaderOnOpen) modalHeaderOnOpen.style.display = '';
             const successEl = document.getElementById('successMessage');
             if (successEl) successEl.style.display = 'none';
         });
@@ -152,8 +154,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                     console.log('GAS URL not configured. Form data:', formData);
                 }
 
-                // 成功時：フォームを非表示にして、成功メッセージを表示
+                // 成功時：フォームとヘッダーを非表示にして、成功メッセージを表示
                 contactForm.style.display = 'none';
+                const modalHeader = modal.querySelector('.modal-header');
+                if (modalHeader) modalHeader.style.display = 'none';
                 document.getElementById('successMessage').style.display = 'block';
 
                 // フォームをリセット（次回使用時のため）
@@ -178,8 +182,10 @@ document.addEventListener('DOMContentLoaded', async function () {
             modal.classList.remove('active');
             document.body.style.overflow = '';
 
-            // フォームと成功メッセージの表示を元に戻す
+            // フォームとヘッダーと成功メッセージの表示を元に戻す
             contactForm.style.display = 'block';
+            const modalHeaderOnClose = modal.querySelector('.modal-header');
+            if (modalHeaderOnClose) modalHeaderOnClose.style.display = '';
             document.getElementById('successMessage').style.display = 'none';
 
             // 送信ボタンを元に戻す

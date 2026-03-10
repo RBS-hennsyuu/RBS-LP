@@ -1282,15 +1282,20 @@
         letter-spacing: -0.05em;
     }
 
-    /* コース比較カードの値を左寄せ */
-    .sp-only-cards .comparison-value {
-        text-align: left;
-    }
-
 
     .strengths-grid-2x2 {
         grid-template-columns: 1fr;
         gap: 14px;
+    }
+
+    .sp-only-cards .comparison-row {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .sp-only-cards .comparison-label {
+        flex: 0 0 auto;
+        margin-right: 12px;
     }
 
     .str-header {
