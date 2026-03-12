@@ -77,10 +77,23 @@ document.addEventListener('DOMContentLoaded', async function () {
     const closeBtn = document.querySelector('.modal-close');
     const contactForm = document.getElementById('contactForm');
 
+    // クリックされたCTA箇所を記憶する変数
+    let ctaLocation = '';
+
+    // CTA箇所のマッピング
+    function getCTALocation(button) {
+        if (button.classList.contains('nav-cta') || button.classList.contains('mobile-cta')) return 'ヘッダーメニュー';
+        if (button.id === 'ctaButton1') return 'ファーストビュー';
+        if (button.id === 'ctaButton2') return 'ボイス';
+        if (button.id === 'ctaButton3') return 'ラスト';
+        return 'その他';
+    }
+
     // Open modal when CTA buttons are clicked
     ctaButtons.forEach(button => {
         button.addEventListener('click', function (e) {
             e.preventDefault();
+            ctaLocation = getCTALocation(button);
             modal.classList.add('active');
             lockBodyScroll(); // Prevent background scrolling (mobile-safe)
 
@@ -129,6 +142,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 prefecture: document.getElementById('prefecture').value,
                 source: document.getElementById('source').value,
                 experience_years: document.getElementById('experience_years').value,
+                cta_location: ctaLocation,
                 timestamp: new Date().toISOString()
             };
 

@@ -67,10 +67,10 @@ function saveToSpreadsheet(data) {
   // シートがなければ作成してヘッダーを追加
   if (!sheet) {
     sheet = ss.insertSheet(CONFIG.SHEET_NAME);
-    sheet.appendRow(['受付日時', 'メールアドレス', '年齢幅', '都道府県', '流入経路', '経験年数']);
+    sheet.appendRow(['受付日時', 'メールアドレス', '年齢幅', '都道府県', '流入経路', '経験年数', 'CTA箇所']);
     
     // ヘッダー行のスタイル設定
-    sheet.getRange(1, 1, 1, 6).setFontWeight('bold').setBackground('#4285f4').setFontColor('#ffffff');
+    sheet.getRange(1, 1, 1, 7).setFontWeight('bold').setBackground('#4285f4').setFontColor('#ffffff');
   }
   
   // データを追加
@@ -81,7 +81,8 @@ function saveToSpreadsheet(data) {
     data.age_range || '',
     data.prefecture || '',
     data.source || '',
-    data.experience_years || ''
+    data.experience_years || '',
+    data.cta_location || ''
   ]);
 }
 
