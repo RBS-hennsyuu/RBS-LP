@@ -15,7 +15,7 @@
 // ===== 設定 =====
 const CONFIG = {
   // スプレッドシートID（URLの /d/XXXXX/edit のXXXXX部分）
-  SPREADSHEET_ID: '1Lebm-lSQ_xlZJ9q23oMSnQz6TGpgD_3kfAQZduEAkd4',
+  SPREADSHEET_ID: '10IacqXq6ye-vYw0Ayd1t2y1K5yhBy3W7KEEl4OcQMGU',
   
   // シート名
   SHEET_NAME: '資料請求',
