@@ -1293,6 +1293,18 @@
         padding-left: 40px;
     }
 
+    .sp-only-cards.course-cards .comparison-row {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .sp-only-cards.course-cards .content-row .comparison-value {
+        font-size: 12px;
+        text-align: left;
+        margin-left: auto;
+        flex: 0 1 auto;
+    }
+
     .sp-only-cards .comparison-label {
         flex: 0 0 auto;
         margin-right: 12px;
