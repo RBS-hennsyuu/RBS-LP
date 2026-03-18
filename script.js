@@ -1,7 +1,7 @@
 // ===== 設定 =====
 const CONFIG = {
     // Google Apps Script のウェブアプリURL（デプロイ後に設定）
-    GAS_URL: 'https://script.google.com/macros/s/AKfycbx3HESpS9Us_1rBg09ZlchMm3JrCqcFkt5WmkPLOHUiJmdFSv8QlA8FzFEZ00qsUuk1/exec'
+    GAS_URL: 'https://script.google.com/macros/s/AKfycbwPLGAxv9gIoAWWOaqVtzKuyItoPQatuYTXkHknf5nmzQTHrGJdiBIx5ofMkIqcmwpA/exec'
 };
 
 // Modal functionality
