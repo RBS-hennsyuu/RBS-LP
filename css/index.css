@@ -1128,10 +1128,32 @@
         padding: 20px;
         border-radius: 6px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        align-items: center;
     }
 
     .flow-row {
-        gap: 12px;
+        display: grid;
+        grid-template-columns: 0.45fr 60px 1.55fr;
+        align-items: center;
+        column-gap: 12px;
+        width: min(100%, 360px);
+        margin: 0 auto;
+    }
+
+    .flow-circle,
+    .flow-line {
+        grid-column: 2;
+        justify-self: center;
+    }
+
+    .flow-label-title,
+    .flow-label-badge {
+        grid-column: 3;
+        justify-self: start;
+    }
+
+    .flow-line {
+        margin-left: 0;
     }
 
     .flow-label-title {
@@ -1141,7 +1163,7 @@
     .flow-label-badge {
         font-size: 11px;
         padding: 3px 10px;
-        margin-left: 4px;
+        margin-left: 0;
     }
 
     .learning-flow-main-title {

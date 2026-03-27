@@ -3,9 +3,9 @@
     max-width: 860px;
 }
 
-/* strengths セクションはframework-boxを860pxにするためコンテナを広げる */
+/* strengths セクションはindex.htmlと同じ幅に合わせる */
 #strengths .doc-container {
-    max-width: 940px;
+    max-width: 1000px;
 }
 
 @media (min-width: 901px) {
