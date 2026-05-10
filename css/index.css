@@ -102,38 +102,83 @@
 .header .cta-button-wrap {
     position: relative;
     display: inline-block;
+    padding-top: 66px;
 }
 
-/* バッジをボタン上部に固定し、ボタン位置は変えない */
 .header .recruitment-badge--header {
     position: absolute;
-    left: 50%;
-    top: -28px;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    top: 8px;
+    z-index: 2;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    gap: 2px;
-    padding: 12px 22px;
+    gap: 5px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 12px 26px 13px;
     border-radius: 999px;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
     background: rgba(255, 255, 255, 0.98);
-    font-weight: 800;
-    font-size: 13px;
-    line-height: 1;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.1;
     pointer-events: none;
+    white-space: normal;
+}
+
+.header .recruitment-badge--header .recruitment-badge-status {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    margin-bottom: 2px;
     white-space: nowrap;
 }
 
 .header .recruitment-badge--header .slash {
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 0.04em;
+    line-height: 1;
+    white-space: nowrap;
 }
 
 .header .recruitment-badge--header .recruiting {
     font-size: 11px;
     opacity: 0.95;
+}
+
+.header .recruitment-status--header {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 0;
+    color: #ffd84d;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    letter-spacing: 0.04em;
+    pointer-events: none;
+    text-shadow:
+        -1px -1px 0 #1d5fd0,
+        0 -2px 0 #1d5fd0,
+        1px -1px 0 #1d5fd0,
+        2px 0 0 #1d5fd0,
+        -1px 1px 0 #1d5fd0,
+        -2px 0 0 #1d5fd0,
+        1px 1px 0 #1d5fd0,
+        0 2px 0 #1d5fd0,
+        0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* 下向き三角（バッジの下に小さな▼） */
@@ -148,7 +193,6 @@
     border-width: 8px 8px 0 8px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.98) transparent transparent transparent;
-    /* バッジ背景に合わせる */
     pointer-events: none;
 }
 
@@ -170,11 +214,26 @@
 }
 
 @media (max-width: 480px) {
-    .header .recruitment-badge--header::after {
-        border-width: 6px 6px 0 6px;
+    .header .cta-button-wrap {
+        padding-top: 56px;
     }
 
     .header .recruitment-badge--header {
+        font-size: 14px;
+        top: 6px;
+        padding: 11px 22px 12px;
+    }
+
+    .header .recruitment-badge--header .recruitment-badge-status {
+        font-size: 11px;
+        margin-bottom: 1px;
+    }
+
+    .header .recruitment-badge--header .slash {
+        font-size: 15px;
+    }
+
+    .header .recruitment-status--header {
         font-size: 12px;
     }
 }
