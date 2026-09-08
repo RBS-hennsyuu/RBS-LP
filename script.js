@@ -4,6 +4,15 @@ const CONFIG = {
     GAS_URL: 'https://script.google.com/macros/s/AKfycbwPLGAxv9gIoAWWOaqVtzKuyItoPQatuYTXkHknf5nmzQTHrGJdiBIx5ofMkIqcmwpA/exec'
 };
 
+function trackMetaLead(formData) {
+    if (typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+            content_name: '資料請求',
+            cta_location: formData.cta_location || 'unknown'
+        });
+    }
+}
+
 // Modal functionality
 document.addEventListener('DOMContentLoaded', async function () {
     // Course modal feature removed — course links open dedicated pages.
@@ -169,6 +178,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 }
 
                 // 成功時：フォームとヘッダーを非表示にして、成功メッセージを表示
+                trackMetaLead(formData);
                 contactForm.style.display = 'none';
                 const modalHeader = modal.querySelector('.modal-header');
                 if (modalHeader) modalHeader.style.display = 'none';
